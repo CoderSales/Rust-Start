@@ -11,3 +11,10 @@ ____
 ____
 
 [Getting started](https://www.rust-lang.org/learn/get-started)
+
+____
+
+on WSL (Windows Subsystem for Linux):
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
