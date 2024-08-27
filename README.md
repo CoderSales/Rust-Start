@@ -24,3 +24,20 @@ in Windows PowerShell:
 rustup update
 ```
 
+____
+
+on [Getting started](https://www.rust-lang.org/learn/get-started):
+
+click:
+
+[Learn more about installation](https://www.rust-lang.org/learn/get-started#:~:text=LEARN%20MORE%20ABOUT%20INSTALLATION)
+
+which takes you to:
+
+on [Install Rust](https://www.rust-lang.org/tools/install):
+
+### Configuring the PATH environment variable
+
+In the Rust development environment, all tools are installed to the ~/.cargo/bin directory, and this is where you will find the Rust toolchain, including rustc, cargo, and rustup.
+
+____
