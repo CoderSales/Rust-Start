@@ -14,7 +14,3 @@ ____
 
 ____
 
-on WSL (Windows Subsystem for Linux):
-
-```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
