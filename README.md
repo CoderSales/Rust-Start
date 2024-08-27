@@ -38,6 +38,8 @@ on [Install Rust](https://www.rust-lang.org/tools/install):
 
 ### Configuring the PATH environment variable
 
+**~/.cargo/bin**
+
 In the Rust development environment, all tools are installed to the ~/.cargo/bin directory, and this is where you will find the Rust toolchain, including rustc, cargo, and rustup.
 
 ____
