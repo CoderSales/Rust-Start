@@ -56,4 +56,8 @@ cargo build
 cargo run
 ```
 
+```bash
+cargo --version
+```
+
 ____
