@@ -17,3 +17,10 @@ ____
 [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 
 ____
+
+in Windows PowerShell:
+
+```bash
+rustup update
+```
+
