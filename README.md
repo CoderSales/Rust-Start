@@ -47,3 +47,13 @@ ____
 [log after install and reboot](/documentation/afterInstallLog.md)
 
 ____
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+____
