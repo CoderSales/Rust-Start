@@ -1,5 +1,9 @@
 # Rust-Start
 
+[Start.md](/documentation/Start.md)
+
+____
+
 [Rust](https://www.rust-lang.org/)
 
 ____
