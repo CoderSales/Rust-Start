@@ -2,9 +2,7 @@
 
 ____
 
-[tree command recursive - Google Search](https://www.google.com/search?q=tree+command+recursive&oq=tree+command+recursive&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyCggEEAAYgAQYogQyCggFEAAYgAQYogQyCggGEAAYgAQYogTSAQg0MjQ2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8)
-
-[How to get tree of folders in CMD?](https://superuser.com/questions/372509/how-to-get-tree-of-folders-in-cmd)
+[tree command not working# 1](https://github.com/users/CoderSales/projects/86/views/1?pane=issue&itemId=77061231)
 
 ____
 
