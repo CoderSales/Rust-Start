@@ -5,4 +5,5 @@ cd hello_world
 tree .
 tree /f
 cargo build
+./target/debug/hello_world
 ```
