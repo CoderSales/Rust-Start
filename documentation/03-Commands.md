@@ -27,4 +27,6 @@ cargo build
 cargo run
 cargo build --release
 cd ..
+git clone https://github.com/rust-lang/regex.git
+cd regex
 ```
