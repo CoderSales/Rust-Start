@@ -26,4 +26,5 @@ cargo build
 ./target/debug/hello_world2
 cargo run
 cargo build --release
+cd ..
 ```
