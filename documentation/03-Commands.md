@@ -18,4 +18,6 @@ New file: /hello/src/hello.rs
 cargo build
 rustc src/hello.rs
 ./hello
+cd ..
+cargo new hello_world2 --bin --vcs none
 ```
