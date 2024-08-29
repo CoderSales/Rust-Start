@@ -29,10 +29,5 @@ cargo build --release
 cd ..
 git clone https://github.com/rust-lang/regex.git
 cd regex
-```
-
-in git bash
-
-```bash
 git remote -v
 ```
