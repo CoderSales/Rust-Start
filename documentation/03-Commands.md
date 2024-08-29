@@ -31,4 +31,5 @@ git clone https://github.com/rust-lang/regex.git
 git remote -v
 cd regex
 git remote -v
+cargo build
 ```
