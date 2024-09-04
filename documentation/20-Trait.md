@@ -175,3 +175,7 @@ ____
 [The Rust Reference | 3. Macros | 3.2. Procedural Macros | Function-like procedural macros](https://doc.rust-lang.org/1.80.1/reference/procedural-macros.html#function-like-procedural-macros)
 
 ____
+
+TokenStream [doc.rust-lang.org | Struct proc_macro::TokenStreamCopy item path](https://doc.rust-lang.org/1.80.1/proc_macro/struct.TokenStream.html)
+
+____
