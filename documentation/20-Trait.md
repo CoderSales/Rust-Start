@@ -56,6 +56,12 @@ ____
 
 [The Rust Reference | 2. Lexical structure | 2.6. Tokens |Lifetimes and loop labels](https://doc.rust-lang.org/1.80.1/reference/tokens.html#lifetimes-and-loop-labels)
 
+#### Summary:
+
+```text
+` before `
+```
+
 ```text
 Lexer
 LIFETIME_TOKEN :
