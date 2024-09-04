@@ -198,6 +198,10 @@ ____
 
 ____
 
+6.4. Functions
+
+....
+
 [The Rust Reference | | 10.1.16 | | Impl trait](https://doc.rust-lang.org/1.80.1/reference/types/impl-trait.html)
 
 
