@@ -151,3 +151,7 @@ ECMA
         - Scope: .... a Common Language Infrastructure (CLI)
 
 ____
+
+[The Rust Reference | 3. Macros | 3.2 Procedural Macros](https://doc.rust-lang.org/1.80.1/reference/procedural-macros.html#attribute-macros)
+
+____
