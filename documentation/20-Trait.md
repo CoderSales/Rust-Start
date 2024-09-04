@@ -328,6 +328,8 @@ doc.rust-lang.org | std crate | [Trait std::error::Error](https://doc.rust-lang.
 
 ____
 
+[crates.io | libz-sys](https://crates.io/crates/libz-sys)
+
 [rust-lang/libz-sys](https://github.com/rust-lang/libz-sys/tree/1940f165a8bf6479e273b0400472ba2aab5ad147)
 
 ____
