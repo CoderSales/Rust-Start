@@ -96,3 +96,9 @@ ____
 - [The rustdoc book | Re-exports](https://doc.rust-lang.org/1.80.1/rustdoc/write-documentation/re-exports.html)
 
 ____
+
+[The Rust Reference | Attributes](https://doc.rust-lang.org/1.80.1/reference/attributes.html#built-in-attributes-index)
+
+- [The Unstable Book | ](https://doc.rust-lang.org/1.80.1/unstable-book/index.html)
+
+____
