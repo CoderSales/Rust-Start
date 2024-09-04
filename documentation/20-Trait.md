@@ -59,7 +59,8 @@ ____
 #### Summary:
 
 ```text
-` before `
+
+` without another ` immediately is a LIFETIME_TOKEN
 ```
 
 ```text
