@@ -250,4 +250,6 @@ ____
 
 - [doc.rust-lang.org | Trait std::simd::SimdElement](https://doc.rust-lang.org/std/simd/trait.SimdElement.html#associatedtype.Mask)
 
+- [doc.rust-lang.org | crate std | Required Associated Types | type Mask: MaskElement](https://doc.rust-lang.org/std/simd/trait.SimdElement.html#associatedtype.Mask)
+
 ____
