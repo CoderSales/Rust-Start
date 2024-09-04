@@ -179,3 +179,7 @@ ____
 TokenStream [doc.rust-lang.org | Struct proc_macro::TokenStreamCopy item path](https://doc.rust-lang.org/1.80.1/proc_macro/struct.TokenStream.html)
 
 ____
+
+[The Rust Reference | 6. Items | 6.4. Functions](https://doc.rust-lang.org/1.80.1/reference/items/functions.html)
+
+____
