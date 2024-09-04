@@ -238,3 +238,7 @@ ____
 
 ____
 
+[10.6. Trait and lifetime bounds | Trait and lifetime bounds](https://doc.rust-lang.org/1.80.1/reference/trait-bounds.html#trait-and-lifetime-bounds)
+
+____
+
