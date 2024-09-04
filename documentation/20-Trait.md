@@ -97,8 +97,8 @@ ____
 
 ____
 
-[The Rust Reference | Attributes](https://doc.rust-lang.org/1.80.1/reference/attributes.html#built-in-attributes-index)
+[The Rust Reference | 7. Attributes](https://doc.rust-lang.org/1.80.1/reference/attributes.html#built-in-attributes-index)
 
-- [The Unstable Book | ](https://doc.rust-lang.org/1.80.1/unstable-book/index.html)
+- [The Unstable Book ](https://doc.rust-lang.org/1.80.1/unstable-book/index.html)
 
 ____
