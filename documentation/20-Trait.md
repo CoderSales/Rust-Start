@@ -246,6 +246,8 @@ ____
 
 ____
 
-[doc.rust-lang.org | Trait std::simd::SimdElement](https://doc.rust-lang.org/std/simd/trait.SimdElement.html#associatedtype.Mask)
+[doc.rust-lang.org | Crate std](https://doc.rust-lang.org/std/index.html)
+
+- [doc.rust-lang.org | Trait std::simd::SimdElement](https://doc.rust-lang.org/std/simd/trait.SimdElement.html#associatedtype.Mask)
 
 ____
