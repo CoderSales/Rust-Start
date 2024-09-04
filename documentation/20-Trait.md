@@ -102,3 +102,36 @@ ____
 - [The Unstable Book ](https://doc.rust-lang.org/1.80.1/unstable-book/index.html)
 
 ____
+
+[The Rust Unstable Book | coroutines](https://doc.rust-lang.org/1.80.1/unstable-book/language-features/coroutines.html)
+
+```rust
+#![feature(coroutines, coroutine_trait, stmt_expr_attributes)]
+
+use std::ops::Coroutine;
+use std::pin::Pin;
+
+fn main() {
+    let mut coroutine = #[coroutine] || {
+        println!("2");
+        yield;
+        println!("4");
+    };
+
+    println!("1");
+    Pin::new(&mut coroutine).resume(());
+    println!("3");
+    Pin::new(&mut coroutine).resume(());
+    println!("5");
+}
+```
+
+```rust
+1
+2
+3
+4
+5
+```
+
+____
