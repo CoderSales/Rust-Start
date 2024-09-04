@@ -53,3 +53,17 @@ ____
 [The Rust Reference | 10.1.7 | Slice types](https://doc.rust-lang.org/1.80.1/reference/types/slice.html)
 
 ____
+
+[The Rust Reference | 2. Lexical structure | 2.6. Tokens |Lifetimes and loop labels](https://doc.rust-lang.org/1.80.1/reference/tokens.html#lifetimes-and-loop-labels)
+
+```text
+Lexer
+LIFETIME_TOKEN :
+      ' IDENTIFIER_OR_KEYWORD (not immediately followed by ')
+   | '_ (not immediately followed by ')
+
+LIFETIME_OR_LABEL :
+      ' NON_KEYWORD_IDENTIFIER (not immediately followed by ')
+```
+
+____
