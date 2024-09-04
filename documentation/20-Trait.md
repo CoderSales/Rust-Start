@@ -6,6 +6,8 @@ Trait [The Rust Reference | doc.rust-lang.org | Trait objects](https://doc.rust-
 
 A trait object is an opaque value of another type that implements a set of traits. The set of traits is made up of an object safe base trait plus any number of auto traits.
 
+....
+
 ```rust
 trait Printable {
     fn stringify(&self) -> String;
@@ -27,6 +29,8 @@ fn main() {
 ```bash
 10
 ```
+
+In this example, the trait Printable occurs as a trait object in both the type signature of print, and the cast expression in main.
 
 ____
 
