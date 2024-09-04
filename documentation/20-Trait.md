@@ -242,6 +242,6 @@ ____
 
 ____
 
-[6.11 Traits | Object Safety | ](https://doc.rust-lang.org/1.80.1/reference/items/traits.html#object-safety)
+[6.11 Traits | Object Safety ](https://doc.rust-lang.org/1.80.1/reference/items/traits.html#object-safety)
 
 ____
