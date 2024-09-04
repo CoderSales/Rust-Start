@@ -185,3 +185,7 @@ ____
 A function consists of a block, along with a name, a set of parameters, and an output type.
 
 ____
+
+[2. Command-line Arguments | Linking modifiers: whole-archive](https://doc.rust-lang.org/1.80.1/rustc/command-line-arguments.html#linking-modifiers-whole-archive)
+
+____
