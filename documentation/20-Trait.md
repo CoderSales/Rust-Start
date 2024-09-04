@@ -200,4 +200,7 @@ ____
 
 [The Rust Reference | | 10.1.16 | | Impl trait](https://doc.rust-lang.org/1.80.1/reference/types/impl-trait.html)
 
+
+`impl` Trait provides ways to specify unnamed but concrete types that implement a specific trait.
+
 ____
