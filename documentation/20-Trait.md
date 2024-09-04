@@ -197,3 +197,7 @@ ____
 [The Rust Reference | | Async functions](https://doc.rust-lang.org/1.80.1/reference/items/functions.html#async-functions)
 
 ____
+
+[The Rust Reference | | 10.1.16 | | Impl trait](https://doc.rust-lang.org/1.80.1/reference/types/impl-trait.html)
+
+____
