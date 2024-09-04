@@ -91,6 +91,6 @@ ____
 
 ____
 
-[The rustdoc book | The #[doc] attribute](https://doc.rust-lang.org/1.80.1/rustdoc/write-documentation/the-doc-attribute.html)
+[The rustdoc book | How to write documentation | 4.2. The #[doc] attribute](https://doc.rust-lang.org/1.80.1/rustdoc/write-documentation/the-doc-attribute.html)
 
 ____
