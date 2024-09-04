@@ -378,3 +378,16 @@ fn test_crc32() {
 ```
 
 ____
+
+[The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+
+3. Cargo Reference
+
+3.8. Build Scripts
+
+[Build Scripts](https://doc.rust-lang.org/cargo/reference/build-scripts.html#build-scripts)
+
+[The links Manifest Key](https://doc.rust-lang.org/cargo/reference/build-scripts.html#the-links-manifest-key)
+
+____
+
