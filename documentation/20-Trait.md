@@ -245,3 +245,7 @@ ____
 [6.11 Traits | Object Safety ](https://doc.rust-lang.org/1.80.1/reference/items/traits.html#object-safety)
 
 ____
+
+[doc.rust-lang.org | Trait std::simd::SimdElement](https://doc.rust-lang.org/std/simd/trait.SimdElement.html#associatedtype.Mask)
+
+____
