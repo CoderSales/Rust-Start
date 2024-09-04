@@ -272,6 +272,8 @@ ____
 
 [Learn Rust](https://www.rust-lang.org/learn)
 
+doc.rust-lang.org
+
 [List of all items](https://doc.rust-lang.org/std/all.html)
 
 [Crate std | The Rust Standard Library](https://doc.rust-lang.org/std/index.html)
