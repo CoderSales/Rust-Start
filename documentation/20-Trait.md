@@ -82,3 +82,13 @@ lists `Punctuation symbol tokens`
 - [External blocks](https://doc.rust-lang.org/1.80.1/reference/items/external-blocks.html)
 
 ____
+
+[the standard C ABI - Google Search](https://www.google.com/search?q=the+standard+C+ABI&sourceid=chrome&ie=UTF-8)
+
+[The D Programming Language | Application Binary Interface | ABI](https://dlang.org/spec/abi.html#:~:text=The%20C%20ABI%20referred%20to,entire%20C%20ABI%20runtime%20library.)
+
+- [C ABI](https://dlang.org/spec/abi.html#c_abi)
+
+____
+
+
