@@ -2,7 +2,7 @@ ____
 
 Items 
 
-- [Traits]()
+- [Traits](https://github.com/CoderSales/Rust-Start/blob/main/documentation/20-Trait.md#trait)
 
 - [Functions]()
 
