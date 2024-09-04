@@ -256,4 +256,16 @@ ____
 
 - [doc.rust-lang.org | crate std | Enum std::borrow::Cow | pub fn into_owned(self) -> <B as ToOwned>::Owned | Examples | Calling into_owned on a Cow::Borrowed returns a clone of the borrowed data:](https://doc.rust-lang.org/std/borrow/enum.Cow.html#examples-4)
 
+```rust
+use std::borrow::Cow;
+
+let s = "Hello world!";
+let cow = Cow::Borrowed(s);
+
+assert_eq!(
+  cow.into_owned(),
+  String::from(s)
+);
+```
+
 ____
