@@ -155,3 +155,15 @@ ____
 [The Rust Reference | 3. Macros | 3.2 Procedural Macros](https://doc.rust-lang.org/1.80.1/reference/procedural-macros.html#attribute-macros)
 
 ____
+
+#### Clippy
+
+[The Rust Reference | 7. Attributes | Tool attributes](https://doc.rust-lang.org/1.80.1/reference/attributes.html#tool-attributes)
+
+Google Search: [clippy rust](https://www.google.com/search?q=clippy+rust&num=10&newwindow=1&sca_esv=c9a915b7e2353e00&sca_upv=1&sxsrf=ADLYWIIj54NTmH5FeJRmwOIlUG8Uq-mjOA%3A1725471050790&ei=SpnYZoX3L47BhbIPr4XD-AQ&ved=0ahUKEwiFxLXI6KmIAxWOYEEAHa_CEE8Q4dUDCBA&uact=5&oq=clippy+rust&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2NsaXBweSBydXN0MgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiVCFCxBVi-B3ABeAGQAQCYAcACoAGkA6oBBzAuMS4wLjG4AQPIAQD4AQGYAgOgAr4DwgIKEAAYsAMY1gQYR8ICChAAGIAEGEMYigWYAwCIBgGQBgiSBwcxLjEuMC4xoAe2CQ&sclient=gws-wiz-serp)
+
+Result: [Clippy Documentation | doc.rust-lang.org/clippy](https://doc.rust-lang.org/clippy/)
+
+Result: [rust-lang/rust-clippy](https://github.com/rust-lang/rust-clippy)
+
+____
