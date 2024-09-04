@@ -202,6 +202,10 @@ ____
 
 ....
 
+An async function is roughly equivalent to a function that returns impl Future and with an async move block as its body:
+
+....
+
 [The Rust Reference | | 10.1.16 | | Impl trait](https://doc.rust-lang.org/1.80.1/reference/types/impl-trait.html)
 
 
