@@ -167,3 +167,7 @@ Result: [Clippy Documentation | doc.rust-lang.org/clippy](https://doc.rust-lang.
 Result: [rust-lang/rust-clippy](https://github.com/rust-lang/rust-clippy)
 
 ____
+
+[The Rust Reference | 12. Names | 12.3. Preludes | Tool prelude](https://doc.rust-lang.org/1.80.1/reference/names/preludes.html#tool-prelude)
+
+____
