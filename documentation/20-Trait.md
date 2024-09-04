@@ -8,6 +8,8 @@ A trait object is an opaque value of another type that implements a set of trait
 
 ____
 
+[The Rust Reference | supertraits](https://doc.rust-lang.org/1.80.1/reference/items/traits.html#supertraits)
+
 [The Rust Reference | Parameter patterns](https://doc.rust-lang.org/1.80.1/reference/items/traits.html#parameter-patterns)
 
 ____
