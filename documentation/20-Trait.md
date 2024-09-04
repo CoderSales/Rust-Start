@@ -193,3 +193,7 @@ ____
 [learn.microsoft.com |  | Import Name Type](https://learn.microsoft.com/en-us/windows/win32/debug/pe-format#import-name-type)
 
 ____
+
+[The Rust Reference | | Async functions](https://doc.rust-lang.org/1.80.1/reference/items/functions.html#async-functions)
+
+____
