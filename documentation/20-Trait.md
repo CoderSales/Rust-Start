@@ -309,3 +309,15 @@ ____
 doc.rust-lang.org | Crate std | [What is in the standard library documentation?](https://doc.rust-lang.org/std/#what-is-in-the-standard-library-documentation)
 
 ____
+
+[The Embedded Rust Book](https://docs.rust-embedded.org/book)
+
+1.2 no_std
+
+[A no_std Rust Environment](https://docs.rust-embedded.org/book/intro/no-std.html#a-no_std-rust-environment)
+
+[Bare Metal Environments](https://docs.rust-embedded.org/book/intro/no-std.html#bare-metal-environments)
+
+[The libstd Runtime](https://docs.rust-embedded.org/book/intro/no-std.html#the-libstd-runtime)
+
+____
