@@ -391,3 +391,15 @@ ____
 
 ____
 
+[The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+
+3. Cargo Reference
+
+3.8. Build Scripts
+
+[Build Scripts](https://doc.rust-lang.org/cargo/reference/build-scripts.html#build-scripts)
+
+[cargo::rerun-if-env-changed=NAME](https://doc.rust-lang.org/cargo/reference/build-scripts.html#rerun-if-env-changed)
+
+____
+
