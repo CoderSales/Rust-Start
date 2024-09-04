@@ -327,3 +327,7 @@ doc.rust-lang.org | std crate | [Trait std::error::Error](https://doc.rust-lang.
 [Implementors](https://doc.rust-lang.org/stable/std/error/trait.Error.html#implementors)
 
 ____
+
+[rust-lang/libz-sys](https://github.com/rust-lang/libz-sys/tree/1940f165a8bf6479e273b0400472ba2aab5ad147)
+
+____
