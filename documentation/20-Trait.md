@@ -103,7 +103,7 @@ ____
 
 ____
 
-[The Rust Unstable Book | coroutines](https://doc.rust-lang.org/1.80.1/unstable-book/language-features/coroutines.html)
+[The Rust Unstable Book | 2.61 coroutines](https://doc.rust-lang.org/1.80.1/unstable-book/language-features/coroutines.html)
 
 ```rust
 #![feature(coroutines, coroutine_trait, stmt_expr_attributes)]
