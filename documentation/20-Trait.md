@@ -189,3 +189,7 @@ ____
 [The rustc book | 2. Command-line Arguments | Linking modifiers: whole-archive](https://doc.rust-lang.org/1.80.1/rustc/command-line-arguments.html#linking-modifiers-whole-archive)
 
 ____
+
+[learn.microsoft.com |  | Import Name Type](https://learn.microsoft.com/en-us/windows/win32/debug/pe-format#import-name-type)
+
+____
