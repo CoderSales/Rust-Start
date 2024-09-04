@@ -134,4 +134,8 @@ fn main() {
 5
 ```
 
+```text
+At this time the main use case of coroutines is an implementation primitive for `async`/`await` and `gen` syntax, but coroutines will likely be extended to other primitives in the future. Feedback on the design and usage is always appreciated!
+```
+
 ____
