@@ -139,3 +139,7 @@ At this time the main use case of coroutines is an implementation primitive for 
 ```
 
 ____
+
+[The Rust Reference | The non_exhaustive attribute](https://doc.rust-lang.org/1.80.1/reference/attributes/type_system.html#the-non_exhaustive-attribute)
+
+____
