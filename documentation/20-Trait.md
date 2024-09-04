@@ -300,6 +300,8 @@ fn eq(&self, other: &Rhs) -> bool
 
 This method tests for self and other values to be equal, and is used by ==.
 
+____
 
+doc.rust-lang.org | Crate std | [Module std::cmp](https://doc.rust-lang.org/std/cmp/index.html)
 
 ____
