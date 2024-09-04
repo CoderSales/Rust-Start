@@ -2,9 +2,9 @@ ____
 
 Items 
 
-- Traits
+- [Traits]()
 
-- Functions
+- [Functions]()
 
 ____
 
