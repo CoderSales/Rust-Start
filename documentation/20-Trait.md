@@ -182,4 +182,6 @@ ____
 
 [The Rust Reference | 6. Items | 6.4. Functions](https://doc.rust-lang.org/1.80.1/reference/items/functions.html)
 
+A function consists of a block, along with a name, a set of parameters, and an output type.
+
 ____
