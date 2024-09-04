@@ -269,3 +269,18 @@ assert_eq!(
 ```
 
 ____
+
+[Learn Rust](https://www.rust-lang.org/learn)
+
+[List of all items](https://doc.rust-lang.org/std/all.html)
+
+[Crate std | The Rust Standard Library](https://doc.rust-lang.org/std/index.html)
+
+[Trait std::cmp::PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#)
+
+[Implementors](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#implementors)
+
+[impl PartialEq<OsStr> for PathBuf](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#impl-PartialEq%3COsString%3E-for-PathBuf)
+
+
+____
