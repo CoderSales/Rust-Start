@@ -252,4 +252,6 @@ ____
 
 - [doc.rust-lang.org | crate std | Required Associated Types | type Mask: MaskElement](https://doc.rust-lang.org/std/simd/trait.SimdElement.html#associatedtype.Mask)
 
+- [doc.rust-lang.org | crate std | Trait std::ops::Add](https://doc.rust-lang.org/std/ops/trait.Add.html#tymethod.add)
+
 ____
