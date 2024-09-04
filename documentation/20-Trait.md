@@ -233,3 +233,8 @@ ____
 [8.2.3. | | async blocks](https://doc.rust-lang.org/1.80.1/reference/expressions/block-expr.html#async-blocks)
 
 ____
+
+[doc.rust-lang.org | Enum proc_macro::Delimiter | Variants](https://doc.rust-lang.org/1.80.1/proc_macro/enum.Delimiter.html#variant.None)
+
+____
+
