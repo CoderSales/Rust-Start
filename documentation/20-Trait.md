@@ -4,7 +4,7 @@ Items
 
 - [Traits](https://github.com/CoderSales/Rust-Start/blob/main/documentation/20-Trait.md#trait)
 
-- [Functions]()
+- [Functions](https://github.com/CoderSales/Rust-Start/blob/main/documentation/20-Trait.md#functions)
 
 ____
 
