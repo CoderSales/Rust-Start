@@ -142,8 +142,12 @@ ____
 
 [The Rust Reference | 7. Attributes > 7.6 Type System | The non_exhaustive attribute](https://doc.rust-lang.org/1.80.1/reference/attributes/type_system.html#the-non_exhaustive-attribute)
 
+ECMA
+
 - [ECMA-334 | C# language specification](https://ecma-international.org/publications-and-standards/standards/ecma-334/)
 
     - [TC49 | Programming languages](https://ecma-international.org/technical-committees/tc49/)
+
+        - Scope: .... a Common Language Infrastructure (CLI)
 
 ____
