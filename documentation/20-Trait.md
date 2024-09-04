@@ -202,7 +202,7 @@ ____
 
 ....
 
-An async function is roughly equivalent to a function that returns impl Future and with an async move block as its body:
+An async function is roughly equivalent to a function that returns `impl Future` and with an `async move` `block` as its body:
 
 ....
 
