@@ -321,3 +321,9 @@ ____
 [The libstd Runtime](https://docs.rust-embedded.org/book/intro/no-std.html#the-libstd-runtime)
 
 ____
+
+doc.rust-lang.org | std crate | [Trait std::error::Error](https://doc.rust-lang.org/stable/std/error/trait.Error.html#)
+
+[Implementors](https://doc.rust-lang.org/stable/std/error/trait.Error.html#implementors)
+
+____
