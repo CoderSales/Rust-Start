@@ -49,3 +49,7 @@ ____
 - [The Rust Reference | Trait and lifetime bounds](https://doc.rust-lang.org/1.80.1/reference/trait-bounds.html)
 
 ____
+
+[The Rust Reference | Slice types](https://doc.rust-lang.org/1.80.1/reference/types/slice.html)
+
+____
