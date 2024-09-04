@@ -284,5 +284,22 @@ doc.rust-lang.org
 
 [impl PartialEq<OsStr> for PathBuf](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#impl-PartialEq%3COsString%3E-for-PathBuf)
 
+____
+
+doc.rust-lang.org
+
+[Crate std | The Rust Standard Library](https://doc.rust-lang.org/std/index.html)
+
+[Trait std::cmp::PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#)
+
+[Required Methods](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html#required-methods)
+
+```rust
+fn eq(&self, other: &Rhs) -> bool
+```
+
+This method tests for self and other values to be equal, and is used by ==.
+
+
 
 ____
