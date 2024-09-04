@@ -77,6 +77,8 @@ ____
 
 [2.6. Tokens | Punctuation](https://doc.rust-lang.org/1.80.1/reference/tokens.html#punctuation)
 
-lists `Punctuation symbol tokens` 
+lists `Punctuation symbol tokens`
+
+- [External blocks](https://doc.rust-lang.org/1.80.1/reference/items/external-blocks.html)
 
 ____
