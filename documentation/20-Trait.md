@@ -171,3 +171,7 @@ ____
 [The Rust Reference | 12. Names | 12.3. Preludes | Tool prelude](https://doc.rust-lang.org/1.80.1/reference/names/preludes.html#tool-prelude)
 
 ____
+
+[The Rust Reference | 3. Macros | 3.2. Procedural Macros | Function-like procedural macros](https://doc.rust-lang.org/1.80.1/reference/procedural-macros.html#function-like-procedural-macros)
+
+____
