@@ -186,6 +186,6 @@ A function consists of a block, along with a name, a set of parameters, and an o
 
 ____
 
-[2. Command-line Arguments | Linking modifiers: whole-archive](https://doc.rust-lang.org/1.80.1/rustc/command-line-arguments.html#linking-modifiers-whole-archive)
+[The rustc book | 2. Command-line Arguments | Linking modifiers: whole-archive](https://doc.rust-lang.org/1.80.1/rustc/command-line-arguments.html#linking-modifiers-whole-archive)
 
 ____
