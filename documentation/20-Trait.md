@@ -50,6 +50,6 @@ ____
 
 ____
 
-[The Rust Reference | Slice types](https://doc.rust-lang.org/1.80.1/reference/types/slice.html)
+[The Rust Reference | 10.1.7 | Slice types](https://doc.rust-lang.org/1.80.1/reference/types/slice.html)
 
 ____
