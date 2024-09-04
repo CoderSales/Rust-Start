@@ -305,3 +305,7 @@ ____
 doc.rust-lang.org | Crate std | [Module std::cmp](https://doc.rust-lang.org/std/cmp/index.html)
 
 ____
+
+doc.rust-lang.org | Crate std | [What is in the standard library documentation?](https://doc.rust-lang.org/std/#what-is-in-the-standard-library-documentation)
+
+____
