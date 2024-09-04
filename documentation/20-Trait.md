@@ -333,3 +333,48 @@ ____
 [rust-lang/libz-sys](https://github.com/rust-lang/libz-sys/tree/1940f165a8bf6479e273b0400472ba2aab5ad147)
 
 ____
+
+[The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+
+3. Cargo Reference
+
+3.8 Build Scripts
+
+3.8.1 Build Script Examples
+
+[Build Script Examples](https://doc.rust-lang.org/cargo/reference/build-script-examples.html#build-script-examples)
+
+[Linking to system libraries](https://doc.rust-lang.org/cargo/reference/build-script-examples.html#linking-to-system-libraries)
+
+The build script is fairly simple:
+
+```rust
+// build.rs
+
+fn main() {
+    pkg_config::Config::new().probe("zlib").unwrap();
+    println!("cargo::rerun-if-changed=build.rs");
+}
+```
+
+Let’s round out the example with a basic FFI binding:
+
+```rust
+// src/lib.rs
+
+use std::os::raw::{c_uint, c_ulong};
+
+extern "C" {
+    pub fn crc32(crc: c_ulong, buf: *const u8, len: c_uint) -> c_ulong;
+}
+
+#[test]
+fn test_crc32() {
+    let s = "hello";
+    unsafe {
+        assert_eq!(crc32(0, s.as_ptr(), s.len() as c_uint), 0x3610a686);
+    }
+}
+```
+
+____
