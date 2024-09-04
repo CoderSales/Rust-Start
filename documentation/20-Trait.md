@@ -219,3 +219,7 @@ async fn example(x: &str) -> usize {
 `impl` Trait provides ways to specify unnamed but concrete types that implement a specific trait.
 
 ____
+
+[8.2.3. | | async blocks](https://doc.rust-lang.org/1.80.1/reference/expressions/block-expr.html#async-blocks)
+
+____
