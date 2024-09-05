@@ -47,3 +47,9 @@ Trait std::ops::Drop [Drop in std::ops | Rust | doc.rust-lang.org](https://doc.r
 [16. Unsafety | 16.2. Behavior considered undefined | The Rust Reference | doc.rust-lang.org](https://doc.rust-lang.org/reference/behavior-considered-undefined.html)
 
 ____
+
+[Behavior considered undefined - The Rust Reference](https://doc.rust-lang.org/reference/behavior-considered-undefined.html#places-based-on-misaligned-pointers)
+
+[Places based on misaligned pointers](https://doc.rust-lang.org/reference/behavior-considered-undefined.html#places-based-on-misaligned-pointers)
+
+____
