@@ -24,4 +24,6 @@ Type Alias libc::size_t [size_t in libc - Rust](https://docs.rs/libc/0.2.158/lib
 
 docs.rs/libc [mod.rs - source](https://docs.rs/libc/0.2.158/src/libc/unix/mod.rs.html#19)
 
+GitHub [rfcs/text/1291-promote-libc.md - rust-lang/rfcs](https://github.com/rust-lang/rfcs/blob/HEAD/text/1291-promote-libc.md)
+
 ____
