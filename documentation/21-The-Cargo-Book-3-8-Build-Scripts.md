@@ -18,6 +18,6 @@ libc
 
 [rust-lang/libc: Raw bindings to platform APIs for Rust](https://github.com/rust-lang/libc)
 
-[libc - Rust](https://docs.rs/libc/0.2.158/libc/)
+docs.rs [libc - Rust](https://docs.rs/libc/0.2.158/libc/)
 
 ____
