@@ -36,4 +36,6 @@ Trait std::ops::Drop [Drop in std::ops | Rust | doc.rust-lang.org](https://doc.r
 
 [Destructors - The Rust Reference | The Rust Reference | doc.rust-lang.org](https://doc.rust-lang.org/reference/destructors.html)
 
+[Scrutinee | Glossary - The Rust Reference | doc.rust-lang.org](https://doc.rust-lang.org/reference/glossary.html#scrutinee)
+
 ____
