@@ -20,4 +20,6 @@ libc
 
 docs.rs [libc - Rust](https://docs.rs/libc/0.2.158/libc/)
 
+Type Alias libc::size_t [size_t in libc - Rust](https://docs.rs/libc/0.2.158/libc/type.size_t.html)
+
 ____
