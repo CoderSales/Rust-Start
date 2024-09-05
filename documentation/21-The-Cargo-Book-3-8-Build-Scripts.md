@@ -42,4 +42,6 @@ Trait std::ops::Drop [Drop in std::ops | Rust | doc.rust-lang.org](https://doc.r
 
 [Shared references (&) | Pointer types | The Rust Reference | doc.rust-lang.org](https://doc.rust-lang.org/reference/types/pointer.html#shared-references-)
 
+[10.1.13. Pointer types | The Rust Reference | doc.rust-lang.org](https://doc.rust-lang.org/reference/types/pointer.html#pointer-types)
+
 ____
