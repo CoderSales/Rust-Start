@@ -38,4 +38,6 @@ Trait std::ops::Drop [Drop in std::ops | Rust | doc.rust-lang.org](https://doc.r
 
 [Scrutinee | Glossary - The Rust Reference | doc.rust-lang.org](https://doc.rust-lang.org/reference/glossary.html#scrutinee)
 
+[10.4 Interior mutability - The Rust Reference](https://doc.rust-lang.org/reference/interior-mutability.html)
+
 ____
