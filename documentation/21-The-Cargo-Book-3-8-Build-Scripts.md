@@ -34,4 +34,6 @@ ____
 
 Trait std::ops::Drop [Drop in std::ops | Rust | doc.rust-lang.org](https://doc.rust-lang.org/std/ops/trait.Drop.html)
 
+[Destructors - The Rust Reference | The Rust Reference | doc.rust-lang.org](https://doc.rust-lang.org/reference/destructors.html)
+
 ____
