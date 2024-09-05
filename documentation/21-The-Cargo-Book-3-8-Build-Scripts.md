@@ -12,6 +12,10 @@ ____
 
 ____
 
+libc
+
 [libc - crates.io: Rust Package Registry](https://crates.io/crates/libc)
+
+[rust-lang/libc: Raw bindings to platform APIs for Rust](https://github.com/rust-lang/libc)
 
 ____
