@@ -31,3 +31,7 @@ ____
 [Calling foreign functions | FFI | The Rustonomicon](https://doc.rust-lang.org/nomicon/ffi.html#calling-foreign-functions)
 
 ____
+
+Trait std::ops::Drop [Drop in std::ops | Rust | doc.rust-lang.org](https://doc.rust-lang.org/std/ops/trait.Drop.html)
+
+____
