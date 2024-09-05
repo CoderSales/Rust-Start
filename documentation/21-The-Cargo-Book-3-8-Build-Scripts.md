@@ -48,4 +48,6 @@ Trait std::ops::Drop [Drop in std::ops | Rust | doc.rust-lang.org](https://doc.r
 
 [Introduction - The Rustonomicon](https://doc.rust-lang.org/nomicon/index.html)
 
+[Issues · rust-lang/nomicon | GitHub](https://github.com/rust-lang/nomicon/issues)
+
 ____
