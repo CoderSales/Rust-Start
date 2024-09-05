@@ -11,3 +11,7 @@ ____
 [Issues · rust-lang/nomicon](https://github.com/rust-lang/nomicon/issues)
 
 ____
+
+[libc - crates.io: Rust Package Registry](https://crates.io/crates/libc)
+
+____
