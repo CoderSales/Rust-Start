@@ -86,9 +86,9 @@ due to automatic dereferencing;
 
 we are considering the fully expanded place expression here.)
 
-<br><br>
+<br><br><br>
 
-For instance, 
+- For instance, 
 
 if ptr has type *const S 
 
@@ -108,7 +108,7 @@ is
 
 u8 (i.e., a type with alignment 1). 
 
-In other words, 
+- In other words, 
 
 the alignment requirement derives from 
 
@@ -122,6 +122,79 @@ the type of the field
 
 that is being accessed.
 
+<br><br><br>
+
+- Note that 
+
+a place based on 
+
+a misaligned pointer 
+
+only leads to 
+
+Undefined Behavior 
+
+when it is loaded from 
+
+or stored to. 
+
+- addr_of!/addr_of_mut! on such a place is allowed.
+
+- &/&mut on a place
+
+requires 
+
+the alignment of the field type 
+
+(or else 
+
+the program would be 
+
+"producing an invalid value"), 
+
+which 
+
+generally is 
+
+a less restrictive requirement 
+
+than being based on 
+
+an aligned pointer. 
+
+- Taking a reference
+
+will lead to 
+
+a compiler error 
+
+in cases where 
+
+the field type 
+
+might be more aligned 
+
+than the type 
+
+that contains it, 
+
+i.e., repr(packed). 
+
+- This means that
+
+being based on 
+
+an aligned pointer 
+
+is always sufficient 
+
+to ensure that 
+
+the new reference is aligned, 
+
+but 
+
+it is not always necessary.
 
 
 ____
