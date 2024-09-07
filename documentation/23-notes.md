@@ -1,13 +1,13 @@
 
 _____
 
-If a [destructor (The Rust Reference)](https://doc.rust-lang.org/reference/destructors.html) must be 
+1. If a [destructor (The Rust Reference)](https://doc.rust-ang.org/reference/destructors.html) must be 
 
-run **manually**, 
+2. run **manually**, 
 
 such as when implementing your own 
 
-**smart pointer**, 
+3. **smart pointer**, 
 
 ```rust
 std::ptr::drop_in_place
