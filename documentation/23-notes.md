@@ -1,7 +1,7 @@
 
 _____
 
-If a [destructor - The Rust Reference](https://doc.rust-lang.org/reference/destructors.html) must be 
+If a [destructor (The Rust Reference)](https://doc.rust-lang.org/reference/destructors.html) must be 
 
 run manually, 
 
