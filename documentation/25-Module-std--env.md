@@ -6,7 +6,7 @@ ____
 Module std::env
 ```
 
-This module contains functions 
+contains functions 
 
 to inspect various aspects such as:
 
@@ -14,6 +14,6 @@ to inspect various aspects such as:
 
 - process arguments,
 
-- the current directory, and various other important directories.
+- current directory, other important directories.
 
 ____
