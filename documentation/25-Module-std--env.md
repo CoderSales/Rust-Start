@@ -1,12 +1,10 @@
 ____
 
-[
+[std::env - Rust](https://doc.rust-lang.org/nightly/std/env/index.html)
 
 ```rust
 Module std::env
 ```
-
-](https://doc.rust-lang.org/nightly/std/env/index.html)
 
 ____
 
