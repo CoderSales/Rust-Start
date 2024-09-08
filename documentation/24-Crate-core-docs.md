@@ -26,6 +26,7 @@ A/ [Undefined behaviour - The Kani Rust Verifier](https://model-checking.github.
 
 ____
 
+- memcpy, memmove, memset, memcmp, and bcmp (note continued) :
 
   - even if the pointers are NULL or dangling.
 
