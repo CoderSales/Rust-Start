@@ -34,7 +34,13 @@ memcpy, memmove, memset, memcmp, bcmp, strlen
 
 - The advice for Rust user code is to call the functions provided by this library instead
 
-- (such as ptr::copy).
+- (such as
+
+```rust
+ptr::copy
+```
+
+).
 
 ____
 
