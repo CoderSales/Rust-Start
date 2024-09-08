@@ -20,7 +20,7 @@ memcpy, memmove, memset, memcmp, bcmp, strlen
 
 - even if the pointers are NULL or dangling.
 
-- (Note that making extra assumptions about these functions is common among compilers:
+- (extra assumptions about these functions is common among compilers:
 
 - clang and GCC do the same.)
 
