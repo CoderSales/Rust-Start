@@ -3,7 +3,7 @@ ____
 
 
 ```rust
-[Module std::env]((https://doc.rust-lang.org/nightly/std/env/index.html))
+[Module std::env](https://doc.rust-lang.org/nightly/std/env/index.html)
 ```
 
 ____
