@@ -14,7 +14,7 @@ memcpy, memmove, memset, memcmp, bcmp, strlen
 
 - For memcpy, memmove, memset, memcmp, and bcmp, if the n parameter is 0,
 
-- the function is assumed to not be UB, (continued after Aside below)
+  - the function is assumed to not be UB, (continued after Aside below)
  
 ____
 
@@ -27,15 +27,15 @@ A/ [Undefined behaviour - The Kani Rust Verifier](https://model-checking.github.
 ____
 
 
-- even if the pointers are NULL or dangling.
+  - even if the pointers are NULL or dangling.
 
-- (extra assumptions about these functions is common among compilers:
+  - (extra assumptions about these functions is common among compilers:
 
-- clang and GCC do the same.)
+  - clang and GCC do the same.)
 
-- These functions are often provided by the system libc,
+  - These functions are often provided by the system libc,
 
-- but can also be provided by the compiler-builtins crate.
+  - but can also be provided by the compiler-builtins crate.
 
 - Note that the library does not guarantee that it will always make these assumptions,
 
