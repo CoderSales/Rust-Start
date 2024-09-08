@@ -44,3 +44,11 @@ ptr::copy
 
 ____
 
+Panic handler
+
+____
+
+`rust_eh_personality`
+
+____
+
