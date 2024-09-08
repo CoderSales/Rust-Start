@@ -14,7 +14,7 @@ memcpy, memmove, memset, memcmp, bcmp, strlen
 
 - For memcpy, memmove, memset, memcmp, and bcmp, if the n parameter is 0,
 
-- the function is assumed to not be UB,
+- the function is assumed to not be UB, (continued after Aside below)
  
 ____
 
