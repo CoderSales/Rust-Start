@@ -33,3 +33,10 @@ that have a counterpart ending in os
 - those without will return a String.
 
 ____
+____
+
+[std - Rust](https://doc.rust-lang.org/nightly/std/index.html)
+
+[std::vec - Rust](https://doc.rust-lang.org/nightly/std/vec/index.html)
+
+____
