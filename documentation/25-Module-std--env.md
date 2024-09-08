@@ -30,4 +30,6 @@ that have a counterpart ending in os
 
 - Those ending in os will return an OsString
 
+- those without will return a String.
+
 ____
