@@ -15,6 +15,17 @@ memcpy, memmove, memset, memcmp, bcmp, strlen
 - For memcpy, memmove, memset, memcmp, and bcmp, if the n parameter is 0,
 
 - the function is assumed to not be UB,
+ 
+____
+
+Aside:
+
+Q/ [What is UB in Rust - Google Search](https://www.google.com/search?q=What+is+UB+in+Rust&oq=What+is+UB+in+Rust&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIKCAIQABiiBBiJBTIKCAMQABiABBiiBDIKCAQQABiABBiiBDIKCAUQABiABBiiBNIBCTEzMzA3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8)
+
+A/ [Undefined behaviour - The Kani Rust Verifier](https://model-checking.github.io/kani/undefined-behaviour.html#:~:text=Note%3A%20Undefined%20behavior%20affects%20the,also%20affect%20the%20Rust%20code.)
+
+____
+
 
 - even if the pointers are NULL or dangling.
 
