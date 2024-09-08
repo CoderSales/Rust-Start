@@ -52,3 +52,15 @@ ____
 
 ____
 
+[Primitive Types](https://doc.rust-lang.org/nightly/core/index.html#primitives)
+
+____
+
+[Modules](https://doc.rust-lang.org/nightly/core/index.html#modules)
+
+____
+
+[Macros](https://doc.rust-lang.org/nightly/core/index.html#macros)
+
+____
+
