@@ -23,3 +23,11 @@ to inspect various aspects such as:
 - current directory, other important directories.
 
 ____
+
+- several functions and structs in this module 
+
+that have a counterpart ending in os
+
+- Those ending in os will return an OsString
+
+____
