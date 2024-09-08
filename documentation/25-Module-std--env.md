@@ -6,6 +6,12 @@ ____
 Module std::env
 ```
 
+____
+
+Inspection and manipulation of the process’s environment.
+
+____
+
 contains functions 
 
 to inspect various aspects such as:
