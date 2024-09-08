@@ -41,6 +41,6 @@ Module std::vec [std::vec - Rust](https://doc.rust-lang.org/nightly/std/vec/inde
 
 Struct std::vec::Vec [Vec in std::vec - Rust](https://doc.rust-lang.org/nightly/std/vec/struct.Vec.html)
 
-[vec in std - Rust](https://doc.rust-lang.org/nightly/std/macro.vec.html)
+Macro std::vec [vec in std - Rust](https://doc.rust-lang.org/nightly/std/macro.vec.html)
 
 ____
