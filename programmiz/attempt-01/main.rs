@@ -1,3 +1,4 @@
 fn main() {
-    print!("Hello, World!");
+    print!("Rust is fun! ");
+    print!("I love Rust programming.");
 }
