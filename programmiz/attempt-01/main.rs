@@ -1,23 +1,8 @@
 fn main() {
-    // declare a constant
-    const PI:f32 = 3.14;
-    println!("Initial Value of PI: {}", PI);
+    // Signed integer type 
+    let x: i32 = -200;
+    let y: i32 = 200;
 
-    // change value of PI
-    PI = 535.23;
-    println!("Update Value of PI: {}", PI);
+    println!("x = {}", x);
+    println!("y = {}", y);
 }
-
-/*
-error[E0070]: invalid left-hand side of assignment
- --> main.rs:7:8
-  |
-7 |     PI = 535.23;
-  |     -- ^
-  |     |
-  |     cannot assign to this expression
-
-error: aborting due to 1 previous error
-
-For more information about this error, try `rustc --explain E0070`.
-*/
