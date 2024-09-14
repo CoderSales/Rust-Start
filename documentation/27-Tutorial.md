@@ -7,3 +7,5 @@
 [{} is a placeholder which is replaced by the value of the variable after the comma](https://www.programiz.com/rust/print-output)
 
 [add text with the placeholder to format our output](https://www.programiz.com/rust/print-output)
+
+[Note: As per Rust's naming convention, we use uppercase for the name of constants.](https://www.programiz.com/rust/variables-mutability)
