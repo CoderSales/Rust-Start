@@ -36,6 +36,10 @@ _________________________________
 
 | 128-bit	| i128	| u128      |
 
+Search: [table in markdown](https://www.google.com/search?q=table+in+markdown&oq=table+in+markdown&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIMCAEQABgUGIcCGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMg0ICBAAGIYDGIAEGIoFMg0ICRAAGIYDGIAEGIoF0gEIMzE4MWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
+
+Result: [Extended Syntax | Markdown Guide](https://www.markdownguide.org/extended-syntax/)
+
 ___________________________________
 
 ____
