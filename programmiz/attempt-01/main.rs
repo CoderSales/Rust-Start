@@ -1,10 +1,3 @@
 fn main() {
-    /*
-    temporarily disable x and y variable declarations.
-    let x = 1;
-    let y = 2;
-    */
-
-    let z = 3;
-    println!("z = {}", z);
+    print!("Hello, World!");
 }
