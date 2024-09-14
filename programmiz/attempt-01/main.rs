@@ -1,4 +1,8 @@
 fn main() {
-    let x = 1;    // declare a variable
+    /*
+    declare a variable
+    and assign value to it
+    */
+    let x = 1;
     println!("x = {}", x);
 }
