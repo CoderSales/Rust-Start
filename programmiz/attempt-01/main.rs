@@ -1,5 +1,5 @@
-// entry point of the program
-fn main() {
-    // print text on the screen
-    println!("Hello, World!");
+fn main () {
+    // declare a variable
+    let x = 1;
+    println!("x = {}", x);
 }
