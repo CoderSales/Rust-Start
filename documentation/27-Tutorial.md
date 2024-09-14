@@ -15,3 +15,20 @@
 i32 signed intgeger
 
 u32 unsigned integer
+
+____
+
+## Categories of Integer Data Types in Rust
+
+Depending on the size of data, we can further classify the signed and unsigned integer type into various categories:
+
+| Size	| Signed	| Unsigned  |
+_________________________________
+| 8-bit	| i8	    | u8        |
+| 16-bit	| i16	| u16       |
+| 32-bit	| i32	| u32       |
+| 64-bit	| i64	| u64       |
+| 128-bit	| i128	| u128      |
+___________________________________
+
+____
