@@ -1,9 +1,15 @@
 fn main() {
-    let character: char = 'A';
+    // only u8 integer data type can be converted into char
+    let integer: u8 = 65;
+  
+    // convert integer to char using the as keyword
+    let character = integer as char;
 
-    // convert char type to u8 integer type
-    let integer = char as u8;
-
+    println!("integer = {}" , integer);
     println!("character = {}", character);
-    println!("integer = {}", integer);
 }
+
+/*
+integer = 65
+character = A
+*/
