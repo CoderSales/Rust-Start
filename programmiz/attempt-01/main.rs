@@ -1,19 +1,16 @@
 fn main() {
-    let integer: i32 = 65;
+    let boolean1: bool = false;
+    let boolean2: bool = true;
   
-    // convert integer to char using the as keyword
-    let character = integer as char;
+    // convert boolean type to integer
+    let integer1 = boolean1 as i32;
+    let integer2 = boolean2 as i32;
 
-    println!("integer = {}" , integer);
-    println!("character = {}", character);
+    println!("boolean1 = {}", boolean1);
+    println!("boolean1 = {}", boolean2);
+    println!("integer1 = {}", integer1);
+    println!("integer2 = {}", integer2);
 }
-
 /*
-error[E0604]: only `u8` can be cast as `char`, not `i32`
-
-let character = integer as char;
-                ^^^^^^^^^^^^^^^ invalid cast
-help: try `char::from_u32` instead (via a `u32`)
-For information about error try
-rustc --explain E0604
+Type Casting: Boolean to Integer in Rust
 */
