@@ -1,36 +1,40 @@
 fn main() {
-    let mut sum = 0;
+    let mut number = 0;
     
-    // for loop to iterate over first 10 natural numbers
-    for i in 1..11 {
-        sum += i;
+    // loop starts here
+    loop {
+        number += 1;
+
+        // condition to exit the loop
+        if number > 5 {
+            break;
+        }
+
+        println!("{}", number);        
     }
-    
-    println!("Sum: {}", sum);
 }
 
 /*
 url:
-https://www.programiz.com/rust/for-loop
+https://www.programiz.com/rust/break-continue
 
 Page Title:
-Rust for Loop
+Rust break and continue
+
 
 Section Title:
-Example: Sum of First 10 Natural Numbers using for Loop
+Rust break
+
 
 Output:
 
-Sum: 55
+1
+2
+3
+4
+5
 
 Note: 
-The 1..11 syntax 
-is also known as a 
-range notation 
-or 
-range operator 
-used to create 
-Iterators 
-in Rust.
+You can use the break keyword with while or for loops in a similar pattern.
 
 */
