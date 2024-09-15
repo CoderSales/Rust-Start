@@ -1,10 +1,15 @@
 fn main() {
-    // initiate an infinite loop
+    let mut number = 0;
+    
+    // infinite loop starts here
     loop {
-        println!("Loop forever!");
+        number += 1;
+        println!("{}", number);
         
-        // stop infinite loop
-        break;
+        if number >= 10 {
+            // exit the loop
+            break;
+        }
     }
 }
 
@@ -16,10 +21,19 @@ Page Title:
 Rust loop
 
 Section Title:
-Terminating Loop in Rust
+Example: Print First 10 Natural Numbers using Loop
 
 Output:
 
-Loop forever!
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
 
 */
