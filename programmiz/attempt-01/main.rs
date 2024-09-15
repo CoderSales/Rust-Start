@@ -1,24 +1,14 @@
 fn main() {
-    let a = 20;
-    let b = 2;
+    let dividend = 21;
+    let divisor = 8;
 
-    // add two variables using + operator
-    let x = a + b;
-    println!("{} + {} = {}", a, b, x);
+    // arithmetic division using / operator with integers
+    let division = dividend / divisor;
 
-    // subtract two variables using - operator
-    let y = a - b;
-    println!("{} - {} = {}", a, b, y);
-
-    // multiply two variables using * operator
-    let z = a * b;
-    println!("{} * {} = {}", a, b, z);
+    println!("{} / {} = {}", dividend, divisor, division);
 }
-
 /*
-Example 1: Addition, Subtraction and Multiplication Operators
+Example 2: Rust Division Operator
 
-20 + 2 = 22
-20 - 2 = 18
-20 * 2 = 40
+21 / 8 = 2
 */
