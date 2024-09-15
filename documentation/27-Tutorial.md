@@ -142,3 +142,14 @@ Let's look at examples of how we can use pattern
 matching on these types.
 
 ____
+
+In this example, my_option is an Option type that contains either a Some variant with an i32 value or a None variant.
+
+The match expression compares the value of my_option to the Some and None variants, and binds the value of Some variant to the value variable.
+
+When a match is found, the corresponding code block is executed.
+
+![match.jpg](/static/images/match.jpg)
+
+____
+

@@ -1,17 +1,10 @@
 fn main() {
-    enum Color {
-        Red,
-        Green,
-        Blue,
-    }
-
-    let my_color = Color::Green;
-
-    // use of match expression to match against an enum variant
-    match my_color {
-        Color::Red => println!("The color is red"),
-        Color::Green => println!("The color is green"),
-        Color::Blue => println!("The color is blue"),
+    let my_option: Option<i32> = Some(222);
+    
+    // use of match expression to match Option type
+    match my_option {
+        Some(value) => println!("The option has a value of {}", value),
+        None => println!("The option has no value"),
     }
 }
 
@@ -27,16 +20,10 @@ Section Title:
 Matching Option and Result Type in Rust
 
 Subsection Title:
+Example: Matching Option Type in Rust
 
-
-Compiler Notes:
-
-warning: 
-variants `Red` and `Blue` 
-are never constructed
 
 Output:
-
-The color is green
+The option has a value of 222
 
 */
