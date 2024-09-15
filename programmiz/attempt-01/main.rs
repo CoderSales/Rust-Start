@@ -1,14 +1,9 @@
 fn main() {
-    let dividend = 21;
-    let divisor = 8;
+    let dividend = 21.0;
+    let divisor = 8.0;
 
-    // arithmetic division using / operator with integers
+    // arithmetic division using / operator with floating point values
     let division = dividend / divisor;
 
     println!("{} / {} = {}", dividend, divisor, division);
 }
-/*
-Example 2: Rust Division Operator
-
-21 / 8 = 2
-*/
