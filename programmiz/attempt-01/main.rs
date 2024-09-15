@@ -1,7 +1,10 @@
 fn main() {
-    //  loop expression
+    // initiate an infinite loop
     loop {
         println!("Loop forever!");
+        
+        // stop infinite loop
+        break;
     }
 }
 
@@ -13,19 +16,10 @@ Page Title:
 Rust loop
 
 Section Title:
-Loop Expression
+Terminating Loop in Rust
 
 Output:
-Warning infinite loop
-Ctrl C to stop
 
 Loop forever!
-Loop forever!
-.
-.
-.
-.
-until press 
-Ctrl C
 
 */
