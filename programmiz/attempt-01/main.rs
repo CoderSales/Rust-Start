@@ -1,14 +1,9 @@
 fn main() {
-    // assign a floating point f64 value to decimal variable
-    let decimal: f32 = 64.31;
+    let character: char = 'A';
 
-    // convert decimal variable to u16 integer type using as keyword
-    let integer = decimal as u16;
+    // convert char type to u8 integer type
+    let integer = char as u8;
 
-    println!("decimal = {}", decimal);
+    println!("character = {}", character);
     println!("integer = {}", integer);
 }
-/*
-decimal = 64.31
-integer = 64
-*/
