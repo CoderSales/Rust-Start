@@ -178,5 +178,8 @@ End of Option Type Pattern matching.
 
 ![ResultTypeContinued.jpg](/static/images/ResultTypeContinued.jpg)
 
+
+![IfLetShorthandMatch.png](/static/images/IfLetShorthandMatch.png)
+
 ____
 
