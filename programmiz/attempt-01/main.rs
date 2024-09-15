@@ -13,4 +13,11 @@ fn main() {
 }
 /*
 Type Casting: Boolean to Integer in Rust
+
+Output:
+
+boolean1 = false
+boolean1 = true
+integer1 = 0
+integer2 = 1
 */
