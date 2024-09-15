@@ -23,4 +23,14 @@ Output:
 
 Sum: 55
 
+Note: 
+The 1..11 syntax 
+is also known as a 
+range notation 
+or 
+range operator 
+used to create 
+Iterators 
+in Rust.
+
 */
