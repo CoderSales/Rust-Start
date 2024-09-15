@@ -1,21 +1,27 @@
 fn main() {
-    let a = 7;
-    let b = 3;
+    let a = true;
+    let b = false;
     
-    // use of comparison operators
-    let c = a > b;
-    let d = a < b;
-    let e = a == b;
+    // logical AND operation
+    let c = a && b;
+
+    // logical OR operation
+    let d = a || b;
+
+    // logical NOT operation
+    let e = !a;
     
-    println!("{} >= {} is {}", a, b, c);
-    println!("{} <= {} is {}", a, b, d);
-    println!("{} == {} is {}", a, b, e);
+    println!("{} && {} = {}", a, b, c);
+    println!("{} || {} = {}", a, b, d);
+    println!("!{} = {}", a, e);
 }
 /*
-Example: Comparison Operators
+Example: Logical Operators
 
 Output:
-7 >= 3 is true
-7 <= 3 is false
-7 == 3 is false
+
+true && false = false
+true || false = true
+!true = false
+
 */
