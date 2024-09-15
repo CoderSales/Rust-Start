@@ -1,43 +1,30 @@
 fn main() {
-    let mut number = 0;
+    let x = 2;
 
-    loop {
-        number += 1;
-
-        // condition to skip the iteration
-        if number == 3 {
-            continue;
-        }
-        
-        // condition to exit the loop
-        if number > 5 {
-            break;
-        }
-        
-        println!("{}", number);
+    // use of match expression to pattern match against variable x
+    match x {
+        1 => println!("x is 1"),
+        2 => println!("x is 2"),
+        _ => println!("x is something else"),
     }
 }
 
 /*
 url:
-https://www.programiz.com/rust/break-continue
+https://www.programiz.com/rust/pattern-matching
 
 Page Title:
-Rust break and continue
+Rust Pattern Matching
 
 
 Section Title:
-Working of continue Keyword in Rust
+Matching a Variable in Rust
 
 Subsection Title:
-break and continue with loop
 
 
 Output:
 
-1
-2
-4
-5
+x is 2
 
 */
