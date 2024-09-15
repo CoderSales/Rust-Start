@@ -1,27 +1,23 @@
 fn main() {
-    let mut number = 0;
-    
-    // infinite loop starts here
-    loop {
-        number += 1;
-        println!("{}", number);
+    let mut counter = 1;
+
+    // usage of while loop
+    while counter < 6 {
+        println!("{}", counter);
         
-        if number >= 10 {
-            // exit the loop
-            break;
-        }
+        counter += 1;
     }
 }
 
  /*
 url:
-https://www.programiz.com/rust/loop
+https://www.programiz.com/rust/while-loop
 
 Page Title:
-Rust loop
+Rust while Loop
 
 Section Title:
-Example: Print First 10 Natural Numbers using Loop
+Example: Rust while Loop
 
 Output:
 
@@ -30,10 +26,5 @@ Output:
 3
 4
 5
-6
-7
-8
-9
-10
 
 */
