@@ -1,10 +1,21 @@
 fn main() {
-    let counter = 1;
+    // variable to print multiplication table for
+    let i = 2;
+    
+    // counter variable that starts at 1
+    let mut j = 1;
+    
+    // while loop that runs for 10 iterations
+    while j <= 10 {
+        // multiply i and j
+        let mult = i * j;
+        
+        // print multiplication result on each iteration
+        println!("{} * {} = {}", i, j, mult);
 
-    // while loop with a condition that always evaluates to true
-    while counter < 6 {
-        println!("Loop forever!");
-   }
+        // increase value of counter variable j
+        j += 1;
+    }
 }
 
  /*
@@ -15,19 +26,19 @@ Page Title:
 Rust while Loop
 
 Section Title:
-Working of while Expression in Rust
-Infinite while Loop
+Example: Multiplication Table Using while Loop
 
 Output:
 
-Warning infinite loop:
-
-Loop forever!
-Loop forever!
-Loop forever!
-Loop forever!
-.
-.
-Ctrl C to stop on Windows
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6
+2 * 4 = 8
+2 * 5 = 10
+2 * 6 = 12
+2 * 7 = 14
+2 * 8 = 16
+2 * 9 = 18
+2 * 10 = 20
 
 */
