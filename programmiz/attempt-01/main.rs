@@ -1,14 +1,10 @@
 fn main() {
-    let x = 51;
+    // f32 floating point type
+    let x: f32 = 3.1;
+
+    // f64 floating point type
+    let y: f64 = 45.0000031;
 
     println!("x = {}", x);
+    println!("y = {}", y);
 }
-
-/*
-Here, you can see that we haven't mentioned the data type of x variable. 
-
-It is because Rust will automatically set i32 as the type (default type for integer variable) by looking at the value 51.
-
-https://www.programiz.com/rust/data-types
-
-*/
