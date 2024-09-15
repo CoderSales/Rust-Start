@@ -1,23 +1,14 @@
 fn main() {
-    let boolean1: bool = false;
-    let boolean2: bool = true;
+    let decimal: f32 = 65.321;
   
-    // convert boolean type to integer
-    let integer1 = boolean1 as i32;
-    let integer2 = boolean2 as i32;
+    // convert float to char data type
+    let character = decimal as char;
 
-    println!("boolean1 = {}", boolean1);
-    println!("boolean1 = {}", boolean2);
-    println!("integer1 = {}", integer1);
-    println!("integer2 = {}", integer2);
+    println!("decimal = {}", decimal);
+    println!("character = {}", character);
 }
 /*
-Type Casting: Boolean to Integer in Rust
+Limitations of Type Casting
 
-Output:
-
-boolean1 = false
-boolean1 = true
-integer1 = 0
-integer2 = 1
+error[E0604]: only `u8` can be cast as `char`, not `f32`
 */
