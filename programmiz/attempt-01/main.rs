@@ -1,10 +1,8 @@
 fn main() {
-    // f32 floating point type
-    let x: f32 = 3.1;
+    // boolean type
+    let flag1: bool = true;
+    let flag2: bool = false;
 
-    // f64 floating point type
-    let y: f64 = 45.0000031;
-
-    println!("x = {}", x);
-    println!("y = {}", y);
+    println!("flag1 = {}", flag1);
+    println!("flag2 = {}", flag2);
 }
