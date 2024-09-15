@@ -1,12 +1,13 @@
 fn main() {
     let number = -2;
-   
-    if number > 0 {
-        println!("{} is positive", number);
-    } else if number < 0 {
-        println!("{} is negative", number);
-    } else {
-        println!("{} is equal to 0", number);
+    
+    if number < 0 {
+        // if outer condition evaluates to true evaluate the inner condition
+        if number == -2 {
+            println!("The current number is -2");
+        } else {
+            println!("The current number is {}", number);
+        }
     }
 }
 
@@ -18,10 +19,11 @@ Page Title:
 Rust if...else
 
 Section Title:
-Example: if..else if..else Conditional
+Nested if..else
+Example: Nested if..else
 
 Output:
 
--2 is negative
+The current number is -2
 
 */
