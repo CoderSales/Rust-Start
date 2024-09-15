@@ -1,9 +1,14 @@
 fn main() {
-    let dividend = 21.0;
-    let divisor = 8.0;
+    let dividend = 21;
+    let divisor = 8;
 
-    // arithmetic division using / operator with floating point values
-    let division = dividend / divisor;
-
-    println!("{} / {} = {}", dividend, divisor, division);
+    // arithmetic remainder using % operator
+    let remainder = dividend % divisor;
+  
+    println!("{} % {} = {}", dividend, divisor, remainder);
 }
+/*
+Example 3: Remainder Operator
+Remainder = 5
+21 % 8 = 5
+*/
