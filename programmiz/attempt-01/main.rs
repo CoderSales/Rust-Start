@@ -1,27 +1,19 @@
 fn main() {
-    let a = true;
-    let b = false;
-    
-    // logical AND operation
-    let c = a && b;
+    let x = 7;
 
-    // logical OR operation
-    let d = a || b;
+    // example of boolean expression
+    let condition = x > 5;
 
-    // logical NOT operation
-    let e = !a;
-    
-    println!("{} && {} = {}", a, b, c);
-    println!("{} || {} = {}", a, b, d);
-    println!("!{} = {}", a, e);
-}
-/*
-Example: Logical Operators
+    println!("condition is {}", condition);
+}/*
+https://www.programiz.com/rust/if-else
+
+Rust if...else
+
+Boolean Expression
 
 Output:
 
-true && false = false
-true || false = true
-!true = false
+condition is true
 
 */
