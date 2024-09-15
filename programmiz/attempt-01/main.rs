@@ -1,14 +1,15 @@
 fn main() {
-    let dividend = 21;
-    let divisor = 8;
-
-    // arithmetic remainder using % operator
-    let remainder = dividend % divisor;
+    let mut a = 2;
   
-    println!("{} % {} = {}", dividend, divisor, remainder);
+    // arithmetic addition and assignment
+    a += 3;
+
+    println!("a = {}", a);
 }
 /*
-Example 3: Remainder Operator
-Remainder = 5
-21 % 8 = 5
+Example: Compound Assignment Operator
+
+Output:
+
+a = 5
 */
