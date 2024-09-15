@@ -143,6 +143,8 @@ matching on these types.
 
 ____
 
+#### Example: Matching Option Type in Rust
+
 ```rust
 fn main() {
     let my_option: Option<i32> = Some(222);
@@ -166,6 +168,15 @@ The match expression compares the value of my_option to the Some and None varian
 When a match is found, the corresponding code block is executed.
 
 ![match.jpg](/static/images/match.jpg)
+
+End of Option Type Pattern matching.
+
+
+#### Example: Matching Result Type in Rust
+
+![ResultType.jpg](/static/images/ResultType.jpg)
+
+![ResultTypeContinued.jpg](/static/images/ResultTypeContinued.jpg)
 
 ____
 
