@@ -1,16 +1,27 @@
 fn main() {
-    let mut number = 0;
+    let mut i = 1;
     
-    // loop starts here
-    loop {
-        number += 1;
-
-        // condition to exit the loop
-        if number > 5 {
-            break;
+    // start of outer loop
+    while i <= 5 {
+        let mut j = 1;
+     
+        // start of inner loop
+        while j <= 5 { // hence 5 lines
+            print!("*");
+            
+            // condition to exit the inner loop
+            if j == 3 {
+                // terminate the inner loop
+                break; // if j is 3
+                // hence 3 asterisks per line
+            }
+            
+            j += 1;
         }
-
-        println!("{}", number);        
+        
+        println!("");
+        
+        i += 1;
     }
 }
 
@@ -23,18 +34,22 @@ Rust break and continue
 
 
 Section Title:
-Rust break
+Working of break Keyword in Rust
+
+Subsection Title:
+Rust break with Nested Loops
 
 
 Output:
 
-1
-2
-3
-4
-5
+***
+***
+***
+***
+***
 
 Note: 
-You can use the break keyword with while or for loops in a similar pattern.
+used the break keyword in the body of the inner while loop.
+on line 15
 
 */
