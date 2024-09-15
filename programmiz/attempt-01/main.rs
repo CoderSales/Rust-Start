@@ -1,11 +1,17 @@
 fn main() {
-    let x = 2;
+    enum Color {
+        Red,
+        Green,
+        Blue,
+    }
 
-    // use of match expression to pattern match against variable x
-    match x {
-        1 => println!("x is 1"),
-        2 => println!("x is 2"),
-        _ => println!("x is something else"),
+    let my_color = Color::Green;
+
+    // use of match expression to match against an enum variant
+    match my_color {
+        Color::Red => println!("The color is red"),
+        Color::Green => println!("The color is green"),
+        Color::Blue => println!("The color is blue"),
     }
 }
 
@@ -18,13 +24,19 @@ Rust Pattern Matching
 
 
 Section Title:
-Matching a Variable in Rust
+Matching an Enum In Rust
 
 Subsection Title:
 
 
+Compiler Notes:
+
+warning: 
+variants `Red` and `Blue` 
+are never constructed
+
 Output:
 
-x is 2
+The color is green
 
 */
