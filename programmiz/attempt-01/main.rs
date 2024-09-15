@@ -1,6 +1,5 @@
 fn main() {
-    // only u8 integer data type can be converted into char
-    let integer: u8 = 65;
+    let integer: i32 = 65;
   
     // convert integer to char using the as keyword
     let character = integer as char;
@@ -10,6 +9,11 @@ fn main() {
 }
 
 /*
-integer = 65
-character = A
+error[E0604]: only `u8` can be cast as `char`, not `i32`
+
+let character = integer as char;
+                ^^^^^^^^^^^^^^^ invalid cast
+help: try `char::from_u32` instead (via a `u32`)
+For information about error try
+rustc --explain E0604
 */
