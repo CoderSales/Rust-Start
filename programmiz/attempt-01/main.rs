@@ -1,5 +1,14 @@
 fn main() {
-    let x = 51;
+    // assign a floating point f64 value to decimal variable
+    let decimal: f32 = 64.31;
 
-    println!("x = {}", x);
+    // convert decimal variable to u16 integer type using as keyword
+    let integer = decimal as u16;
+
+    println!("decimal = {}", decimal);
+    println!("integer = {}", integer);
 }
+/*
+decimal = 64.31
+integer = 64
+*/
