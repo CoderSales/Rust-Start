@@ -1,24 +1,28 @@
 fn main() {
-    // variable to print multiplication table for
-    let i = 2;
+    // outer loop counter
+    let mut i = 1;
     
-    // counter variable that starts at 1
-    let mut j = 1;
-    
-    // while loop that runs for 10 iterations
-    while j <= 10 {
-        // multiply i and j
-        let mult = i * j;
+    // outer loop
+    while i <= 5 {
+        // inner loop counter
+        let mut j = 1;
         
-        // print multiplication result on each iteration
-        println!("{} * {} = {}", i, j, mult);
-
-        // increase value of counter variable j
-        j += 1;
+        // inner loop
+        while j <= 5 {
+            print!("*");
+            
+            // increase inner loop counter
+            j += 1;
+        }
+        
+        println!("");
+        
+        // increase outer loop counter
+        i += 1;
     }
 }
 
- /*
+/*
 url:
 https://www.programiz.com/rust/while-loop
 
@@ -26,19 +30,22 @@ Page Title:
 Rust while Loop
 
 Section Title:
-Example: Multiplication Table Using while Loop
+Nested while Loop
 
 Output:
 
-2 * 1 = 2
-2 * 2 = 4
-2 * 3 = 6
-2 * 4 = 8
-2 * 5 = 10
-2 * 6 = 12
-2 * 7 = 14
-2 * 8 = 16
-2 * 9 = 18
-2 * 10 = 20
+*****
+*****
+*****
+*****
+*****
+
+Notes:
+
+j does the 5 *'s per line
+i repeats the line of j asterisks over the 5 lines
+
+i is outer
+j is inner
 
 */
