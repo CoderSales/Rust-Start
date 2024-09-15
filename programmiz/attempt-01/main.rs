@@ -1,8 +1,5 @@
 fn main() {
-    // char type
-    let character: char = 'z';
-    let special_character: char = '$';
+    let x = 51;
 
-    println!("character = {}", character);
-    println!("special_character = {}", special_character);
+    println!("x = {}", x);
 }
