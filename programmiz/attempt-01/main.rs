@@ -24,7 +24,7 @@ Rust Pattern Matching
 
 
 Section Title:
-Matching an Enum In Rust
+Matching Option and Result Type in Rust
 
 Subsection Title:
 

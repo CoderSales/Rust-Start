@@ -61,3 +61,84 @@ It is because Rust will automatically set i32 as the type (default type for inte
 [Rust Data Types](https://www.programiz.com/rust/data-types)
 
 ____
+
+## [Rust Pattern Matching](https://www.programiz.com/rust/pattern-matching)
+
+### Matching a Variable in Rust
+
+```rust
+fn main() {
+    let x = 2;
+
+    // use of match expression to pattern match against variable x
+    match x {
+        1 => println!("x is 1"),
+        2 => println!("x is 2"),
+        _ => println!("x is something else"),
+    }
+}
+```
+
+#### Ouput
+
+```bash
+x is 2
+```
+
+### Matching an Enum In Rust
+
+```rust
+fn main() {
+    enum Color {
+        Red,
+        Green,
+        Blue,
+    }
+
+    let my_color = Color::Green;
+
+    // use of match expression to match against an enum variant
+    match my_color {
+        Color::Red => println!("The color is red"),
+        Color::Green => println!("The color is green"),
+        Color::Blue => println!("The color is blue"),
+    }
+}
+```
+
+#### Output
+
+```bash
+The color is green
+```
+
+### Matching Option and Result Type in Rust
+
+The most common case for 
+
+pattern matching 
+
+is with 
+
+`Option` and `Result` enum types. 
+
+Both the `Option` and `Result` type have two variants.
+
+`Option` type has:
+
+- `None` → to indicate failure with no value
+
+- `Some(T)` → a value with type T
+
+
+`Result` type has:
+
+- `Ok(T)` → operation succeeded with value T
+
+- `Err(E)` → operation failed with an error E
+
+Let's look at examples of how we can use pattern 
+
+matching on these types.
+
+____
