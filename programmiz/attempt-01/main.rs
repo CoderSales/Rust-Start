@@ -1,29 +1,31 @@
 fn main() {
-    let number = -2;
-    
-    if number < 0 {
-        // if outer condition evaluates to true evaluate the inner condition
-        if number == -2 {
-            println!("The current number is -2");
-        } else {
-            println!("The current number is {}", number);
-        }
+    //  loop expression
+    loop {
+        println!("Loop forever!");
     }
 }
 
  /*
 url:
-https://www.programiz.com/rust/if-else
+https://www.programiz.com/rust/loop
 
 Page Title:
-Rust if...else
+Rust loop
 
 Section Title:
-Nested if..else
-Example: Nested if..else
+Loop Expression
 
 Output:
+Warning infinite loop
+Ctrl C to stop
 
-The current number is -2
+Loop forever!
+Loop forever!
+.
+.
+.
+.
+until press 
+Ctrl C
 
 */
