@@ -1,51 +1,39 @@
 fn main() {
-    // outer loop counter
-    let mut i = 1;
-    
-    // outer loop
-    while i <= 5 {
-        // inner loop counter
-        let mut j = 1;
-        
-        // inner loop
-        while j <= 5 {
-            print!("*");
-            
-            // increase inner loop counter
-            j += 1;
-        }
-        
-        println!("");
-        
-        // increase outer loop counter
-        i += 1;
+    // usage of for loop
+    for i in 1..6 {
+        println!("{}", i);
     }
 }
 
 /*
 url:
-https://www.programiz.com/rust/while-loop
+https://www.programiz.com/rust/for-loop
 
 Page Title:
-Rust while Loop
+Rust for Loop
 
 Section Title:
-Nested while Loop
+Example: Rust for Loop
 
 Output:
 
-*****
-*****
-*****
-*****
-*****
+1
+2
+3
+4
+5
 
-Notes:
+Note:
 
-j does the 5 *'s per line
-i repeats the line of j asterisks over the 5 lines
+1..6 - is known as an Iterator 
+where 1 is the lower bound 
+and   6 is the upper bound. 
 
-i is outer
-j is inner
+This yields values from 
+1 (inclusive) to 
+6 (exclusive) 
+
+in steps of one.
+
 
 */
