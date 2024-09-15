@@ -1,22 +1,27 @@
 fn main() {
     let number = -2;
-    
-    // condition to check if number is greater than zero
+   
     if number > 0 {
-        println!("{} is greater than 0", number);
+        println!("{} is positive", number);
+    } else if number < 0 {
+        println!("{} is negative", number);
     } else {
-        println!("{} is less than or equal to 0", number);
+        println!("{} is equal to 0", number);
     }
- }
+}
+
  /*
+url:
 https://www.programiz.com/rust/if-else
 
+Page Title:
 Rust if...else
 
-Rust if..else Expressions
+Section Title:
+Example: if..else if..else Conditional
 
 Output:
 
--2 is less than or equal to 0
+-2 is negative
 
 */
