@@ -1,17 +1,26 @@
 fn main() {
-    let mut number = 0;
-
-    while number < 5 {
-        number += 1;
-
-        // condition to skip the iteration
-        if number == 3 {
-            continue;
+    let mut i = 1;
+    
+    // start of outer loop
+    while i <= 5 { //  Note1: 5 lines
+        let mut j = 1;
+            
+        // start of inner loop
+        while j <= 5 { // Note2: would be 5 asterisks
+            j += 1;
+            
+            // condition to skip iteration of the inner loop
+            if j == 3 { // Note3: but skip 3 so 4 asterisks
+                // move to the next iteration of the inner loop
+                continue;
+            }
+            
+            print!("*");
         }
-        // continue if
-        // number is 3
-
-        println!("{}", number);
+        
+        println!("");
+        
+        i += 1;
     }
 }
 
@@ -24,19 +33,19 @@ Rust break and continue
 
 
 Section Title:
-Rust continue
+Working of continue Keyword in Rust
 
 Subsection Title:
-Example: Rust continue
+Rust continue with Nested Loops
 
 
 Output:
 
-1
-2
-4
-5
-
+****
+****
+****
+****
+****
 
 
 */
