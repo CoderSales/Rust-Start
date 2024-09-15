@@ -1,12 +1,10 @@
 fn main() {
-    let mut counter = 1;
+    let counter = 1;
 
-    // usage of while loop
+    // while loop with a condition that always evaluates to true
     while counter < 6 {
-        println!("{}", counter);
-        
-        counter += 1;
-    }
+        println!("Loop forever!");
+   }
 }
 
  /*
@@ -17,14 +15,19 @@ Page Title:
 Rust while Loop
 
 Section Title:
-Example: Rust while Loop
+Working of while Expression in Rust
+Infinite while Loop
 
 Output:
 
-1
-2
-3
-4
-5
+Warning infinite loop:
+
+Loop forever!
+Loop forever!
+Loop forever!
+Loop forever!
+.
+.
+Ctrl C to stop on Windows
 
 */
