@@ -1,15 +1,21 @@
 fn main() {
-    let mut a = 2;
-  
-    // arithmetic addition and assignment
-    a += 3;
-
-    println!("a = {}", a);
+    let a = 7;
+    let b = 3;
+    
+    // use of comparison operators
+    let c = a > b;
+    let d = a < b;
+    let e = a == b;
+    
+    println!("{} >= {} is {}", a, b, c);
+    println!("{} <= {} is {}", a, b, d);
+    println!("{} == {} is {}", a, b, e);
 }
 /*
-Example: Compound Assignment Operator
+Example: Comparison Operators
 
 Output:
-
-a = 5
+7 >= 3 is true
+7 <= 3 is false
+7 == 3 is false
 */
