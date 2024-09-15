@@ -143,6 +143,22 @@ matching on these types.
 
 ____
 
+```rust
+fn main() {
+    let my_option: Option<i32> = Some(222);
+    
+    // use of match expression to match Option type
+    match my_option {
+        Some(value) => println!("The option has a value of {}", value),
+        None => println!("The option has no value"),
+    }
+}
+```
+
+```bash
+The option has a value of 222
+```
+
 In this example, my_option is an Option type that contains either a Some variant with an i32 value or a None variant.
 
 The match expression compares the value of my_option to the Some and None variants, and binds the value of Some variant to the value variable.
