@@ -1,19 +1,23 @@
 fn main() {
-    let x = 7;
-
-    // example of boolean expression
-    let condition = x > 5;
-
-    println!("condition is {}", condition);
-}/*
+    let number = 10;
+   
+    // condition to check if number is greater than zero
+    if number > 0 {
+        println!("{} is greater than 0", number);
+    }
+   
+    println!("End of program")
+}
+/*
 https://www.programiz.com/rust/if-else
 
 Rust if...else
 
-Boolean Expression
+Rust if Expression
 
 Output:
 
-condition is true
+10 is greater than 0
+End of program
 
 */
