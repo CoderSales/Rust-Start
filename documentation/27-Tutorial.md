@@ -247,6 +247,6 @@ fn main() {
 
 ____
 
-![RustArrayNotes.png](/static/images/RustArrayNotes.png)
+![RustArrayNotes.jpg](/static/images/RustArrayNotes.jpg)
 
 ____
