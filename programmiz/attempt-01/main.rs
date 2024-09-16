@@ -1,8 +1,16 @@
 fn main() {
-    // initialization of array with default values
-    let numbers: [i32; 5] = [3; 5];
+    // an array without data type
+    let a = [5, 4, 3, 2, 1];
     
-    println!("Array of numbers = {:?}", numbers);
+    // an array with data type and size
+    let b: [i32; 5] = [1, 2, 3, 4, 5];
+    
+    // an array with default values
+    let c = [3; 5];
+    
+    println!("a = {:?}", a);
+    println!("b = {:?}", b);
+    println!("c = {:?}", c);
 }
 
 /*
@@ -16,9 +24,11 @@ Section Title:
 Creating an Array in Rust
 
 Subsection Title:
-Array with Default Values in Rust
+Revision: Different Ways to Create Array in Rust
 
 Output:
-Array of numbers = [3, 3, 3, 3, 3]
+a = [5, 4, 3, 2, 1]
+b = [1, 2, 3, 4, 5]
+c = [3, 3, 3, 3, 3]
 
 */
