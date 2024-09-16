@@ -231,8 +231,6 @@ We use `:?` in the `println!` function to print an entire array.
 
 ____
 
-![RustArray.png](/static/images/RustArray.png)
-
 ![RustArray2.png](/static/images/RustArray2.png)
 
 ____
