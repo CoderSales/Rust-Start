@@ -183,3 +183,17 @@ End of Option Type Pattern matching.
 
 ____
 
+## [Rust Array](https://www.programiz.com/rust/array)
+
+```rust
+fn main() {
+    // initialization of array with data type
+    let numbers: [i32; 5] = [1, 2, 3, 4, 5];
+    
+    println!("Array of numbers = {:?}", numbers);
+}
+```
+
+```bash
+Array of numbers = [1, 2, 3, 4, 5]
+```

@@ -1,29 +1,28 @@
 fn main() {
-    let my_option: Option<i32> = Some(222);
-
-    // use of if let expression on the Option type
-    if let Some(value) = my_option {
-        println!("The option has a value of {}", value);
-    } else {
-        println!("The option has no value");
-    }
+    // initialization of array with data type
+    let numbers: [i32; 5] = [1, 2, 3, 4, 5];
+    
+    println!("Array of numbers = {:?}", numbers);
 }
 
 /*
 url:
-https://www.programiz.com/rust/pattern-matching
+https://www.programiz.com/rust/array
 
 Page Title:
-Rust Pattern Matching
+Rust Array
 
 
 Section Title:
-if let Expression in Rust
+Creating an Array in Rust
 
 Subsection Title:
+Array with Data Type in Rust
 
 Output:
+Array of numbers = [1, 2, 3, 4, 5]
 
-The option has a value of 222
+created array of numbers with:
+let numbers: [i32; 5] = [1, 2, 3, 4, 5];
 
 */
