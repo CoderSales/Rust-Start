@@ -227,4 +227,4 @@ c = [3, 3, 3, 3, 3]
 
 #### Note: 
 
-We use <kbd>:</kbd><kbd>?</kbd> in the `println!` function to print an entire array.
+We use `:?` in the `println!` function to print an entire array.
