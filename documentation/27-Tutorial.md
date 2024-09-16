@@ -197,3 +197,34 @@ fn main() {
 ```bash
 Array of numbers = [1, 2, 3, 4, 5]
 ```
+
+### Revision: Different Ways to Create Array in Rust
+
+```rust
+fn main() {
+    // an array without data type
+    let a = [5, 4, 3, 2, 1];
+    
+    // an array with data type and size
+    let b: [i32; 5] = [1, 2, 3, 4, 5];
+    
+    // an array with default values
+    let c = [3; 5];
+    
+    println!("a = {:?}", a);
+    println!("b = {:?}", b);
+    println!("c = {:?}", c);
+}
+```
+
+#### Output
+
+```bash
+a = [5, 4, 3, 2, 1]
+b = [1, 2, 3, 4, 5]
+c = [3, 3, 3, 3, 3]
+```
+
+#### Note: 
+
+We use <kbd>:</kbd><kbd>?</kbd> in the `println!` function to print an entire array.
