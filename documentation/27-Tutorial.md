@@ -231,7 +231,7 @@ We use `:?` in the `println!` function to print an entire array.
 
 ____
 
-![RustArray2.png](/static/images/RustArray2.png)
+![RustArray.png](/static/images/RustArray.png)
 
 ____
 ### Array without Data Type in Rust:
