@@ -228,3 +228,18 @@ c = [3, 3, 3, 3, 3]
 #### Note: 
 
 We use `:?` in the `println!` function to print an entire array.
+
+____
+
+### Array without Data Type in Rust:
+
+```rust
+fn main() {
+    // initialization of array without data type
+
+    let numbers = [1, 2, 3, 4, 5];
+    println!("array of numbers = {:?}, numbers;
+}
+```
+
+____
