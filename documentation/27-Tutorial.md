@@ -233,6 +233,8 @@ ____
 
 ![RustArray.png](/static/images/RustArray.png)
 
+![RustArray2.png](/static/images/RustArray2.png)
+
 ____
 ### Array without Data Type in Rust:
 
