@@ -1,10 +1,11 @@
 fn main() {
-    let my_result: Result<i32, &str> = Ok(100);
+    let my_option: Option<i32> = Some(222);
 
-    // use of match expression to match Result type
-    match my_result {
-        Ok(value) => println!("The result is {}", value),
-        Err(error) => println!("The error message is {}", error),
+    // use of if let expression on the Option type
+    if let Some(value) = my_option {
+        println!("The option has a value of {}", value);
+    } else {
+        println!("The option has no value");
     }
 }
 
@@ -17,16 +18,12 @@ Rust Pattern Matching
 
 
 Section Title:
-Matching Option and Result Type in Rust
+if let Expression in Rust
 
 Subsection Title:
-Example: Matching Option Type in Rust
-
-(Second example)
-
 
 Output:
 
-The result is 100
+The option has a value of 222
 
 */
