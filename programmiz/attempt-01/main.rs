@@ -1,8 +1,8 @@
 fn main() {
-    // initialization of array without data type
-    let numbers = [1, 2, 3, 4, 5];
+    // initialization of array with default values
+    let numbers: [i32; 5] = [3; 5];
     
-    println!("array of numbers = {:?}", numbers);
+    println!("Array of numbers = {:?}", numbers);
 }
 
 /*
@@ -12,14 +12,13 @@ https://www.programiz.com/rust/array
 Page Title:
 Rust Array
 
-
 Section Title:
 Creating an Array in Rust
 
 Subsection Title:
-Array without Data Type in Rust
+Array with Default Values in Rust
 
 Output:
-array of numbers = [1, 2, 3, 4, 5]
+Array of numbers = [3, 3, 3, 3, 3]
 
 */
