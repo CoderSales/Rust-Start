@@ -72,7 +72,7 @@ let add_one = |x: i32| x + 1;
 
 Here,
 
-- `let add_one` - is the name of the variable to store the the closure
+- `let add_one` - is the name of the variable to store the closure
 
 - `|x: i32|` - is the parameter and its type that we pass to the closure
 
