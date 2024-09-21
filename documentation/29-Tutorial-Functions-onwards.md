@@ -282,3 +282,9 @@ Sum of a and b = 8
 Here's how the program works,
 
 ![functionWorkingsWithReturn.png](/static/images/functionWorkingsWithReturn.png)
+
+#### Note
+
+```bash
+In the above example, when we reach the `return` statement in the add function, it returns the `sum` variable. The returned value is stored in the `sum` variable inside `main()`.
+```
