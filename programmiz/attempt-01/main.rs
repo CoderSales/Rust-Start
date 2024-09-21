@@ -1,8 +1,11 @@
 fn main() {
-    // closure that prints a text
-    let print_text = || println!("Hello, World!");
+    // define a closure and store it in a variable
+    let add_one = |x: i32| x + 1;
     
-    print_text(); 
+    // call closure and store the result in a variable
+    let result = add_one(2);
+    
+    println!("Result = {}", result);
 }
 
 /*
@@ -13,7 +16,7 @@ Page Title:
 Rust Closure
 
 Section Title:
-Example: Closure in Rust
+Example: Rust Closure with Parameter
 
 Subsection Title:
 
@@ -23,7 +26,7 @@ Subsection Title:
 30-Tutorial-Closure-onwards.md
 
 Output:
-Hello, World!
+Result = 3
 
 Notes:
 
