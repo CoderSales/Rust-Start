@@ -104,3 +104,54 @@ fn main() {
 ```bash
 Result = 3
 ```
+
+In the above example, we have defined a closure and binded it to the `add_one` variable. We then call the closure with `add_one(2)` and bind the return value to the `result` variable.
+
+Here's how the program works,
+
+____
+
+![closureWithParameter.png](/static/images/closureWithParameter.png)
+
+Working of closure with parameter in Rust
+
+____
+
+### Multi-line Closure in Rust
+
+We can also include multiple statements inside a closure. In this case, we enclose those statements using curly braces `{}`.
+
+Let's look at an example.
+
+```rust
+fn main() {
+    // define a multi-line closure
+    let squared_sum = |x: i32, y: i32| {
+    
+        // find the sum of two parameters
+        let mut sum: i32 = x + y;
+        
+        // find the squared value of the sum
+        let mut result: i32 = sum * sum;
+        
+        return result;
+    };
+    
+    // call the closure
+    let result = squared_sum(5, 3);
+    
+    println!("Result = {}", result);
+}
+```
+
+```bash
+Result = 64
+```
+
+In the above example, we have created a closure that takes two parameters: `x` and `y`. Inside the closure, we add `x` and `y` and assign the result to the `sum` variable.
+
+Finally, we have computed the square of sum and returned the `result`.
+
+Here, code inside the opening and closing curly braces, `{}` denotes the body of the closure.
+
+____
