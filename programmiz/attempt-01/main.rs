@@ -1,20 +1,17 @@
 fn main() {
-    let mut word = String::from("Hello");
-    
-    // mutable closure
-    let mut print_str = || {
-        // value of word is changed here
-        word.push_str(" World!");
-        println!("word = {}", word);
+    let word = String::from("Hello");
+
+    // immutable closure
+    let print_str = || {
+        // word variable is moved to a new variable
+        let new_word = word;
+        println!("word = {}", new_word);
     };
-     
-     // cannot immutable borrow because the variable is borrowed as mutable inside the closure
-     // println!("length of word = {}", word.len());
-    
+
     print_str();
 
-    // can immutable borrow because the closure has been already used
-    println!("length of word = {}", word.len());
+    // cannot immutable borrow because word variable has moved inside closure
+    // println!("length of word = {}", word.len());
 }
 
 /*
@@ -28,15 +25,14 @@ Section Title:
 Closure Environment Capturing Modes in Rust
 
 Subsection Title:
-2. Variable is modified inside closure
+3. Variable is moved inside closure
 
 ### Documentation
 
 30-Tutorial-Closure-onwards.md
 
 Output:
-word = Hello World!
-length of word = 12
+word = Hello
 
 Notes:
 
