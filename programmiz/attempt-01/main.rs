@@ -16,7 +16,7 @@ Section Title:
 Rust Tuple with Data Type
 
 Subsection Title:
-Example: Tuple with Data Type
+Example: Tuple without Data Types
 
 ### Documentation
 

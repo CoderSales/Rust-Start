@@ -49,3 +49,20 @@ Here,
 `("Ricky", 21, 3.56)` - specifies the elements of the tuple
 
 ____
+
+### Example: Tuple without Data Types
+
+```rust
+fn main() {
+    // initialization of tuple without data type
+    let tuple = ("Rust", "fun", 100);
+
+    println!("Tuple contents = {:?}", tuple);
+}
+```
+
+#### Output
+
+```bash
+Tuple contents = ("Rust", 3.14, 100)
+```
