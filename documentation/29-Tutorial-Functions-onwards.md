@@ -542,3 +542,5 @@ fn main() {
 age variable inner block = 100
 age variable outer block = 3
 ```
+
+[30-Tutorial-Closure-onwards.md](/documentation/30-Tutorial-Closure-onwards.md)
