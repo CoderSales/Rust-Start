@@ -353,3 +353,59 @@ Finally, `main()` is completed, and everything goes away.
 Rust automatically does allocation and deallocation of memory in and out of the stack.
 
 ____
+
+### The Heap
+
+As opposed to the stack, most of the time, we will need to pass variables (memory) to different functions and keep them alive for longer than a single function's execution. This is when we can use the heap.
+
+We can allocate memory on the heap using the `Box<T>` type. For example,
+
+```rust
+fn main() {
+    let x = Box::new(100);
+    let y = 222;
+    
+    println!("x = {}, y = {}", x, y);
+}
+```
+
+#### Output
+
+```bash
+x = 100, y = 222
+```
+
+Let's visualize the memory when main() is called in the above example.
+
+| Address | Name | Value |
+|---------|------|-------|
+| 1       | y    | 222   |
+| 0       | x    | ???   |
+
+Like before, we allocate two variables, `x` and `y`, on the stack.
+
+However, the value of `x` is allocated on the heap when `Box::new()` is called. Thus, the actual value of `x` is a pointer to the heap.
+
+The memory now looks like this:
+
+| Address | Name | Value    |
+|---------|------|----------|
+| 5678    |      | 100      |
+| ...     | ...  | ...      |
+| 1       | y    | 222      |
+| 0       | x    | -> 5678  |
+
+Here, the variable `x` holds a pointer to the address **→ 5678**, an arbitrary address used for demonstration. Heap can be allocated and freed in any order. Thus it can end up with different addresses and create holes between addresses.
+
+So when `x` goes away, it first frees the memory allocated on the heap.
+
+| Address | Name | Value    |
+|---------|------|----------|
+| 1       | y    | 222      |
+| 0       | x    | ???      |
+
+Once the `main()` is completed, we free the stack frame, and everything goes away, freeing all the memory.
+
+We can make the memory live longer by transferring ownership where the heap can stay alive longer than the function which allocates the `Box`. To learn more about ownership, visit [Rust Ownership](https://www.programiz.com/rust/ownership).
+
+
