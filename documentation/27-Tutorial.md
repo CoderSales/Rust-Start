@@ -420,11 +420,11 @@ includes `2..` without the end index.
 
 This means 
 
-the slice starts from index 2 
+the slice starts from `index 2` 
 
 and 
 
-goes up to index 5 (exclusive). 
+goes up to `index 5` (exclusive). 
 
 It is equivalent to 
 
