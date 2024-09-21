@@ -404,3 +404,42 @@ Here,
 - `person.height` - reads the field `height` (`178`)
 
 ____
+
+### Destructuring Fields of a Rust Struct
+
+Destructuring is the process of breaking down fields of a data type (array, tuple, etc.) into smaller variables. We can break down the struct fields into smaller variables in Rust.
+
+Suppose we have a struct and a struct instance,
+
+```rust
+struct Person {
+    name: String,
+    age: u8,
+    height: u8
+}
+
+let person = Person {
+    name: String::from("John Doe"),
+    age: 18,
+    height: 178
+};
+```
+
+We can now perform destructuring using:
+
+```rust
+// destructuring the Person struct
+let Person { name, age, height } = person;
+```
+
+Now, we access the `name`, `age` and `height` fields using the field names directly:
+
+- `name` instead of `person.name`
+
+- `age` instead of `person.age`
+
+- `height` instead of `person.height`
+
+However, you should note that the name of the variables while destructuring should be the same as the name of the fields.
+
+
