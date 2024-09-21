@@ -253,7 +253,7 @@ let (message, number, float) = mixture;
 
 Finally, we print these variables to the screen.
 
-### [Struct](https://www.programiz.com/rust/struct)
+## [Struct](https://www.programiz.com/rust/struct)
 
 Rust structs or structures are user-defined data types used to store different types of data together.
 
@@ -276,3 +276,42 @@ struct Person {
     height: u8
 }
 ```
+
+### Defining a Struct in Rust
+
+In Rust, we use the `struct` keyword to define a structure. The syntax of a structure is:
+
+```rust
+struct struct_name {
+    field1: data_type,
+    field2: data_type,
+    field3: data_type
+}
+```
+
+Here,
+
+- `struct` - keyword to define a structure
+
+- `struct_name` - name of the structure
+
+- `field1: data_type/field2: data_type` - name and data type of the fields inside the struct.
+
+
+Let's look at an example.
+
+```rust
+struct Person {
+    name: String,
+    age: u8,
+    height: u8
+}
+```
+
+Here, we have defined a structure named `Person`. It contains three fields:
+
+- `name` - with data type `String`
+- `age` - with data type `u8`
+- `height` - with data type `u8`
+
+
