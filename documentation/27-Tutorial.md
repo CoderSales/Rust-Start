@@ -275,3 +275,27 @@ fn main() {
 2nd Color: green
 3rd Color: blue
 ```
+
+____
+
+### Mutable array in Rust
+
+```rust
+fn main() {
+    let mut numbers: [i32; 5] = [1, 2, 3, 4, 5];
+    
+    println!("original array = {:?}", numbers);
+    
+    // change the value of the 3rd element in the array
+    numbers[2] = 0;
+    
+    println!("changed array = {:?}", numbers);
+}
+```
+
+#### Output
+
+```bash
+original array = [1, 2, 3, 4, 5]
+changed array = [1, 2, 0, 4, 5]
+```

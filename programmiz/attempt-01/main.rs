@@ -1,14 +1,12 @@
 fn main() {
-    let colors = ["red", "green", "blue"];
+    let mut numbers: [i32; 5] = [1, 2, 3, 4, 5];
     
-    // accessing element at index 0
-    println!("1st Color: {}", colors[0]);
-
-    // accessing element at index 1
-    println!("2nd Color: {}", colors[1]);
-
-    // accessing element at index 2
-    println!("3rd Color: {}", colors[2]);
+    println!("original array = {:?}", numbers);
+    
+    // change the value of the 3rd element in the array
+    numbers[2] = 0;
+    
+    println!("changed array = {:?}", numbers);
 }
 
 /*
@@ -19,14 +17,13 @@ Page Title:
 Rust Array
 
 Section Title:
-Example: Access Array Elements
+Mutable Array in Rust
 
 Subsection Title:
 
 
 Output:
-1st Color: red
-2nd Color: green
-3rd Color: blue
+original array = [1, 2, 3, 4, 5]
+changed array = [1, 2, 0, 4, 5]
 
 */
