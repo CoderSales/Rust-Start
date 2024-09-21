@@ -314,4 +314,83 @@ Here, we have defined a structure named `Person`. It contains three fields:
 - `age` - with data type `u8`
 - `height` - with data type `u8`
 
+### Instantiating Rust Struct
 
+To use a structure in Rust, we first have to create an instance of structures. For example,
+
+```rust
+// define a structure
+struct Person {
+    name: String
+    age: u8,
+    height: u8
+}
+
+// create an instance of Person struct
+let person1 = Person {
+    ...
+};
+```
+
+Here, `Person {...}` creates an instance of the **Person struct**, and we have assigned it to the `person1` variable.
+
+We can also assign values to the struct fields while creating the instance. For example,
+
+```rust
+let person1 = Person {
+    name: String::from("John Doe"),
+    age: 18,
+    height: 178
+};
+```
+
+Here, we have initialized the values of the `name`, `age` and `height` fields of the Person struct. This process of initializing the values of struct fields is known as an 
+
+**instantiation of a struct**.
+
+#### Note
+
+The struct definition is a template, 
+
+and the struct instances fill in that template with data.
+
+____
+
+### Accessing Fields of a Struct
+
+We can use the struct instance along with the dot . notation to access values of fields in a structure. For example,
+
+```rust
+fn main() {
+    // define a Person struct
+    struct Person {
+        name: String,
+        age: u8,
+        height: u8
+    }
+    
+    // instantiate Person struct
+    let person = Person {
+        name: String::from("John Doe"),
+        age: 18,
+        height: 178
+    };
+    
+    // access value of name field in Person struct
+    println!("Person name = {}", person.name);
+
+    // access value of age field in Person struct
+    println!("Person age = {}", person.age);
+
+    // access value of height field in Person struct
+    println!("Person height = {}", person.height);
+}
+```
+
+#### Output
+
+```bash
+Person name = John Doe
+Person age = 18
+Person height = 178
+```

@@ -1,35 +1,49 @@
 fn main() {
-    let mixture = ("Hello, World!", 16, 2.71828);
+    // define a Person struct
+    struct Person {
+        name: String,
+        age: u8,
+        height: u8
+    }
     
-    // destructuring a tuple
-    let (message, number, float) = mixture;
+    // instantiate Person struct
+    let person = Person {
+        name: String::from("John Doe"),
+        age: 18,
+        height: 178
+    };
     
-    println!("message = {}", message);
-    println!("number = {}", number);
-    println!("float = {}", float);
+    // access value of name field in Person struct
+    println!("Person name = {}", person.name);
+
+    // access value of age field in Person struct
+    println!("Person age = {}", person.age);
+
+    // access value of height field in Person struct
+    println!("Person height = {}", person.height);
 }
 
 /*
 url:
-https://www.programiz.com/rust/tuple
+https://www.programiz.com/rust/struct
 
 Page Title:
-Rust Tuple
+Rust Struct
 
 Section Title:
-Destructuring a Tuple
+
 
 Subsection Title:
-Example: Destructuring a Tuple
+
 
 ### Documentation
 
 28-Tutorial-Tuple-onwards.md
 
 Output:
-message = Hello, World!
-number = 16
-float = 2.71828
+Person name = John Doe
+Person age = 18
+Person height = 178
 
 Notes:
 
