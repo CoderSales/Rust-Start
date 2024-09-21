@@ -1,17 +1,17 @@
-// define an add function that takes in two parameters
-// define an add function that takes in two parameters with a return type
-fn add(a: i32, b: i32) -> i32 {
-    let sum = a + b;
-
-    // return a value from the function
-    return sum;
-}
-
 fn main() {
-    // function call
-    let sum = add(3, 5);
-
-    println!("Sum of a and b = {}", sum);
+    // scope of outer_var variable is inside the main function code block
+    let outer_var = 100;
+    
+    // start of the inner code block
+    {
+        // scope of inner_var variable is only inside this new code block
+        let inner_var = 200;
+        println!("inner_var = {}", inner_var);
+    }
+    // end of the inner code block
+    
+    println!("inner_var = {}", inner_var);
+    println!("outer_var = {}", outer_var);
 }
 
 /*
@@ -22,10 +22,9 @@ Page Title:
 Rust Variable Scope
 
 Section Title:
-Function with Return Value in Rust
+Working of Variable Scope in Rust
 
 Subsection Title:
-Example: Function with Return Value
 
 
 ### Documentation
@@ -33,9 +32,19 @@ Example: Function with Return Value
 29-Tutorial-Functions-onwards.md
 
 Output:
-Sum of a and b = 8
 
 Notes:
+
+Error:
+error[E0425]: cannot find value `inner_var` in this scope
+  --> main.rs:13:32
+   |
+13 |     println!("inner_var = {}", inner_var);
+   |                                ^^^^^^^^^ help: a local variable with a similar name exists: `outer_var`      
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0425`.
 
 
 */
