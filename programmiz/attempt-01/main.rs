@@ -1,13 +1,15 @@
 // define an add function that takes in two parameters
-fn add(a: i32, b: i32) {
+fn add(a: i32, b: i32) -> i32 {
     let sum = a + b;
-    
-    println!("Sum of a and b = {}", sum);
+
+    // return a value from the function
+    return sum;
 }
 
 fn main() {
     // call add function with arguments
-    add(2, 11);
+    let sum = add(3, 5);
+    println!("returned sum is: {}", sum);
 }
 
 /*

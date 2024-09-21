@@ -222,3 +222,34 @@ The arguments are assigned to the function parameters when we call the function.
 - **11** is assigned to `b`
 
 As a result, we see the sum of **2** and **11** equal to **13** printed on the screen.
+
+____
+
+### Function with Return Value in Rust
+
+In the last example, we computed the sum of two numbers and printed the result inside the function. However, we can also return the result from the function and use it anywhere in our program.
+
+Here's how we can create a function in Rust that returns a value.
+
+```rust
+// define an add function that takes in two parameters with a return type
+fn add(a: i32, b: i32) -> i32 {
+    let sum = a + b;
+
+    // return a value from the function
+    return sum;
+}
+```
+
+Here, `-> i32` before the opening curly bracket `{` indicates the function's return type. In this case, the function will return an `i32` value.
+
+We have then used the `return` keyword to return the `sum` variable from the function.
+
+The function returns the value to the place from where it is called, so the returned value needs to be stored somewhere.
+
+```rust
+// store the returned value in a variable
+let sum = add(3, 5);
+```
+
+____
