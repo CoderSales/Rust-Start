@@ -45,6 +45,7 @@ let student_info = ("Ricky", 21, 3.56);
 Here,
 
 `let student_info` - specifies the variable name of the tuple
+
 `("Ricky", 21, 3.56)` - specifies the elements of the tuple
 
 ____
