@@ -66,3 +66,21 @@ fn main() {
 ```bash
 Tuple contents = ("Rust", 3.14, 100)
 ```
+
+____
+
+### Accessing Elements in a Tuple
+
+Each element in a tuple is associated with a unique sequence of numbers. 
+
+This number is known as the tuple index or just index.
+
+Suppose we have a tuple,
+
+```rust
+let random_tuple = ("Hello", 200, 3.14);
+```
+
+The tuple indexes of the `random_tuple` look like,
+
+![TupleIndexImage.png](/static/images/TupleIndexImage.png)
