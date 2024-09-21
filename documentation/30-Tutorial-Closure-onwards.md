@@ -408,4 +408,20 @@ Once the `main()` is completed, we free the stack frame, and everything goes awa
 
 We can make the memory live longer by transferring ownership where the heap can stay alive longer than the function which allocates the `Box`. To learn more about ownership, visit [Rust Ownership](https://www.programiz.com/rust/ownership).
 
+____
 
+### Differences between Stack and Heap
+
+| Stack                                  |   	Heap                                 |
+|----------------------------------------|-------------------------------------------|
+| Accessing data in the stack is faster. | Accessing data in a heap is slower.       |
+|                                        |                                           |
+| Managing memory in the stack is        | Managing memory for the heap              |
+| predictable and trivial.	             | (arbitrary size) is non-trivial.          |
+|                                        |                                           |
+| Rust stack allocates by default.	     | Box is used to allocate to the heap.      |
+|                                        |                                           |
+| Primitive types and local variables    | Data types that are dynamic in size,      |
+| of a function are allocated            | such as String, Vector, Box, etc.,        |
+| on the stack.	                         | are allocated on the heap.                |
+|                                        |                                           |
