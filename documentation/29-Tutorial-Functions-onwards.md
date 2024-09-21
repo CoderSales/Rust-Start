@@ -539,5 +539,6 @@ fn main() {
 #### Output
 
 ```bash
-
+age variable inner block = 100
+age variable outer block = 3
 ```
