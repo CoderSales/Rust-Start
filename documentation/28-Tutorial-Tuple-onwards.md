@@ -190,3 +190,34 @@ You can only change the element of a tuple to the same type as when it was creat
 
 Changing data types is not allowed after tuple creation.
 
+____
+
+### Destructuring a Tuple
+
+We can break down tuples into smaller variables in Rust, known as **destructuring**.
+
+Suppose we have a tuple,
+
+```rust
+let tuple = ("John Doe", 18, 178);
+```
+
+Now, we can perform destructuring using,
+
+```rust
+let (name, age, height) = tuple;
+```
+
+Now, we access the `name`, `age` and `height` variables directly without using tuple indexes.
+
+- `name` instead of `tuple.0`
+
+- `age` instead of `tuple.1`
+
+- `height` instead of `tuple.2`
+
+You can name the variables as you like while destructuring a tuple.
+
+#### Note
+
+Destructuring a tuple is also known as **tuple unpacking**.

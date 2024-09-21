@@ -19,7 +19,7 @@ Page Title:
 Rust Tuple
 
 Section Title:
-Mutable Tuple
+Destructuring a Tuple
 
 Subsection Title:
 
@@ -28,8 +28,6 @@ Subsection Title:
 28-Tutorial-Tuple-onwards.md
 
 Output:
-Original tuple = ("Everest", 8848, "Fishtail", 6993)
-Changed tuple = ("Everest", 8848, "Lhotse", 8516)
 
 Notes:
 
