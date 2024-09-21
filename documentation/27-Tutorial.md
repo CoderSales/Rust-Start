@@ -407,3 +407,28 @@ fn main() {
 array = [1, 2, 3, 4, 5]
 slice = [3, 4, 5]
 ```
+
+#### Note
+
+Here,
+
+```rust
+&numbers[2..]
+```
+
+includes `2..` without the end index. 
+
+This means 
+
+the slice starts from index 2 
+
+and 
+
+goes up to index 5 (exclusive). 
+
+It is equivalent to 
+
+```rust
+&numbers[2..5]
+```
+
