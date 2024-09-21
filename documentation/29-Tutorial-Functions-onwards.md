@@ -276,7 +276,7 @@ fn main() {
 #### Output
 
 ```bash
-
+Sum of a and b = 8
 ```
 
 Here's how the program works,
