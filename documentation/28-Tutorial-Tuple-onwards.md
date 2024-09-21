@@ -394,3 +394,13 @@ Person name = John Doe
 Person age = 18
 Person height = 178
 ```
+
+Here,
+
+- `person.name` - reads the field `name` of the Person struct (`John Doe`)
+
+- `person.age` - reads the field `age` (`18`)
+
+- `person.height` - reads the field `height` (`178`)
+
+____
