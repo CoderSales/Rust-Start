@@ -126,3 +126,45 @@ Value at Index 2 = 3.14
 
 The tuple index always starts at 0; hence the first element of the tuple is at position 0, not 1.
 
+____
+
+### Mutable Tuple
+
+#### `mut` Keyword
+
+In Rust, a tuple is immutable, which means we cannot change its elements once it is created.
+
+However, we can create a mutable array by using the mut keyword before assigning it to a variable. For example,
+
+```rust
+// create a mutable tuple 
+let mut mountains = ("Everest", 8848, "Fishtail", 6993);
+```
+
+Now, we can make changes to this tuple.
+
+Let's take a look at an example,
+
+
+
+```rust
+fn main() {
+    // initialize a mutable tuple
+    let mut mountain_heights = ("Everest", 8848, "Fishtail", 6993);
+    
+    println!("Original tuple = {:?}", mountain_heights);
+    
+    // change 3rd and 4th element of a mutable tuple
+    mountain_heights.2 = "Lhotse";
+    mountain_heights.3 = 8516;
+    
+    println!("Changed tuple = {:?}", mountain_heights);
+}
+```
+
+#### Output
+
+```bash
+Original tuple = ("Everest", 8848, "Fishtail", 6993)
+Changed tuple = ("Everest", 8848, "Lhotse", 8516)
+```

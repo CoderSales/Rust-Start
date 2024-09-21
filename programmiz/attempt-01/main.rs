@@ -1,14 +1,14 @@
 fn main() {
-    let random_tuple = ("Hello", 200, 3.14);
-
-    // accessing tuple element at index 0
-    println!("Value at Index 0 = {}", random_tuple.0);
+    // initialize a mutable tuple
+    let mut mountain_heights = ("Everest", 8848, "Fishtail", 6993);
     
-    // accessing tuple element at index 1
-    println!("Value at Index 1 = {}", random_tuple.1);
+    println!("Original tuple = {:?}", mountain_heights);
     
-    // accessing tuple element at index 2
-    println!("Value at Index 2 = {}", random_tuple.2);
+    // change 3rd and 4th element of a mutable tuple
+    mountain_heights.2 = "Lhotse";
+    mountain_heights.3 = 8516;
+    
+    println!("Changed tuple = {:?}", mountain_heights);
 }
 
 /*
@@ -19,24 +19,18 @@ Page Title:
 Rust Tuple
 
 Section Title:
-Rust Tuple with Data Type
+Mutable Tuple
 
 Subsection Title:
-Example: Access Tuple Elements
 
 ### Documentation
 
 28-Tutorial-Tuple-onwards.md
 
 Output:
-Value at Index 0 = Hello
-Value at Index 1 = 200
-Value at Index 2 = 3.14
+Original tuple = ("Everest", 8848, "Fishtail", 6993)
+Changed tuple = ("Everest", 8848, "Lhotse", 8516)
 
 Notes:
-Tuple Immutable
-
-Can access Tuple elements using
-Dot notation
 
 */
