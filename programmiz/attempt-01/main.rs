@@ -1,12 +1,10 @@
 fn main() {
-    let mut numbers: [i32; 5] = [1, 2, 3, 4, 5];
+    let colors = ["red", "green", "blue"];
     
-    println!("original array = {:?}", numbers);
-    
-    // change the value of the 3rd element in the array
-    numbers[2] = 0;
-    
-    println!("changed array = {:?}", numbers);
+    // loop through an array to print its index and value
+    for index in 0..3 {
+        println!("Index: {} -- Value: {}", index, colors[index]);
+    }
 }
 
 /*
@@ -17,13 +15,14 @@ Page Title:
 Rust Array
 
 Section Title:
-Mutable Array in Rust
+Looping Through an Array in Rust
 
 Subsection Title:
 
 
 Output:
-original array = [1, 2, 3, 4, 5]
-changed array = [1, 2, 0, 4, 5]
+Index: 0 -- Value: red
+Index: 1 -- Value: green
+Index: 2 -- Value: blue
 
 */

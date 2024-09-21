@@ -307,3 +307,26 @@ Reassignment using:
 ```
 
 ![RustArrayMutReassign.png](/static/images/RustArrayMutReassign.png)
+
+____
+
+### Looping Through an Array in Rust
+
+```rust
+fn main() {
+    let colors = ["red", "green", "blue"];
+    
+    // loop through an array to print its index and value
+    for index in 0..3 {
+        println!("Index: {} -- Value: {}", index, colors[index]);
+    }
+}
+```
+
+#### Output
+
+```bash
+Index: 0 -- Value: red
+Index: 1 -- Value: green
+Index: 2 -- Value: blue
+```
