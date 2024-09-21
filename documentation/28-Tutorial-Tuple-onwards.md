@@ -252,3 +252,27 @@ let (message, number, float) = mixture;
 ```
 
 Finally, we print these variables to the screen.
+
+### [Struct](https://www.programiz.com/rust/struct)
+
+Rust structs or structures are user-defined data types used to store different types of data together.
+
+Suppose we want to store a person's name, age, and height. To do this, we can create variables for each property/field.
+
+```rust
+let personName: String = String::from("John Doe");
+let personAge: u8 = 18;
+let personHeight: u8 = 178;
+```
+
+The problem with this approach is we have to maintain all these variables separately. To store these fields for more than one person, we will have to create different variables for each person.
+
+Instead, we can create a struct to store all the fields together as a single unit. For example,
+
+```rust
+struct Person {
+    name: String,
+    age: u8,
+    height: u8
+}
+```
