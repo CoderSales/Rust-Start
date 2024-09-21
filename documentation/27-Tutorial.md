@@ -513,8 +513,33 @@ fn main() {
 }
 ```
 
+#### Output
+
 ```bash
 array = ["red", "green", "yellow", "white"]
 original slice = ["green", "yellow"]
 changed slice = ["green", "purple"]
 ```
+
+#### Note
+
+Here, we have created a 
+
+mutable array 
+
+`colors`.
+
+Then, we have created a 
+
+mutable slice 
+
+`sliced_colors` 
+
+with 
+
+```rust
+&mut array[1..3]
+```
+
+____
+
