@@ -561,3 +561,6 @@ We change the value of original slice
 
 ____
 
+[28-Tutorial-Tuple-onwards.md](/documentation/28-Tutorial-Tuple-onwards.md)
+
+____
