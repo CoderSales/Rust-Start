@@ -502,7 +502,7 @@ fn main() {
     println!("array = {:?}", colors);
 
     // mutable slice
-    let sliced_colors = &mut colors[1..3];
+    let sliced_colors = &mut colors[1..3]; // Note
     
     println!("original slice = {:?}", sliced_colors);
 
