@@ -135,3 +135,54 @@ In the above example, we have created a function named `add()`. The function add
 Here's how the program works,
 
 ![function.png](/static/images/function.png)
+
+### Function Parameters in Rust
+
+From the definition, we know that a function should be reusable. However, the `add()` function in our previous example can only be used to perform the addition of **5** and **10**.
+
+```rust
+// function to add two numbers
+fn add() {
+    let a = 5;
+    let b = 10;
+
+    let sum = a + b;
+
+    println!("Sum of a and b = {}", sum);
+}
+```
+
+This function is not dynamic to be reused.
+
+To deal with this and make our functions more dynamic, we can create functions that accept external values. These external values are called function parameters.
+
+Here's how we can create a function with parameters.
+
+```rust
+// function with parameters
+fn add(a: i32, b: i32) {
+    let sum = a + b;
+
+    println!("Sum of a and b = {}", sum);
+}
+```
+
+Here,
+
+- `a` and `b` are function parameters
+
+- `i32` is the data type of parameters
+
+To call this function, we should provide some value during the function call.
+
+```rust
+add(2, 11);
+```
+
+Here, **2** and **11** are known as function arguments that are passed to the add function.
+
+#### Output of adding mentioned modifications to previous example
+
+```bash
+Sum of a and b = 13
+```

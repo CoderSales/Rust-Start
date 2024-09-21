@@ -1,8 +1,6 @@
 // function to add two numbers
-fn add() {
-    let a = 5;
-    let b = 10;
-
+// function with parameters
+fn add(a: i32, b: i32) {
     let sum = a + b;
 
     println!("Sum of a and b = {}", sum);
@@ -10,7 +8,7 @@ fn add() {
 
 fn main() {
     // function call
-    add();
+    add(2, 11);
 }
 
 /*
@@ -21,7 +19,7 @@ Page Title:
 Rust Functions
 
 Section Title:
-Example: Function to Add Two Numbers in Rust
+Function Parameters in Rust
 
 Subsection Title:
 
@@ -31,7 +29,7 @@ Subsection Title:
 29-Tutorial-Functions-onwards.md
 
 Output:
-Sum of a and b = 15
+Sum of a and b = 13
 
 Notes:
 
