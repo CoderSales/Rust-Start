@@ -432,3 +432,26 @@ It is equivalent to
 &numbers[2..5]
 ```
 
+____
+
+### 3. Omitting both Start and End Index of a Slice
+
+```rust
+fn main() {
+    let numbers = [1, 2, 3, 4, 5];
+    
+    // omit the start index and the end index
+    // reference the whole array
+    let slice = &numbers[..];
+
+    println!("array = {:?}", numbers);
+    println!("slice = {:?}", slice);
+}
+```
+
+#### Output
+
+```bash
+array = [1, 2, 3, 4, 5]
+slice = [1, 2, 3, 4, 5]
+```
