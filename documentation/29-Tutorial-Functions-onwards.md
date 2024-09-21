@@ -376,3 +376,11 @@ inner_var = 200
 outer_var inside inner block = 100
 outer_var = 100
 ```
+
+We removed the `println!("inner_var = {}", inner_var);` from the outer code block and the program now works as expected.
+
+Additionally, we can access the `outer_var` inside the inner code block because its scope is in the `main()` function.
+
+Here is how variable scope works in the above program,
+
+![scope.png](/static/images/scope.png)
