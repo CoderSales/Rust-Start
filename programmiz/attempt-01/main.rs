@@ -1,28 +1,29 @@
 fn main() {
-    let colors = ["red", "green", "blue"];
+    // an array of numbers
+    let numbers = [1, 2, 3, 4, 5];
     
-    // loop through an array to print its index and value
-    for index in 0..3 {
-        println!("Index: {} -- Value: {}", index, colors[index]);
-    }
+    // create a slice of 2nd and 3rd element
+    let slice = &numbers[1..3];
+    
+    println!("array = {:?}", numbers);
+    println!("slice = {:?}", slice);
 }
 
 /*
 url:
-https://www.programiz.com/rust/array
+https://www.programiz.com/rust/slice
 
 Page Title:
-Rust Array
+Rust Slice
 
 Section Title:
-Looping Through an Array in Rust
+Example: Rust Slice
 
 Subsection Title:
 
 
 Output:
-Index: 0 -- Value: red
-Index: 1 -- Value: green
-Index: 2 -- Value: blue
+array = [1, 2, 3, 4, 5]
+slice = [2, 3]
 
 */

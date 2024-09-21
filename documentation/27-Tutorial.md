@@ -330,3 +330,26 @@ Index: 0 -- Value: red
 Index: 1 -- Value: green
 Index: 2 -- Value: blue
 ```
+
+____
+____
+
+#### Rust Slice
+
+```rust
+fn main() {
+    // an array of numbers
+    let numbers = [1, 2, 3, 4, 5];
+    
+    // create a slice of 2nd and 3rd element
+    let slice = &numbers[1..3];
+    
+    println!("array = {:?}", numbers);
+    println!("slice = {:?}", slice);
+}
+```
+
+```bash
+array = [1, 2, 3, 4, 5]
+slice = [2, 3]
+```
