@@ -346,3 +346,33 @@ error: aborting due to 1 previous error
 
 For more information about this error, try `rustc --explain E0425`.
 ```
+
+The Rust compiler could not find inner_var in scope as we tried to print the variable outside the inner code block.
+
+To fix this, we can do the following,
+
+```rust
+fn main() {
+    // scope of outer_var variable is inside the main function code block
+    let outer_var = 100;
+    
+    // start of the inner code block
+    {
+        // scope of inner_var variable is only inside this new code block
+        let inner_var = 200;
+        println!("inner_var = {}", inner_var);
+        println!("outer_var inside inner block = {}", outer_var);
+    }
+    // end of the inner code block
+    
+    println!("outer_var = {}", outer_var);
+}
+```
+
+#### Output
+
+```bash
+inner_var = 200
+outer_var inside inner block = 100
+outer_var = 100
+```

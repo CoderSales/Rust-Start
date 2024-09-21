@@ -7,10 +7,10 @@ fn main() {
         // scope of inner_var variable is only inside this new code block
         let inner_var = 200;
         println!("inner_var = {}", inner_var);
+        println!("outer_var inside inner block = {}", outer_var);
     }
     // end of the inner code block
     
-    println!("inner_var = {}", inner_var);
     println!("outer_var = {}", outer_var);
 }
 
@@ -32,19 +32,11 @@ Subsection Title:
 29-Tutorial-Functions-onwards.md
 
 Output:
+inner_var = 200
+outer_var inside inner block = 100
+outer_var = 100
 
 Notes:
-
-Error:
-error[E0425]: cannot find value `inner_var` in this scope
-  --> main.rs:13:32
-   |
-13 |     println!("inner_var = {}", inner_var);
-   |                                ^^^^^^^^^ help: a local variable with a similar name exists: `outer_var`      
-
-error: aborting due to 1 previous error
-
-For more information about this error, try `rustc --explain E0425`.
 
 
 */
