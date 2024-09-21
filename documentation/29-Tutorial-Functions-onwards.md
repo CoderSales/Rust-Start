@@ -53,3 +53,52 @@ fn main() {
 
 When we run this code, we will not get any output. This is because here we are just defining a function. To execute a function, we need to call it.
 
+____
+
+### Calling a Function in Rust
+
+We use the name of the function and parentheses `()` to call a function.
+
+```rust
+// call a function
+greet();
+```
+
+Let's complete the above example now.
+
+```rust
+// define a function
+fn greet() {
+    println!("Hello, World!");
+}
+
+fn main() {
+    // function call
+    greet();
+}
+```
+
+#### Output
+
+```bash
+Hello, World!
+```
+
+Here, we have created a `greet()` function that prints "Hello, World!" on the screen. Notice that we are calling the function from inside `main()`.
+
+##### main() Function in Rust
+
+If you look carefully, you can see the syntax of `main()` looks similar to a function.
+
+```rust
+fn main() {
+    // function call
+    greet();
+}
+```
+
+In Rust, `main()` is also a function known as a built-in function that has a special meaning. It is **the entry point (start) of every Rust program**.
+
+#### Note
+
+Rust code uses a small case as the convention for defining a function name. An extended function name with multiple words will have underscores in between words.

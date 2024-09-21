@@ -4,8 +4,10 @@ fn greet() {
 }
 
 fn main() {
-
+    // function call
+    greet();
 }
+
 
 /*
 url:
@@ -15,7 +17,7 @@ Page Title:
 Rust Functions
 
 Section Title:
-Define a Function in Rust
+Calling a Function in Rust
 
 Subsection Title:
 
@@ -25,11 +27,9 @@ Subsection Title:
 29-Tutorial-Functions-onwards.md
 
 Output:
-
+Hello, World!
 
 Notes:
 
-Compiler Warning:
-warning: function `greet` is never used
 
 */
