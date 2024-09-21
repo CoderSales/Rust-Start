@@ -1,16 +1,14 @@
 fn main() {
-    // an array without data type
-    let a = [5, 4, 3, 2, 1];
+    let colors = ["red", "green", "blue"];
     
-    // an array with data type and size
-    let b: [i32; 5] = [1, 2, 3, 4, 5];
-    
-    // an array with default values
-    let c = [3; 5];
-    
-    println!("a = {:?}", a);
-    println!("b = {:?}", b);
-    println!("c = {:?}", c);
+    // accessing element at index 0
+    println!("1st Color: {}", colors[0]);
+
+    // accessing element at index 1
+    println!("2nd Color: {}", colors[1]);
+
+    // accessing element at index 2
+    println!("3rd Color: {}", colors[2]);
 }
 
 /*
@@ -21,14 +19,14 @@ Page Title:
 Rust Array
 
 Section Title:
-Creating an Array in Rust
+Example: Access Array Elements
 
 Subsection Title:
-Revision: Different Ways to Create Array in Rust
+
 
 Output:
-a = [5, 4, 3, 2, 1]
-b = [1, 2, 3, 4, 5]
-c = [3, 3, 3, 3, 3]
+1st Color: red
+2nd Color: green
+3rd Color: blue
 
 */
