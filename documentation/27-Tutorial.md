@@ -455,3 +455,39 @@ fn main() {
 array = [1, 2, 3, 4, 5]
 slice = [1, 2, 3, 4, 5]
 ```
+
+#### Note
+
+Here, 
+
+```rust
+&numbers[..]
+```
+
+includes `..` 
+
+without 
+
+the start and end index. 
+
+
+This means the slice starts from 
+
+`index 0` and goes up to 
+
+`index 5` (exclusive).
+
+
+It is equivalent to 
+
+```rust
+&numbers[0..5]
+```
+
+which will produce 
+
+the same slice and 
+
+will reference the whole array.
+
+____
