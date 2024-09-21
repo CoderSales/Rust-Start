@@ -1,49 +1,35 @@
+// define a function
+fn greet() {
+    println!("Hello, World!");
+}
+
 fn main() {
-    // define a Person struct
-    struct Person {
-        name: String,
-        age: u8,
-        height: u8
-    }
-    
-    // instantiate Person struct
-    let person = Person {
-        name: String::from("John Doe"),
-        age: 18,
-        height: 178
-    };
-    
-    // destructure Person struct into name, age and height variables
-    let Person { name, age, height } = person;
-    
-    println!("Person name = {}", name);
-    println!("Person age = {}", age);
-    println!("Person height = {}", height);
+
 }
 
 /*
 url:
-https://www.programiz.com/rust/struct
+https://www.programiz.com/rust/function
 
 Page Title:
-Rust Struct
+Rust Functions
 
 Section Title:
-Destructuring Fields of a Rust Struct
+Define a Function in Rust
 
 Subsection Title:
-Example: Destructuring Fields of Struct
 
 
 ### Documentation
 
-28-Tutorial-Tuple-onwards.md
+29-Tutorial-Functions-onwards.md
 
 Output:
-Person name = John Doe
-Person age = 18
-Person height = 178
+
 
 Notes:
+
+Compiler Warning:
+warning: function `greet` is never used
 
 */
