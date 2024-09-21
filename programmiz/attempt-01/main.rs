@@ -1,39 +1,31 @@
 fn main() {
-    // mutable array
-    let mut colors = ["red", "green", "yellow", "white"];
+    // initialization of tuple with data type
+    let tuple: (&str, f32, u8) = ("Rust", 3.14, 100);
     
-    println!("array = {:?}", colors);
-
-    // mutable slice
-    let sliced_colors = &mut colors[1..3]; // Note 1
-    
-    println!("original slice = {:?}", sliced_colors);
-
-    // change the value of the original slice at the first index
-    sliced_colors[1] = "purple"; // Note 2
-
-    println!("changed slice = {:?}", sliced_colors);
+    println!("Tuple contents = {:?}", tuple);
 }
 
 /*
 url:
-https://www.programiz.com/rust/slice
+https://www.programiz.com/rust/tuple
 
 Page Title:
-Rust Slice
+Rust Tuple
 
 Section Title:
-Mutable Slice in Rust
+Rust Tuple with Data Type
 
 Subsection Title:
+Example: Tuple with Data Type
 
+### Documentation
+
+28-Tutorial-Tuple-onwards.md
 
 Output:
-array = ["red", "green", "yellow", "white"]
-original slice = ["green", "yellow"]
-changed slice = ["green", "purple"]
+Tuple contents = ("Rust", 3.14, 100)
 
 Note:
-Mutable Slice
+Tuple Immutable
 
 */
