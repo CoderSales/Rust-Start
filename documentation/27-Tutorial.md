@@ -305,3 +305,5 @@ Reassignment using:
 ```rust
     numbers[2] = 0;
 ```
+
+![RustArrayMutReassign.png](/static/images/RustArrayMutReassign.png)
