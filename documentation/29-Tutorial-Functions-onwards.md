@@ -102,3 +102,36 @@ In Rust, `main()` is also a function known as a built-in function that has a spe
 #### Note
 
 Rust code uses a small case as the convention for defining a function name. An extended function name with multiple words will have underscores in between words.
+
+____
+
+### Example: Function to Add Two Numbers in Rust
+
+```rust
+// function to add two numbers
+fn add() {
+    let a = 5;
+    let b = 10;
+
+    let sum = a + b;
+
+    println!("Sum of a and b = {}", sum);
+}
+
+fn main() {
+    // function call
+    add();
+}
+```
+
+#### Output
+
+```bash
+Sum of a and b = 15
+```
+
+In the above example, we have created a function named `add()`. The function adds two numbers and prints the sum.
+
+Here's how the program works,
+
+![function.png](/static/images/function.png)
