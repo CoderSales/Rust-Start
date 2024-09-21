@@ -442,4 +442,37 @@ Now, we access the `name`, `age` and `height` fields using the field names direc
 
 However, you should note that the name of the variables while destructuring should be the same as the name of the fields.
 
+____
 
+#### Example: Destructuring Fields of Struct
+
+```rust
+fn main() {
+    // define a Person struct
+    struct Person {
+        name: String,
+        age: u8,
+        height: u8
+    }
+    
+    // instantiate Person struct
+    let person = Person {
+        name: String::from("John Doe"),
+        age: 18,
+        height: 178
+    };
+    
+    // destructure Person struct into name, age and height variables
+    let Person { name, age, height } = person;
+    
+    println!("Person name = {}", name);
+    println!("Person age = {}", age);
+    println!("Person height = {}", height);
+}
+```
+
+```bash
+Person name = John Doe
+Person age = 18
+Person height = 178
+```

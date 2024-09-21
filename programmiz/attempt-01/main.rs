@@ -13,14 +13,12 @@ fn main() {
         height: 178
     };
     
-    // access value of name field in Person struct
-    println!("Person name = {}", person.name);
-
-    // access value of age field in Person struct
-    println!("Person age = {}", person.age);
-
-    // access value of height field in Person struct
-    println!("Person height = {}", person.height);
+    // destructure Person struct into name, age and height variables
+    let Person { name, age, height } = person;
+    
+    println!("Person name = {}", name);
+    println!("Person age = {}", age);
+    println!("Person height = {}", height);
 }
 
 /*
@@ -31,9 +29,10 @@ Page Title:
 Rust Struct
 
 Section Title:
-
+Destructuring Fields of a Rust Struct
 
 Subsection Title:
+Example: Destructuring Fields of Struct
 
 
 ### Documentation
