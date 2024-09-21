@@ -1,17 +1,18 @@
 fn main() {
-    // scope of outer_var variable is inside the main function code block
-    let outer_var = 100;
-    
-    // start of the inner code block
+    let random = 100;
+
+    // start of the inner block
     {
-        // scope of inner_var variable is only inside this new code block
-        let inner_var = 200;
-        println!("inner_var = {}", inner_var);
-        println!("outer_var inside inner block = {}", outer_var);
+        println!("random variable before shadowing in inner block = {}", random);
+
+        // this declaration shadows the outer random variable
+        let random = "abc";
+
+        println!("random after shadowing in inner block = {}", random);
     }
-    // end of the inner code block
-    
-    println!("outer_var = {}", outer_var);
+    // end of the inner block
+
+    println!("random variable in outer block = {}", random);
 }
 
 /*
@@ -22,7 +23,7 @@ Page Title:
 Rust Variable Scope
 
 Section Title:
-Working of Variable Scope in Rust
+Variable Shadowing in Rust
 
 Subsection Title:
 
@@ -32,9 +33,9 @@ Subsection Title:
 29-Tutorial-Functions-onwards.md
 
 Output:
-inner_var = 200
-outer_var inside inner block = 100
-outer_var = 100
+random variable before shadowing in inner block = 100
+random after shadowing in inner block = abc
+random variable in outer block = 100
 
 Notes:
 

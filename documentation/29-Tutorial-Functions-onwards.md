@@ -384,3 +384,48 @@ Additionally, we can access the `outer_var` inside the inner code block because 
 Here is how variable scope works in the above program,
 
 ![scope.png](/static/images/scope.png)
+
+### Variable Shadowing in Rust
+
+In Rust, when a variable declared within a particular scope has the same name as a variable declared in the outer scope, it is known as **variable shadowing**.
+
+We can use the same variable name in different scope blocks in the same program.
+
+Let's take a look at an example,
+
+```rust
+fn main() {
+    let random = 100;
+
+    // start of the inner block
+    {
+        println!("random variable before shadowing in inner block = {}", random);
+
+        // this declaration shadows the outer random variable
+        let random = "abc";
+
+        println!("random after shadowing in inner block = {}", random);
+    }
+    // end of the inner block
+
+    println!("random variable in outer block = {}", random);
+}
+```
+
+#### Output
+
+```bash
+random variable before shadowing in inner block = 100
+random after shadowing in inner block = abc
+random variable in outer block = 100
+```
+
+Here, the `random` variable declared in the outer block is shadowed in the inner block. Let's look at what that means,
+
+```rust
+let random = "abc";
+```
+
+The `random` variable value inside the inner block will shadow the value of the outer block so that the inner block will have the `"abc"` value. However, the value of the random variable remains the same outside of the inner block.
+
+____
