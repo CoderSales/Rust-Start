@@ -1,12 +1,18 @@
 fn main() {
-    let numbers = [1, 2, 3, 4, 5];
+    // mutable array
+    let mut colors = ["red", "green", "yellow", "white"];
     
-    // omit the start index and the end index
-    // reference the whole array
-    let slice = &numbers[..];
+    println!("array = {:?}", colors);
 
-    println!("array = {:?}", numbers);
-    println!("slice = {:?}", slice);
+    // mutable slice
+    let sliced_colors = &mut colors[1..3];
+    
+    println!("original slice = {:?}", sliced_colors);
+
+    // change the value of the original slice at the first index
+    sliced_colors[1] = "purple";
+
+    println!("changed slice = {:?}", sliced_colors);
 }
 
 /*
@@ -17,14 +23,17 @@ Page Title:
 Rust Slice
 
 Section Title:
-Omit Indexes of a Rust Slice
+Mutable Slice in Rust
 
 Subsection Title:
-3. Omitting both Start and End Index of a Slice
 
 
 Output:
-array = [1, 2, 3, 4, 5]
-slice = [1, 2, 3, 4, 5]
+array = ["red", "green", "yellow", "white"]
+original slice = ["green", "yellow"]
+changed slice = ["green", "purple"]
+
+Note:
+Mutable Slice
 
 */
