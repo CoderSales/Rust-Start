@@ -155,3 +155,28 @@ Finally, we have computed the square of sum and returned the `result`.
 Here, code inside the opening and closing curly braces, `{}` denotes the body of the closure.
 
 ____
+
+### Closure Environment Capturing in Rust
+
+Closure has a unique feature that allows it to capture the environment. This means the closure can use the values in its scope. For example,
+
+```rust
+fn main() {
+    let num = 100;
+    
+    // A closure that captures the num variable
+    let print_num = || println!("Number = {}", num);
+    
+    print_num(); 
+}
+```
+
+#### Output
+
+```bash
+Number = 100
+```
+
+Here, the closure bound to `print_num` uses the variable `num` which was not defined in it. This is known as closure environment capturing.
+
+____
