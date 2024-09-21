@@ -429,3 +429,115 @@ let random = "abc";
 The `random` variable value inside the inner block will shadow the value of the outer block so that the inner block will have the `"abc"` value. However, the value of the random variable remains the same outside of the inner block.
 
 ____
+
+### Variable Freezing in Rust
+
+We can freeze a variable in Rust by using shadowing and immutability. Once a variable is frozen, we cannot change the variable value in the inner scope.
+
+Let's see an example.
+
+```rust
+fn main() {
+    let mut age = 1;
+
+    // start of the inner block
+    {
+        // shadowing by immutable age variable
+        let age = age;
+
+        // error, age variable is frozen in this scope
+        age = 2;
+
+        println!("age variable inner block = {}", age);
+        // age variable goes out of scope
+    }
+    // end of the inner block
+
+    // age variable is not frozen in outer block
+    age = 3;
+
+    println!("integer variable outer block = {}", age);
+}
+```
+
+#### Error
+
+```bash
+warning: value assigned to `age` is never read
+ --> main.rs:7:13
+  |
+7 |         let age = age;
+  |             ^^^
+  |
+  = help: maybe it is overwritten before being read?
+  = note: `#[warn(unused_assignments)]` on by default
+
+error[E0384]: cannot assign twice to immutable variable `age`
+  --> main.rs:10:9
+   |
+7  |         let age = age;
+   |             ---
+   |             |
+   |             first assignment to `age`
+   |             help: consider making this binding mutable: `mut age`
+...
+10 |         age = 2;
+   |         ^^^^^^^ cannot assign twice to immutable variable
+
+error: aborting due to 1 previous error; 1 warning emitted
+
+For more information about this error, try `rustc --explain E0384`.
+```
+
+In the above example, we have assigned the mutable variable of the outer block named age to the same immutable variable in the inner scope.
+
+```rust
+fn main() {
+    let mut age = 100;
+
+    {
+        let age = age;
+        …
+    }
+    …
+}
+```
+
+In doing this, 
+
+we are shadowing the mutable `age` variable 
+
+with an immutable variable named `age`.
+
+Now the `age` variable freezes inside the inner block because the inner `age` variable is pointing to the same value as the `age` variable in the outer block.
+
+Thus, we cannot change the value of `age` inside the inner block and encounter an error.
+
+Once we get out of the inner block, the value of `age` can be changed.
+
+Let's look at the working version of the variable freezing example.
+
+```rust
+fn main() {
+    let mut age = 100;
+
+    {
+        // shadowing by immutable age variable
+        let age = age;
+
+        println!("age variable inner block = {}", age);
+        // age goes out of scope
+    }
+
+    // age variable is not frozen in this scope
+    age = 3;
+
+    println!("age variable outer block = {}", age);
+}
+```
+
+#### Output
+
+```bash
+
+```
