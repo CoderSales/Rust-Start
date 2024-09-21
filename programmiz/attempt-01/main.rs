@@ -7,7 +7,7 @@ fn main() {
 
         println!("age variable inner block = {}", age);
         // age goes out of scope
-    }
+    } // Note Key line of code
 
     // age variable is not frozen in this scope
     age = 3;
