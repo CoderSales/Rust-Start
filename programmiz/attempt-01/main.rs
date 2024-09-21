@@ -5,12 +5,12 @@ fn main() {
     println!("array = {:?}", colors);
 
     // mutable slice
-    let sliced_colors = &mut colors[1..3]; // Note
+    let sliced_colors = &mut colors[1..3]; // Note 1
     
     println!("original slice = {:?}", sliced_colors);
 
     // change the value of the original slice at the first index
-    sliced_colors[1] = "purple";
+    sliced_colors[1] = "purple"; // Note 2
 
     println!("changed slice = {:?}", sliced_colors);
 }

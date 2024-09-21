@@ -502,12 +502,12 @@ fn main() {
     println!("array = {:?}", colors);
 
     // mutable slice
-    let sliced_colors = &mut colors[1..3]; // Note
+    let sliced_colors = &mut colors[1..3]; // Note 1
     
     println!("original slice = {:?}", sliced_colors);
 
     // change the value of the original slice at the first index
-    sliced_colors[1] = "purple";
+    sliced_colors[1] = "purple"; // Note 2
 
     println!("changed slice = {:?}", sliced_colors);
 }
@@ -521,7 +521,7 @@ original slice = ["green", "yellow"]
 changed slice = ["green", "purple"]
 ```
 
-#### Note
+#### Note 1
 
 Here, we have created a 
 
@@ -540,6 +540,24 @@ with
 ```rust
 &mut array[1..3]
 ```
+
+#### Note 2
+
+Now, we can change the content of the mutable slice,
+
+```rust
+sliced_colors[1] = "purple"
+```
+
+We change the value of original slice 
+
+`sliced_colors` at the 
+
+1st index from 
+
+`"yellow"` to `"purple"`.
+
+
 
 ____
 
