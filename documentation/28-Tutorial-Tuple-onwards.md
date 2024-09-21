@@ -121,3 +121,8 @@ Value at Index 0 = Hello
 Value at Index 1 = 200
 Value at Index 2 = 3.14
 ```
+
+#### Note: 
+
+The tuple index always starts at 0; hence the first element of the tuple is at position 0, not 1.
+
