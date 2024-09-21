@@ -186,3 +186,39 @@ Here, **2** and **11** are known as function arguments that are passed to the ad
 ```bash
 Sum of a and b = 13
 ```
+
+____
+
+### Example: Function Parameters
+
+```rust
+// define an add function that takes in two parameters
+fn add(a: i32, b: i32) {
+    let sum = a + b;
+    
+    println!("Sum of a and b = {}", sum);
+}
+
+fn main() {
+    // call add function with arguments
+    add(2, 11);
+}
+```
+
+### Output
+
+```bash
+Sum of a and b = 13
+```
+
+Here's how the program works,
+
+![functionParameters.png](/static/images/functionParameters.png
+
+The arguments are assigned to the function parameters when we call the function.
+
+- **2** is assigned to `a`
+
+- **11** is assigned to `b`
+
+As a result, we see the sum of **2** and **11** equal to **13** printed on the screen.

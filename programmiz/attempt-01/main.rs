@@ -1,13 +1,12 @@
-// function to add two numbers
-// function with parameters
+// define an add function that takes in two parameters
 fn add(a: i32, b: i32) {
     let sum = a + b;
-
+    
     println!("Sum of a and b = {}", sum);
 }
 
 fn main() {
-    // function call
+    // call add function with arguments
     add(2, 11);
 }
 
@@ -30,7 +29,6 @@ Subsection Title:
 
 Output:
 Sum of a and b = 13
-
 Notes:
 
 
