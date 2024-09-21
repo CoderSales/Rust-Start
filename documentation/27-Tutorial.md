@@ -385,3 +385,25 @@ ____
 ![RustSliceOmitStart.png](/static/images/RustSliceOmitStart.png)
 
 ____
+
+
+### 2. Omitting the End Index of a Slice
+
+```rust
+fn main() {
+    let numbers = [1, 2, 3, 4, 5];
+
+    // omit the end index
+    let slice = &numbers[2..];
+
+    println!("array = {:?}", numbers);
+    println!("slice = {:?}", slice);
+}
+```
+
+#### Output
+
+```bash
+array = [1, 2, 3, 4, 5]
+slice = [3, 4, 5]
+```

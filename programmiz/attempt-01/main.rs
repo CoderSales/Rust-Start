@@ -1,8 +1,8 @@
 fn main() {
     let numbers = [1, 2, 3, 4, 5];
 
-    // omit the start index
-    let slice = &numbers[..3];
+    // omit the end index
+    let slice = &numbers[2..];
 
     println!("array = {:?}", numbers);
     println!("slice = {:?}", slice);
@@ -19,10 +19,10 @@ Section Title:
 Omit Indexes of a Rust Slice
 
 Subsection Title:
-1. Omitting the Start Index of a Slice
+2. Omitting the End Index of a Slice
 
 Output:
 array = [1, 2, 3, 4, 5]
-slice = [1, 2, 3]
+slice = [3, 4, 5]
 
 */
