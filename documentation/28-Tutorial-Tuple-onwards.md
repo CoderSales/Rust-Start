@@ -27,3 +27,17 @@ Tuple contents = ("Rust", 3.14, 100)
 
 We use the `:?` in the `println!` function to print an entire tuple.
 
+____
+
+### Tuple without Data Type in Rust
+
+We can create a tuple **without mentioning the type of data** it is storing. 
+
+The Rust compiler can automatically detect and set the data type. 
+
+For example,
+
+```rust
+// create a tuple without data type
+let student_info = ("Ricky", 21, 3.56);
+```
