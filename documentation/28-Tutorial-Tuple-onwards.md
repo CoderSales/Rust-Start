@@ -221,3 +221,26 @@ You can name the variables as you like while destructuring a tuple.
 #### Note
 
 Destructuring a tuple is also known as **tuple unpacking**.
+
+### Example: Destructuring a Tuple
+
+```rust
+fn main() {
+    let mixture = ("Hello, World!", 16, 2.71828);
+    
+    // destructuring a tuple
+    let (message, number, float) = mixture;
+    
+    println!("message = {}", message);
+    println!("number = {}", number);
+    println!("float = {}", float);
+}
+```
+
+#### Output
+
+```bash
+message = Hello, World!
+number = 16
+float = 2.71828
+```

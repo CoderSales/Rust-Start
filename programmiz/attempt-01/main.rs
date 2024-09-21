@@ -1,14 +1,12 @@
 fn main() {
-    // initialize a mutable tuple
-    let mut mountain_heights = ("Everest", 8848, "Fishtail", 6993);
+    let mixture = ("Hello, World!", 16, 2.71828);
     
-    println!("Original tuple = {:?}", mountain_heights);
+    // destructuring a tuple
+    let (message, number, float) = mixture;
     
-    // change 3rd and 4th element of a mutable tuple
-    mountain_heights.2 = "Lhotse";
-    mountain_heights.3 = 8516;
-    
-    println!("Changed tuple = {:?}", mountain_heights);
+    println!("message = {}", message);
+    println!("number = {}", number);
+    println!("float = {}", float);
 }
 
 /*
@@ -22,12 +20,16 @@ Section Title:
 Destructuring a Tuple
 
 Subsection Title:
+Example: Destructuring a Tuple
 
 ### Documentation
 
 28-Tutorial-Tuple-onwards.md
 
 Output:
+message = Hello, World!
+number = 16
+float = 2.71828
 
 Notes:
 
