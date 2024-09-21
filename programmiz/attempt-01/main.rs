@@ -1,10 +1,15 @@
 fn main() {
-    let num = 100;
+    let word = String::from("Hello");
     
-    // A closure that captures the num variable
-    let print_num = || println!("Number = {}", num);
+    // immutable closure
+    let print_str = || {
+        println!("word = {}", word);
+    };
+
+    // immutable borrow is possible outside the closure
+    println!("length of word = {}", word.len());
     
-    print_num(); 
+    print_str();
 }
 
 /*
@@ -15,17 +20,18 @@ Page Title:
 Rust Closure
 
 Section Title:
-Closure Environment Capturing in Rust
+Closure Environment Capturing Modes in Rust
 
 Subsection Title:
-
+1. Variable is not modified inside closure
 
 ### Documentation
 
 30-Tutorial-Closure-onwards.md
 
 Output:
-Number = 100
+length of word = 5
+word = Hello
 
 Notes:
 

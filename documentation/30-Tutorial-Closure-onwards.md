@@ -180,3 +180,39 @@ Number = 100
 Here, the closure bound to `print_num` uses the variable `num` which was not defined in it. This is known as closure environment capturing.
 
 ____
+
+### Closure Environment Capturing Modes in Rust
+
+Environment capturing of closures can be of 3 different modes based on the variable and the closure definition.
+
+1. Variable is not modified inside closure
+
+2. Variable is modified inside closure
+
+3. Variable is moved inside closure
+
+Let's look at each of these modes of environment capturing.
+
+#### 1. Variable is not modified inside closure
+
+```rust
+fn main() {
+    let word = String::from("Hello");
+    
+    // immutable closure
+    let print_str = || {
+        println!("word = {}", word);
+    };
+
+    // immutable borrow is possible outside the closure
+    println!("length of word = {}", word.len());
+    
+    print_str();
+}
+```
+
+Here, the variable `word` is not modified inside the closure `print_str`. As the variable is immutable by default, we can make any number of immutable references of `word` inside the closure. Notice that the closure variable `print_str` is also immutable.
+
+This mode of capture is also known as **Capture by Immutable Borrow**.
+
+
