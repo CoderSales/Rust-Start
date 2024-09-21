@@ -353,3 +353,9 @@ fn main() {
 array = [1, 2, 3, 4, 5]
 slice = [2, 3]
 ```
+
+#### Note
+
+A slice is not the actual data like integers or floats but a reference/pointer to the data block. That's why we have used the & symbol before the variable name.
+
+____
