@@ -97,3 +97,27 @@ For example,
 
 - `random_tuple.2` - access the element at `index 2` (third element)
 
+_____
+
+### Example: Access Tuple Elements
+
+```rust
+fn main() {
+    let random_tuple = ("Hello", 200, 3.14);
+
+    // accessing tuple element at index 0
+    println!("Value at Index 0 = {}", random_tuple.0);
+    
+    // accessing tuple element at index 1
+    println!("Value at Index 1 = {}", random_tuple.1);
+    
+    // accessing tuple element at index 2
+    println!("Value at Index 2 = {}", random_tuple.2);
+}
+```
+
+```bash
+Value at Index 0 = Hello
+Value at Index 1 = 200
+Value at Index 2 = 3.14
+```

@@ -1,8 +1,14 @@
 fn main() {
-    // initialization of tuple with data type
-    let tuple: (&str, f32, u8) = ("Rust", 3.14, 100);
+    let random_tuple = ("Hello", 200, 3.14);
+
+    // accessing tuple element at index 0
+    println!("Value at Index 0 = {}", random_tuple.0);
     
-    println!("Tuple contents = {:?}", tuple);
+    // accessing tuple element at index 1
+    println!("Value at Index 1 = {}", random_tuple.1);
+    
+    // accessing tuple element at index 2
+    println!("Value at Index 2 = {}", random_tuple.2);
 }
 
 /*
@@ -16,16 +22,21 @@ Section Title:
 Rust Tuple with Data Type
 
 Subsection Title:
-Example: Tuple without Data Types
+Example: Access Tuple Elements
 
 ### Documentation
 
 28-Tutorial-Tuple-onwards.md
 
 Output:
-Tuple contents = ("Rust", 3.14, 100)
+Value at Index 0 = Hello
+Value at Index 1 = 200
+Value at Index 2 = 3.14
 
-Note:
+Notes:
 Tuple Immutable
+
+Can access Tuple elements using
+Dot notation
 
 */
