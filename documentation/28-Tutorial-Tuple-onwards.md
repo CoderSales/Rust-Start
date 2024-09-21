@@ -244,3 +244,11 @@ message = Hello, World!
 number = 16
 float = 2.71828
 ```
+
+Here, we destructure the tuple `mixture` to variables `message`, `number` and `float`.
+
+```rust
+let (message, number, float) = mixture;
+```
+
+Finally, we print these variables to the screen.
