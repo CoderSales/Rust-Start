@@ -278,3 +278,78 @@ word = Hello
 Here, we move the variable `word` to a new variable `new_word` inside the closure. As the variable is moved, we cannot use it anywhere else except for inside the closure.
 
 This mode of capture is also known as **Capture by Move**.
+
+____
+
+## [Rust Stack and Heap](https://www.programiz.com/rust/stack-and-heap)
+
+Stack and Heap are parts of memory available to our Rust code to use at runtime.
+
+Rust is a memory-safe programming language. To ensure that Rust is memory-safe, it introduces concepts like ownership, references and borrowing.
+
+To understand these concepts, we must first understand how to allocate and deallocate memory into the Stack and Heap.
+
+____
+
+### The Stack
+
+The Stack can be thought of as a stack of books. When we add more books, we add them on the top of the pile. When we need a book, we take one from the top.
+
+The stack inserts values in order. It gets them and removes the values in the opposite order.
+
+- Adding data is called **pushing onto the stack**
+
+- Removing data is called **popping off the stack**
+
+This phenomenon is called **Last In, First Out (LIFO)** in programming.
+
+Data stored on the stack must have a fixed size during compile time. Rust, by default, allocates memory on the stack for primitive types.
+
+Let's visualize how memory is allocated and deallocated on the stack with an example.
+
+```rust
+fn foo() {
+    let y = 999;
+    let z = 333;
+}
+
+fn main() {
+    let x = 111;
+    
+    foo();
+}
+```
+
+In the above example, we first call the function `main()`. The `main()` function has one variable binding `x`.
+
+When `main()` executes, we allocate a single 32-bit integer (`x`) to the stack frame.
+
+| Address | Name | Value |
+|---------|------|-------|
+| 0       | x    | 111   |
+
+In the table, the **"Address"** column refers to the memory address of the RAM.
+
+It starts from **0** and goes to how much RAM (number of bytes) your computer has. The **"Name"** column refers to the variable, and the **"Value"** column refers to the variable's value.
+
+When `foo()` is called a new stack frame is allocated. The `foo()` function has two variable bindings, `y` and `z`.
+
+| Address | Name | Value |
+|---------|------|-------|
+| 2       | z    | 333   |
+| 1       | y    | 999   |
+| 0       | x    | 111   |
+
+The numbers **0**, **1**, and **2** do not use address values the computer will use in reality. In reality, the addresses are separated by some number of bytes based on the value.
+
+After `foo()` is completed, its stack frame is deallocated.
+
+| Address | Name | Value |
+|---------|------|-------|
+| 0       | x    | 111   |
+
+Finally, `main()` is completed, and everything goes away.
+
+Rust automatically does allocation and deallocation of memory in and out of the stack.
+
+____
