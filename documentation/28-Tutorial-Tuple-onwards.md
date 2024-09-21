@@ -84,3 +84,16 @@ let random_tuple = ("Hello", 200, 3.14);
 The tuple indexes of the `random_tuple` look like,
 
 ![TupleIndexImage.png](/static/images/TupleIndexImage.png)
+
+#### Tuple Dot notation access
+
+In Rust, we can access individual tuple elements using their corresponding tuple indexes and the dot . notation. 
+
+For example,
+
+- `random_tuple.0` - access the element at `index 0` (first element)
+
+- `random_tuple.1` - access the element at `index 1` (second element)
+
+- `random_tuple.2` - access the element at `index 2` (third element)
+
