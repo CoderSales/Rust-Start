@@ -116,6 +116,8 @@ fn main() {
 }
 ```
 
+#### Output
+
 ```bash
 Value at Index 0 = Hello
 Value at Index 1 = 200
