@@ -179,4 +179,14 @@ We then change its
 
 `2nd` and `3rd` tuple index.
 
+```rust
+mountain_heights.2 = "Lhotse";
+mountain_heights.3 = 8516;
+```
+
+#### Note
+
+You can only change the element of a tuple to the same type as when it was created. 
+
+Changing data types is not allowed after tuple creation.
 
