@@ -379,3 +379,9 @@ fn main() {
 array = [1, 2, 3, 4, 5]
 slice = [1, 2, 3]
 ```
+
+____
+
+![RustSliceOmitStart.png](/static/images/RustSliceOmitStart.png)
+
+____
