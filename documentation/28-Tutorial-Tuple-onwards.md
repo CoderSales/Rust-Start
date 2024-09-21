@@ -476,3 +476,15 @@ Person name = John Doe
 Person age = 18
 Person height = 178
 ```
+
+Here, the destructing happens with this expression,
+
+```rust
+let Person { name, age, height } = person;
+```
+
+The pattern on the left has declarations, and the right side of the expression has a struct instance.
+
+On the left side of the expression, we are making `let` declarations for the `Person` struct with field `name`, `age` and `height`. On the right side of the expression, we assign the instantiated struct of the `Person`.
+
+As a result, we get the `name`, `age` and `height` of the person and print it to the screen.
