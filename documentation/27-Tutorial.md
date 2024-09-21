@@ -359,3 +359,23 @@ slice = [2, 3]
 A slice is not the actual data like integers or floats but a reference/pointer to the data block. That's why we have used the & symbol before the variable name.
 
 ____
+
+### Omit Indexes of a Rust Slice
+
+```rust
+fn main() {
+    let numbers = [1, 2, 3, 4, 5];
+
+    // omit the start index
+    let slice = &numbers[..3];
+
+    println!("array = {:?}", numbers);
+    println!("slice = {:?}", slice);
+}
+```
+
+
+```bash
+array = [1, 2, 3, 4, 5]
+slice = [1, 2, 3]
+```

@@ -1,10 +1,9 @@
 fn main() {
-    // an array of numbers
     let numbers = [1, 2, 3, 4, 5];
-    
-    // create a slice of 2nd and 3rd element
-    let slice = &numbers[1..3];
-    
+
+    // omit the start index
+    let slice = &numbers[..3];
+
     println!("array = {:?}", numbers);
     println!("slice = {:?}", slice);
 }
@@ -17,13 +16,13 @@ Page Title:
 Rust Slice
 
 Section Title:
-Example: Rust Slice
+Omit Indexes of a Rust Slice
 
 Subsection Title:
-
+1. Omitting the Start Index of a Slice
 
 Output:
 array = [1, 2, 3, 4, 5]
-slice = [2, 3]
+slice = [1, 2, 3]
 
 */
