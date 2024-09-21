@@ -215,4 +215,36 @@ Here, the variable `word` is not modified inside the closure `print_str`. As the
 
 This mode of capture is also known as **Capture by Immutable Borrow**.
 
+### 2. Variable is modified inside closure
 
+```rust
+fn main() {
+    let mut word = String::from("Hello");
+    
+    // mutable closure
+    let mut print_str = || {
+        // value of word is changed here
+        word.push_str(" World!");
+        println!("word = {}", word);
+    };
+     
+     // cannot immutable borrow because the variable is borrowed as mutable inside the closure
+     // println!("length of word = {}", word.len());
+    
+    print_str();
+
+    // can immutable borrow because the closure has been already used
+    println!("length of word = {}", word.len());
+}
+```
+
+#### Output
+
+```bash
+word = Hello World!
+length of word = 12
+```
+
+Here, the variable `word` is modified inside the closure `print_str` with `word.push_str("World!");`. Thus, we have to make the variable `word` mutable as well as the closure variable `print_str`. This means no other references of the `word` variable can exist unless the closure is used.
+
+This mode of capture is also known as **Capture by Mutable Borrow**.
