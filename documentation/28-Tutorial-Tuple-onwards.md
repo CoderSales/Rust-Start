@@ -168,3 +168,15 @@ fn main() {
 Original tuple = ("Everest", 8848, "Fishtail", 6993)
 Changed tuple = ("Everest", 8848, "Lhotse", 8516)
 ```
+
+#### Note
+
+Here, we create a mutable tuple named `mountain_heights`. 
+
+We then change its 
+
+`3rd` and `4th` element, the 
+
+`2nd` and `3rd` tuple index.
+
+
