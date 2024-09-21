@@ -18,3 +18,10 @@ fn main() {
 ```bash
 Tuple contents = ("Rust", 3.14, 100)
 ```
+
+#### Note
+
+##### `:?` operator
+
+We use the `:?` in the `println!` function to print an entire tuple.
+
