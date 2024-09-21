@@ -299,3 +299,9 @@ fn main() {
 original array = [1, 2, 3, 4, 5]
 changed array = [1, 2, 0, 4, 5]
 ```
+
+Reassignment using:
+
+```rust
+    numbers[2] = 0;
+```
