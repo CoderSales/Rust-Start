@@ -16,10 +16,10 @@ fn main() {
 
 /*
 url:
-https://www.programiz.com/rust/function
+https://www.programiz.com/rust/variable-scope
 
 Page Title:
-Rust Functions
+Rust Variable Scope
 
 Section Title:
 Function with Return Value in Rust

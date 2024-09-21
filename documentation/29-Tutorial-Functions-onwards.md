@@ -288,3 +288,26 @@ Here's how the program works,
 ```bash
 In the above example, when we reach the `return` statement in the add function, it returns the `sum` variable. The returned value is stored in the `sum` variable inside `main()`.
 ```
+
+## [Variable Scope](https://www.programiz.com/rust/variable-scope)
+
+In computer programming, a variable's scope defines the region in which the variable is available for use. For example,
+
+```rust
+fn main() {
+    // this variable has scope inside the main function block
+    let age = 31;
+    …
+}
+```
+
+Here, the `age` variable has scope inside the body `{...}` of the `main()` function,
+
+#### Note
+
+Each variable in Rust has a scope that is valid inside a block. A block is a collection of statements enclosed by curly braces `{}`.
+
+_____
+
+### Working of Variable Scope in Rust
+
