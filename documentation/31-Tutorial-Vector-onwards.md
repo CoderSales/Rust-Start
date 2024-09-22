@@ -197,3 +197,14 @@ fn main() {
 original vector = [2, 4, 6, 8, 10]
 changed vector = [2, 4, 6, 8, 10, 12, 14]
 ```
+
+Here, we push values to the vector with the `push()` method. It is only possible because the variable holding the vector `even_numbers` is mutable.
+
+```rust
+even_numbers.push(12);
+even_numbers.push(14);
+```
+
+As a result, the final vector includes **12** and **14** with the default elements.
+
+____
