@@ -1,12 +1,13 @@
 fn main() {
-    let mut even_numbers = vec![2, 4, 6, 8, 10];
+    let colors = vec!["blue", "red", "green"];
     
-    println!("original vector = {:?}", even_numbers);
+    let mut index = 0;
     
-    // remove value from the vector in its second index
-    even_numbers.remove(2);
-    
-    println!("changed vector = {:?}", even_numbers);
+    // loop through a vector to print its index and value
+    for color in colors {
+        println!("Index: {} -- Value: {}", index, color);
+        index = index + 1;
+    }
 }
 
 /*
@@ -17,7 +18,7 @@ Page Title:
 Rust Vector
 
 Section Title:
-Removing Values from a Vector in Rust
+Looping Through a Vector in Rust
 
 Subsection Title:
 
@@ -26,8 +27,9 @@ Subsection Title:
 31-Tutorial-Vector-onwards.md
 
 Output:
-original vector = [2, 4, 6, 8, 10]
-changed vector = [2, 4, 8, 10]
+Index: 0 -- Value: blue
+Index: 1 -- Value: red
+Index: 2 -- Value: green
 
 Notes:
 

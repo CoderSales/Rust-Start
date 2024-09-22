@@ -240,3 +240,47 @@ Here, we remove the value in the second index with the `even_numbers.remove(2)` 
 Removing an element will shift all other values beyond that element by one (**-1** index).
 
 ____
+
+### Looping Through a Vector in Rust
+
+We can use the `for` loop to iterate through a vector. For example,
+
+```rust
+fn main() {
+    let colors = vec!["blue", "red", "green"];
+    
+    let mut index = 0;
+    
+    // loop through a vector to print its index and value
+    for color in colors {
+        println!("Index: {} -- Value: {}", index, color);
+        index = index + 1;
+    }
+}
+```
+
+#### Output
+
+```bash
+Index: 0 -- Value: blue
+Index: 1 -- Value: red
+Index: 2 -- Value: green
+```
+
+In the above example, we have used the for loop.
+
+```rust
+for color in colors {
+    ...
+}
+```
+
+Here, the loop runs **3** times (total number of vector elements).
+
+In each iteration of the loop, the value of `color` will be set to **blue**, **red**, and **green**, respectively. Similarly, we have used an index variable to represent the index of each vector element.
+
+#### Note: 
+
+A for loop should preferred over the `[]` operator to access vector elements because access by `[]` incurs run-time cost due to out of bounds checks.`
+
+____
