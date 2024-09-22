@@ -2,7 +2,7 @@
 
 ## [Rust Vector](https://www.programiz.com/rust/vector)
 
-[31-Tutorial-Vector-onwards.md](/documentation/31-Tutorial-Vector-onwards.md)
+( Back to: [30-Tutorial-Closure-onwards.md](/documentation/30-Tutorial-Closure-onwards.md) )
 
 Vector is a dynamic (resizable) data structure that can store a list of elements of the same type. Being a resizable data structure, vectors can grow and shrink at runtime.
 

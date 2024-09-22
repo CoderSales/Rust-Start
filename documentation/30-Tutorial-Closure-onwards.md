@@ -426,4 +426,4 @@ ____
 | on the stack.	                         | are allocated on the heap.                |
 |                                        |                                           |
 
-[30-Tutorial-Closure-onwards.md](/documentation/30-Tutorial-Closure-onwards.md)
+[31-Tutorial-Vector-onwards.md](/documentation/31-Tutorial-Vector-onwards.md)
