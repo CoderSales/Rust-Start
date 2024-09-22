@@ -208,3 +208,35 @@ even_numbers.push(14);
 As a result, the final vector includes **12** and **14** with the default elements.
 
 ____
+
+### Removing Values from a Vector in Rust
+
+We can remove values from a vector by making it mutable and with the `remove()` method. For example,
+
+```rust
+fn main() {
+    let mut even_numbers = vec![2, 4, 6, 8, 10];
+    
+    println!("original vector = {:?}", even_numbers);
+    
+    // remove value from the vector in its second index
+    even_numbers.remove(2);
+    
+    println!("changed vector = {:?}", even_numbers);
+}
+```
+
+#### Output
+
+```bash
+original vector = [2, 4, 6, 8, 10]
+changed vector = [2, 4, 8, 10]
+```
+
+Here, we remove the value in the second index with the `even_numbers.remove(2)` method. Thus, the final result does not include the value **6** in the vector.
+
+#### Note
+
+Removing an element will shift all other values beyond that element by one (**-1** index).
+
+____

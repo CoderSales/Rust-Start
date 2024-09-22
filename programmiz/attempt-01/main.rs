@@ -3,9 +3,8 @@ fn main() {
     
     println!("original vector = {:?}", even_numbers);
     
-    // push values at the end of the vector
-    even_numbers.push(12);
-    even_numbers.push(14);
+    // remove value from the vector in its second index
+    even_numbers.remove(2);
     
     println!("changed vector = {:?}", even_numbers);
 }
@@ -18,7 +17,7 @@ Page Title:
 Rust Vector
 
 Section Title:
-Adding Values to a Vector in Rust
+Removing Values from a Vector in Rust
 
 Subsection Title:
 
@@ -28,7 +27,7 @@ Subsection Title:
 
 Output:
 original vector = [2, 4, 6, 8, 10]
-changed vector = [2, 4, 6, 8, 10, 12, 14]
+changed vector = [2, 4, 8, 10]
 
 Notes:
 
