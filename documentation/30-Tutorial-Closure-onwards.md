@@ -425,3 +425,5 @@ ____
 | of a function are allocated            | such as String, Vector, Box, etc.,        |
 | on the stack.	                         | are allocated on the heap.                |
 |                                        |                                           |
+
+[30-Tutorial-Closure-onwards.md](/documentation/30-Tutorial-Closure-onwards.md)
