@@ -109,3 +109,30 @@ first color = blue
 second color = red
 third color = green
 ```
+
+### Accessing Elements of a Vector using the get() method in Rust
+
+We can also access the element of the vector with the `get()` method and the index of the element.
+
+Suppose we have a vector of colors:
+
+```rust
+let colors = vec!["blue", "red", "green"];
+```
+
+We can access the elements of this vector using `get()`. The `get()` method does not directly return the vector element but an enum with type `Option<T>`. The result is either a `Some(T)` or `None`.
+
+
+- `colors.get(0)` - returns Some value at **index 0**
+
+- `colors.get(1)` - returns Some value at **index 1**
+
+- `colors.get(2)` - returns Some value at **index 2**
+
+The advantage of using the `get()` method over just using the vector index to access the element directly is that it will not error if the vector index is out of range.
+
+Suppose we go out of the vector index range; then `get()` will return `None`. For example,
+
+`colors.get(3)` will return `None`
+
+____
