@@ -325,3 +325,5 @@ v = [10, 20]
 ```
 
 Here, we create a mutable vector with `Vec::new()` and push values to it using the `push()` method of the vector.
+
+[32-Tutorial-Rust-String-onwards.md](/documentation/32-Tutorial-Rust-String-onwards.md)
