@@ -60,3 +60,32 @@ in the `println!` macro
 to print a vector.
 
 ____
+
+### Accessing Elements of a Vector in Rust
+
+Each element in a vector is associated with a unique sequence of numbers. This number is known as the **vector index**.
+
+We can access elements of a vector using the vector index. Suppose we have a vector of colors.
+
+```rust
+let colors = vec!["blue", "red", "green"];
+```
+
+Here's what the indexes for this vector look like,
+
+![vectorIndex.png](/static/images/vectorIndex.png)
+
+We can access individual vector elements using their corresponding vector indexes. For example,
+
+- `colors[0]` - access the element at **index 0** (first element)
+
+- `colors[1]` - access the element at index 1 (second element)
+
+- `colors[2]` - access the element at index 2 (third element)
+
+#### Note
+
+The vector index always starts at **0**; hence the first element of the array is at position **0**, not **1**.
+
+____
+
