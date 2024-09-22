@@ -1,13 +1,12 @@
 fn main() {
-    let colors = vec!["blue", "red", "green"];
-    
-    let mut index = 0;
-    
-    // loop through a vector to print its index and value
-    for color in colors {
-        println!("Index: {} -- Value: {}", index, color);
-        index = index + 1;
-    }
+    // vector creation with Vec::new() method
+    let mut v: Vec<i32> = Vec::new();
+
+    // push values to a mutable vector
+    v.push(10);
+    v.push(20);
+
+    println!("v = {:?}", v);
 }
 
 /*
@@ -18,18 +17,17 @@ Page Title:
 Rust Vector
 
 Section Title:
-Looping Through a Vector in Rust
+Creating a Vector using Vec::new() Method
 
 Subsection Title:
+Example: Creating a Vector using Vec::new()
 
 ### Documentation
 
 31-Tutorial-Vector-onwards.md
 
 Output:
-Index: 0 -- Value: blue
-Index: 1 -- Value: red
-Index: 2 -- Value: green
+v = [10, 20]
 
 Notes:
 

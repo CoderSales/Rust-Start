@@ -284,3 +284,44 @@ In each iteration of the loop, the value of `color` will be set to **blue**, **r
 A for loop should preferred over the `[]` operator to access vector elements because access by `[]` incurs run-time cost due to out of bounds checks.`
 
 ____
+
+### Creating a Vector using `Vec::new()` Method
+
+Alternatively, we can create an empty vector using the `Vec::new()` method. For example,
+
+```bash
+let v: Vec<i32> = Vec::new();
+```
+
+Here, we are creating an empty vector to hold values of type i32.
+
+- `let v` - the name of the variable
+
+- `Vec<i32>` - type of the vector, where `i32` is the data type of all elements in the vector
+
+- `Vec::new()` - initialize an empty vector with the `new()` method
+
+____
+
+### Example: Creating a Vector using Vec::new()
+
+```rust
+fn main() {
+    // vector creation with Vec::new() method
+    let mut v: Vec<i32> = Vec::new();
+
+    // push values to a mutable vector
+    v.push(10);
+    v.push(20);
+
+    println!("v = {:?}", v);
+}
+```
+
+#### Output
+
+```bash
+v = [10, 20]
+```
+
+Here, we create a mutable vector with `Vec::new()` and push values to it using the `push()` method of the vector.
