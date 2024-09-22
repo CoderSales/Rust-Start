@@ -136,3 +136,30 @@ Suppose we go out of the vector index range; then `get()` will return `None`. Fo
 `colors.get(3)` will return `None`
 
 ____
+
+### Example: Accessing Elements of a Vector using get()
+
+```rust
+fn main() {
+    let colors = vec!["blue", "red", "green"];
+    
+    // method 2: access vector elements using get() method and vector index
+    println!("first color = {:?}", colors.get(0));
+    println!("second color = {:?}", colors.get(1));
+    println!("third color = {:?}", colors.get(2));
+}
+```
+
+#### Output
+
+```bash
+first color = Some("blue")
+second color = Some("red")
+third color = Some("green")
+```
+
+As we can see, the output returns a value `Some("blue")`, `Some("red")` and `Some("green")` of the `Option<T>` type.
+
+To get the exact value from the `Option<T>` type, we need to unwrap the value. To learn about unwrap, visit [Rust unwrap() and expect()](https://www.programiz.com/rust/unwrap-and-expect).
+
+____
