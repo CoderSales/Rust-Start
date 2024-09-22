@@ -163,3 +163,37 @@ As we can see, the output returns a value `Some("blue")`, `Some("red")` and `Som
 To get the exact value from the `Option<T>` type, we need to unwrap the value. To learn about unwrap, visit [Rust unwrap() and expect()](https://www.programiz.com/rust/unwrap-and-expect).
 
 ____
+
+### Adding Values to a Vector in Rust
+
+We can add values to a Vector by creating a mutable vector in Rust. We can use the `mut` keyword before assigning a vector to a variable to make it mutable. For example,
+
+```rust
+// mutable vector
+let mut v = vec![2, 4, 6, 8, 10];
+```
+
+We can add values to this vector using the `push()` method.
+
+Let's look at an example.
+
+```rust
+fn main() {
+    let mut even_numbers = vec![2, 4, 6, 8, 10];
+    
+    println!("original vector = {:?}", even_numbers);
+    
+    // push values at the end of the vector
+    even_numbers.push(12);
+    even_numbers.push(14);
+    
+    println!("changed vector = {:?}", even_numbers);
+}
+```
+
+#### Output
+
+```rust
+original vector = [2, 4, 6, 8, 10]
+changed vector = [2, 4, 6, 8, 10, 12, 14]
+```
