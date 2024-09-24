@@ -1,10 +1,13 @@
 fn main() {
-    let str = String::from("Hello");
+    // create an empty string
+    let mut word = String::new();
     
-    // Loop through each character in a string using chars() method
-    for char in str.chars() {
-        println!("{}", char);
-    }
+    println!("original string = {}", word);
+    
+    // append a string to the word variable
+    word.push_str("Hello, World!");
+
+    println!("changed string = {}", word);
 }
 
 /*
@@ -15,20 +18,18 @@ Page Title:
 Rust String
 
 Section Title:
-Iterating over Strings
+Creating an Empty String with String::new()
 
 Subsection Title:
+Example: Creating an Empty String with String::new()
 
 ### Documentation
 
 32-Tutorial-Rust-String-onwards.md
 
 Output:
-H
-e
-l
-l
-o
+original string = 
+changed string = Hello, World!
 
 Notes:
 

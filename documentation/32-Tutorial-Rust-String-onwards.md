@@ -134,3 +134,49 @@ o
 Here, we iterate through all the characters using the `chars()` method and print each of them.
 
 ____
+
+### Creating an Empty String with String::new()
+
+We can create an empty string, using the `String::new()` method. For example,
+
+```rust
+// create an empty string
+let mut word = String::new();
+```
+
+We can then append a string to the `word` variable using the `push_str()` method.
+
+```rust
+word.push_str("Hello, World!");
+```
+
+Here, we push the string `"Hello, World!"` to the empty string variable `word`.
+
+____
+
+#### Example: Creating an Empty String with String::new()
+
+```rust
+fn main() {
+    // create an empty string
+    let mut word = String::new();
+    
+    println!("original string = {}", word);
+    
+    // append a string to the word variable
+    word.push_str("Hello, World!");
+
+    println!("changed string = {}", word);
+}
+```
+
+##### Output
+
+```bash
+original string = 
+changed string = Hello, World!
+```
+
+Here, we create an empty string with `String::new()` and append a string `"Hello, World!"` using the `push_str()` method to the original string.
+
+____
