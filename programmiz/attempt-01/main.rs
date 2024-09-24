@@ -1,33 +1,29 @@
 fn main() {
-    // vector creation with Vec::new() method
-    let mut v: Vec<i32> = Vec::new();
+    // string creation using String::from() method
+    let word = String::from("Hello, World!");
 
-    // push values to a mutable vector
-    v.push(10);
-    v.push(20);
-
-    println!("v = {:?}", v);
+    println!("word = {}", word);
 }
 
 /*
 url:
-https://www.programiz.com/rust/vector
+https://www.programiz.com/rust/string
 
 Page Title:
-Rust Vector
+Rust String
 
 Section Title:
-Creating a Vector using Vec::new() Method
+Creating a String in Rust
 
 Subsection Title:
-Example: Creating a Vector using Vec::new()
+Example: Creating a String in Rust
 
 ### Documentation
 
-31-Tutorial-Vector-onwards.md
+32-Tutorial-Rust-String-onwards.md
 
 Output:
-v = [10, 20]
+word = Hello, World!
 
 Notes:
 
