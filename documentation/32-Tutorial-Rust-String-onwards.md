@@ -180,3 +180,7 @@ changed string = Hello, World!
 Here, we create an empty string with `String::new()` and append a string `"Hello, World!"` using the `push_str()` method to the original string.
 
 ____
+
+[33-Tutorial-HashMap.md](/documentation/33-Tutorial-HashMap.md)
+
+____
