@@ -1,35 +1,46 @@
-fn main() {
-    // create an empty string
-    let mut word = String::new();
-    
-    println!("original string = {}", word);
-    
-    // append a string to the word variable
-    word.push_str("Hello, World!");
+// import HashMap from Rust standard collections library
+use std::collections::HashMap;
 
-    println!("changed string = {}", word);
+fn main() {
+    // create a new HashMap
+    let mut info: HashMap<i32, String> = HashMap::new();
+    
+    println!("HashMap = {:?}", info);
 }
 
 /*
 url:
-https://www.programiz.com/rust/string
+https://www.programiz.com/rust/hashmap
 
 Page Title:
-Rust String
+Rust HashMap
 
 Section Title:
-Creating an Empty String with String::new()
+Creating a HashMap in Rust
 
 Subsection Title:
-Example: Creating an Empty String with String::new()
+Example: Creating a HashMap
 
 ### Documentation
 
-32-Tutorial-Rust-String-onwards.md
+33-Tutorial-HashMap-onwards.md
+
+Compiler Warning:
+
+warning: variable does not need to be mutable
+ --> ./main.rs:6:9
+  |
+6 |     let mut info: HashMap<i32, String> = HashMap::new();
+  |         ----^^^^
+  |         |
+  |         help: remove this `mut`
+  |
+  = note: `#[warn(unused_mut)]` on by default
+
+warning: 1 warning emitted
 
 Output:
-original string = 
-changed string = Hello, World!
+HashMap = {}
 
 Notes:
 
