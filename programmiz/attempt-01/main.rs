@@ -1,12 +1,11 @@
 fn main() {
-    let mut word = String::from("cat");
-    
-    println!("original string = {}", word);
-    
-    // push a new string at the end of the initial string 
-    word.push_str(" dog");
-    
-    println!("changed string = {}", word);
+    let word = String::from("Hello, World!");
+
+    // slicing a string
+    let slice = &word[0..5];
+
+    println!("string = {}", word);
+    println!("slice = {}", slice);
 }
 
 /*
@@ -17,7 +16,7 @@ Page Title:
 Rust String
 
 Section Title:
-Mutable String in Rust
+String Slicing in Rust
 
 Subsection Title:
 
@@ -26,8 +25,8 @@ Subsection Title:
 32-Tutorial-Rust-String-onwards.md
 
 Output:
-original string = cat
-changed string = cat dog
+string = Hello, World!
+slice = Hello
 
 Notes:
 

@@ -74,3 +74,28 @@ changed string = cat dog
 Here, we create a mutable variable `word` that holds the string `"cat"`. We then push a new string to the end of the original string using `word.push_str(" dog");`.
 
 ____
+
+### String Slicing in Rust
+
+We can slice a string in Rust to reference a part of the string. String slicing allows us to reference a part (portion) of a string. For example,
+
+```rust
+fn main() {
+    let word = String::from("Hello, World!");
+
+    // slicing a string
+    let slice = &word[0..5];
+
+    println!("string = {}", word);
+    println!("slice = {}", slice);
+}
+```
+
+#### Output
+
+```bash
+string = Hello, World!
+slice = Hello
+```
+
+____
