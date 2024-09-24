@@ -98,4 +98,11 @@ string = Hello, World!
 slice = Hello
 ```
 
+Here, `&word[0..5]` is a notation for slicing the string stored in variable `word` from start index **0** (inclusive) to end index **5** (exclusive).
+
+The `&` (ampersand) in the slicing syntax signifies that it is a string reference. It is not actual data.
+
+Slicing is also used to access portions of data stored in arrays and vectors. To learn about Slice in Rust, visit [Rust Slice](https://www.programiz.com/rust/slice).
+
+
 ____
