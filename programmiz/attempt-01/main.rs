@@ -1,11 +1,10 @@
 fn main() {
-    let word = String::from("Hello, World!");
-
-    // slicing a string
-    let slice = &word[0..5];
-
-    println!("string = {}", word);
-    println!("slice = {}", slice);
+    let str = String::from("Hello");
+    
+    // Loop through each character in a string using chars() method
+    for char in str.chars() {
+        println!("{}", char);
+    }
 }
 
 /*
@@ -16,7 +15,7 @@ Page Title:
 Rust String
 
 Section Title:
-String Slicing in Rust
+Iterating over Strings
 
 Subsection Title:
 
@@ -25,8 +24,11 @@ Subsection Title:
 32-Tutorial-Rust-String-onwards.md
 
 Output:
-string = Hello, World!
-slice = Hello
+H
+e
+l
+l
+o
 
 Notes:
 

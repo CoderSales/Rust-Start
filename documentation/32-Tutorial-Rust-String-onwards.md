@@ -104,5 +104,33 @@ The `&` (ampersand) in the slicing syntax signifies that it is a string referenc
 
 Slicing is also used to access portions of data stored in arrays and vectors. To learn about Slice in Rust, visit [Rust Slice](https://www.programiz.com/rust/slice).
 
+____
+
+### Iterating over Strings
+
+We can use the `chars()` method of the string type to iterate over a string. For example,
+
+```rust
+fn main() {
+    let str = String::from("Hello");
+    
+    // Loop through each character in a string using chars() method
+    for char in str.chars() {
+        println!("{}", char);
+    }
+}
+```
+
+#### Output
+
+```bash
+H
+e
+l
+l
+o
+```
+
+Here, we iterate through all the characters using the `chars()` method and print each of them.
 
 ____
