@@ -1,8 +1,12 @@
 fn main() {
-    // string creation using String::from() method
-    let word = String::from("Hello, World!");
-
-    println!("word = {}", word);
+    let mut word = String::from("cat");
+    
+    println!("original string = {}", word);
+    
+    // push a new string at the end of the initial string 
+    word.push_str(" dog");
+    
+    println!("changed string = {}", word);
 }
 
 /*
@@ -13,17 +17,17 @@ Page Title:
 Rust String
 
 Section Title:
-Creating a String in Rust
+Mutable String in Rust
 
 Subsection Title:
-Example: Creating a String in Rust
 
 ### Documentation
 
 32-Tutorial-Rust-String-onwards.md
 
 Output:
-word = Hello, World!
+original string = cat
+changed string = cat dog
 
 Notes:
 

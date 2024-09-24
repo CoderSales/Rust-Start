@@ -35,3 +35,42 @@ fn main() {
 ```bash
 word = Hello, World!
 ```
+
+____
+
+### Mutable String in Rust
+
+We can create a mutable string in Rust by using the `mut` keyword before assigning a string to a variable. For example,
+
+```rust
+// mutable string
+let mut word = String::from("cat");
+```
+
+We can make changes to this string.
+
+Let's look at an example,
+
+```rust
+fn main() {
+    let mut word = String::from("cat");
+    
+    println!("original string = {}", word);
+    
+    // push a new string at the end of the initial string 
+    word.push_str(" dog");
+    
+    println!("changed string = {}", word);
+}
+```
+
+#### Output
+
+```bash
+original string = cat
+changed string = cat dog
+```
+
+Here, we create a mutable variable `word` that holds the string `"cat"`. We then push a new string to the end of the original string using `word.push_str(" dog");`.
+
+____
