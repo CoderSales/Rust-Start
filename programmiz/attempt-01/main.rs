@@ -3,11 +3,18 @@ use std::collections::HashMap;
 fn main() {
     let mut fruits: HashMap<i32, String> = HashMap::new();
     
-    // add key-value in a hashmap
+    // insert elements in a hashmap
     fruits.insert(1, String::from("Apple"));
     fruits.insert(2, String::from("Banana"));
     
-    println!("fruits = {:?}", fruits);
+    // access values in a hashmap
+    let first_fruit = fruits.get(&1);
+    let second_fruit = fruits.get(&2);
+    let third_fruit = fruits.get(&3);
+    
+    println!("first fruit = {:?}", first_fruit);
+    println!("second fruit = {:?}", second_fruit);
+    println!("third fruit = {:?}", third_fruit);
 }
 
 /*
@@ -18,17 +25,19 @@ Page Title:
 Rust HashMap
 
 Section Title:
-1. Add Elements to a HashMap in Rust
+2. Access Values in a HashMap in Rust
 
 Subsection Title:
-Example: Add Elements to a HashMap
+Example: Access Values in a HashMap
 
 ### Documentation
 
 33-Tutorial-HashMap-onwards.md
 
 Output:
-fruits = {2: "Banana", 1: "Apple"}
+first fruit = Some("Apple")
+second fruit = Some("Banana")
+third fruit = None
 
 Notes:
 

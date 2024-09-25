@@ -123,3 +123,66 @@ fruits = {2: "Banana", 1: "Apple"}
 ```
 
 ____
+
+### 2. Access Values in a HashMap in Rust
+
+We can use the `get()` to access a value from the given hashmap. For example,
+
+```rust
+let mut fruits: HashMap<i32, String> = HashMap::new();
+
+fruits.insert(1, String::from("Apple"));
+fruits.insert(2, String::from("Banana"));
+
+let first_fruit = fruits.get(&1);
+```
+
+Here, we get a value out of the hashmap using the key `&1` and the `get()` method.
+
+We use the ampersand(`&`) and the key (`&1`) as the argument because `get()` returns us a reference of the value. It is not the actual value in the HashMap.
+
+____
+
+#### Example: Access Values in a HashMap
+
+```rust
+use std::collections::HashMap;
+
+fn main() {
+    let mut fruits: HashMap<i32, String> = HashMap::new();
+    
+    // insert elements in a hashmap
+    fruits.insert(1, String::from("Apple"));
+    fruits.insert(2, String::from("Banana"));
+    
+    // access values in a hashmap
+    let first_fruit = fruits.get(&1);
+    let second_fruit = fruits.get(&2);
+    let third_fruit = fruits.get(&3);
+    
+    println!("first fruit = {:?}", first_fruit);
+    println!("second fruit = {:?}", second_fruit);
+    println!("third fruit = {:?}", third_fruit);
+}
+```
+
+#### Output
+
+```bash
+first fruit = Some("Apple")
+second fruit = Some("Banana")
+third fruit = None
+```
+
+Notice that we use the ampersand(`&`) and the key (`&1`, `&2`) as an argument to the `get()` method.
+
+```rust
+let first_fruit = fruits.get(&1);
+let second_fruit = fruits.get(&2); 
+```
+
+The output of the `get()` method is an `Option` enum which means that if the key passed as an argument matches, it returns `Some` value, and if it doesn't, it returns `None`.
+
+In the above example, `let third_fruit = fruits.get(&3)` returns `None` because the key `&3` doesn't match anything that's in the hashmap.
+
+____
