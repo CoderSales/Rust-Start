@@ -1,11 +1,13 @@
-// import HashMap from Rust standard collections library
 use std::collections::HashMap;
 
 fn main() {
-    // create a new HashMap
-    let mut info: HashMap<i32, String> = HashMap::new();
+    let mut fruits: HashMap<i32, String> = HashMap::new();
     
-    println!("HashMap = {:?}", info);
+    // add key-value in a hashmap
+    fruits.insert(1, String::from("Apple"));
+    fruits.insert(2, String::from("Banana"));
+    
+    println!("fruits = {:?}", fruits);
 }
 
 /*
@@ -16,31 +18,17 @@ Page Title:
 Rust HashMap
 
 Section Title:
-Creating a HashMap in Rust
+1. Add Elements to a HashMap in Rust
 
 Subsection Title:
-Example: Creating a HashMap
+Example: Add Elements to a HashMap
 
 ### Documentation
 
 33-Tutorial-HashMap-onwards.md
 
-Compiler Warning:
-
-warning: variable does not need to be mutable
- --> ./main.rs:6:9
-  |
-6 |     let mut info: HashMap<i32, String> = HashMap::new();
-  |         ----^^^^
-  |         |
-  |         help: remove this `mut`
-  |
-  = note: `#[warn(unused_mut)]` on by default
-
-warning: 1 warning emitted
-
 Output:
-HashMap = {}
+fruits = {2: "Banana", 1: "Apple"}
 
 Notes:
 

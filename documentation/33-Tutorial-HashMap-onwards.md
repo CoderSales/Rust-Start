@@ -65,3 +65,61 @@ Here, we create an empty HashMap and print it to the screen.
 We use :? in the println! macro to print a HashMap.
 
 ____
+
+### HashMap Operations in Rust
+
+The `HashMap` module provides various methods to perform basic operations in a hashmap.
+
+- Add Elements
+
+- Access Values
+
+- Remove Elements
+
+- Change Elements
+
+____
+
+### 1. Add Elements to a HashMap in Rust
+
+We can use the `insert()` to add an element (key-value pairs) to a hashmap. For example,
+
+```rust
+let mut fruits: HashMap<i32, String> = HashMap::new();
+
+// insert elements to hashmap
+fruits.insert(1, String::from("Apple"));
+fruits.insert(2, String::from("Banana"));
+```
+
+Here, we insert two key-value pairs in the `HashMap` bound to the variable `fruits`. The `String::from()` method here creates a value of `String` type.
+
+#### Note:
+
+Adding a new key-value to the HashMap is only possible because of the mut variable declaration.
+
+____
+
+#### Example: Add Elements to a HashMap
+
+```rust
+use std::collections::HashMap;
+
+fn main() {
+    let mut fruits: HashMap<i32, String> = HashMap::new();
+    
+    // add key-value in a hashmap
+    fruits.insert(1, String::from("Apple"));
+    fruits.insert(2, String::from("Banana"));
+    
+    println!("fruits = {:?}", fruits);
+}
+```
+
+#### Output
+
+```bash
+fruits = {2: "Banana", 1: "Apple"}
+```
+
+____
