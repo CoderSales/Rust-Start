@@ -10,18 +10,20 @@
 
 ## Programmiz Tutorial Progress:
 
-[27-Tutorial.md](https://github.com/CoderSales/Rust-Start/blob/main/documentation/27-Tutorial.md)
+[27-Tutorial.md](/documentation/27-Tutorial.md)
 
-[28-Tutorial-Tuple-onwards.md](https://github.com/CoderSales/Rust-Start/blob/main/documentation/28-Tutorial-Tuple-onwards.md)
+[28-Tutorial-Tuple-onwards.md](/documentation/28-Tutorial-Tuple-onwards.md)
 
-[29-Tutorial-Functions-onwards.md](https://github.com/CoderSales/Rust-Start/blob/main/documentation/29-Tutorial-Functions-onwards.md)
+[29-Tutorial-Functions-onwards.md](/documentation/29-Tutorial-Functions-onwards.md)
 
-[30-Tutorial-Closure-onwards.md](https://github.com/CoderSales/Rust-Start/blob/main/documentation/30-Tutorial-Closure-onwards.md)
+[30-Tutorial-Closure-onwards.md](/documentation/30-Tutorial-Closure-onwards.md)
 
-[31-Tutorial-Vector-onwards.md](https://github.com/CoderSales/Rust-Start/blob/main/documentation/31-Tutorial-Vector-onwards.md)
+[31-Tutorial-Vector-onwards.md](/documentation/31-Tutorial-Vector-onwards.md)
 
-[32-Tutorial-Rust-String-onwards.md](https://github.com/CoderSales/Rust-Start/blob/main/documentation/32-Tutorial-Rust-String-onwards.md)
+[32-Tutorial-Rust-String-onwards.md](/documentation/32-Tutorial-Rust-String-onwards.md)
+
+[33-Tutorial-Rust-String-onwards.md](/documentation/33-Tutorial-HashMap-onwards.md)
 
 ## Current program file:
 
-[programmiz/attempt-01](https://github.com/CoderSales/Rust-Start/tree/main/programmiz/attempt-01)
+[programmiz/attempt-01](/programmiz/attempt-01)
