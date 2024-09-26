@@ -204,7 +204,7 @@ Here, we remove a value from the hashmap using the key and the `remove()` method
 
 ____
 
-### Example: Remove Elements in a HashMap
+#### Example: Remove Elements in a HashMap
 
 ```rust
 use std::collections::HashMap;
@@ -225,7 +225,7 @@ fn main() {
 }
 ```
 
-#### Output
+##### Output
 
 ```bash
 fruits before remove operation = {2: "Banana", 1: "Apple"}
