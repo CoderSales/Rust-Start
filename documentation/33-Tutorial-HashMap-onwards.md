@@ -186,3 +186,52 @@ The output of the `get()` method is an `Option` enum which means that if the key
 In the above example, `let third_fruit = fruits.get(&3)` returns `None` because the key `&3` doesn't match anything that's in the hashmap.
 
 ____
+
+### 3. Remove Elements from a HashMap in Rust
+
+We can remove elements from a hashmap by providing a key to the `remove()` method. For example,
+
+```rust
+let mut fruits: HashMap<i32, String> = HashMap::new();
+
+fruits.insert(1, String::from("Apple"));
+fruits.insert(2, String::from("Banana"));
+
+fruits.remove(&1);
+```
+
+Here, we remove a value from the hashmap using the key and the `remove()` method.
+
+____
+
+### Example: Remove Elements in a HashMap
+
+```rust
+use std::collections::HashMap;
+
+fn main() {
+    let mut fruits: HashMap<i32, String> = HashMap::new();
+    
+    // insert values in a hashmap
+    fruits.insert(1, String::from("Apple"));
+    fruits.insert(2, String::from("Banana"));
+    
+    println!("fruits before remove operation = {:?}", fruits);
+
+    // remove value in a hashmap
+    fruits.remove(&1);
+    
+    println!("fruits after remove operation = {:?}", fruits);
+}
+```
+
+#### Output
+
+```bash
+fruits before remove operation = {2: "Banana", 1: "Apple"}
+fruits after remove operation = {2: "Banana"}
+```
+
+Here, we remove an element in the hashmap with key `&1` using the `remove()` method.
+
+____

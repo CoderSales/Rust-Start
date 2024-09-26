@@ -3,18 +3,16 @@ use std::collections::HashMap;
 fn main() {
     let mut fruits: HashMap<i32, String> = HashMap::new();
     
-    // insert elements in a hashmap
+    // insert values in a hashmap
     fruits.insert(1, String::from("Apple"));
     fruits.insert(2, String::from("Banana"));
     
-    // access values in a hashmap
-    let first_fruit = fruits.get(&1);
-    let second_fruit = fruits.get(&2);
-    let third_fruit = fruits.get(&3);
+    println!("fruits before remove operation = {:?}", fruits);
+
+    // remove value in a hashmap
+    fruits.remove(&1);
     
-    println!("first fruit = {:?}", first_fruit);
-    println!("second fruit = {:?}", second_fruit);
-    println!("third fruit = {:?}", third_fruit);
+    println!("fruits after remove operation = {:?}", fruits);
 }
 
 /*
@@ -25,19 +23,18 @@ Page Title:
 Rust HashMap
 
 Section Title:
-2. Access Values in a HashMap in Rust
+3. Remove Elements from a HashMap in Rust
 
 Subsection Title:
-Example: Access Values in a HashMap
+Example: Remove Elements in a HashMap
 
 ### Documentation
 
 33-Tutorial-HashMap-onwards.md
 
 Output:
-first fruit = Some("Apple")
-second fruit = Some("Banana")
-third fruit = None
+fruits before remove operation = {2: "Banana", 1: "Apple"}
+fruits after remove operation = {2: "Banana"}
 
 Notes:
 
