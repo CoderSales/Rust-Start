@@ -22,7 +22,7 @@
 
 [32-Tutorial-Rust-String-onwards.md](/documentation/32-Tutorial-Rust-String-onwards.md)
 
-[33-Tutorial-Rust-String-onwards.md](/documentation/33-Tutorial-HashMap-onwards.md)
+[33-Tutorial-HashMap-onwards.md](/documentation/33-Tutorial-HashMap-onwards.md)
 
 ## Current program file:
 
