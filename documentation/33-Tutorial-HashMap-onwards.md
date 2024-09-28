@@ -251,7 +251,7 @@ fruits.insert(2, String::from("Banana"));
 fruits.insert(1, String::from("Mango"));
 ```
 
-Here, the final insert expression updates the initial value of the element with the key of 1.
+Here, the final insert expression updates the initial value of the element with the key of **1**.
 
 ____
 
