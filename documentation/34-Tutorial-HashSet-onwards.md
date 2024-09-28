@@ -219,9 +219,44 @@ fn main() {
 #### Output
 
 ```bash
-
+Yellow
+Green
+Red
 ```
 
 Here, we iterate over the hashset named `colors` and print each element.
+
+##### Note from Running Program:
+
+Order of colors varies with each run.
+
+____
+
+### HashSet with Default Values in Rust
+
+We can also create a hashset with default values using the `from()` method when creating it. For example,
+
+```rust
+use std::collections::HashSet;
+
+fn main() {
+    // Create HashSet with default set of values using from() method
+    let numbers = HashSet::from([2, 7, 8, 10]);
+    
+    println!("numbers = {:?}", numbers);
+}
+```
+
+#### Output
+
+```bash
+numbers = {8, 7, 10, 2}
+```
+
+Here, we create a hashset using the `HashSet::from()` method with default values and print it to the screen.
+
+##### Note from Running Program:
+
+Order of values in Output varies with each run.
 
 ____

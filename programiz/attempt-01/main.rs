@@ -1,17 +1,10 @@
 use std::collections::HashSet;
 
 fn main() {
-    let mut colors: HashSet<&str> = HashSet::new();
+    // Create HashSet with default set of values using from() method
+    let numbers = HashSet::from([2, 7, 8, 10]);
     
-    colors.insert("Red");
-    colors.insert("Yellow");
-    colors.insert("Green");
-
-    // iterate over a hashset
-    for color in colors {
-        // print each value in the hashset
-        println!("{}", color);
-    }
+    println!("numbers = {:?}", numbers);
 }
 
 /*
@@ -22,7 +15,7 @@ Page Title:
 Rust HashSet
 
 Section Title:
-4. Iterate over Values of a HashSet in Rust
+HashSet with Default Values in Rust
 
 Subsection Title:
 
@@ -31,15 +24,13 @@ Subsection Title:
 34-Tutorial-HashSet-onwards.md
 
 Output:
-Yellow
-Green
-Red
+numbers = {2, 7, 8, 10}
 
 Notes:
-Order of colors
+order of
+values
 in Output
-varies
-with each
-run
+varies with
+each run
 
 */
