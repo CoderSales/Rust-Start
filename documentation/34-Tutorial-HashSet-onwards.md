@@ -116,3 +116,40 @@ colors = {"Yellow", "Red", "Green"}
 Here, the output has the elements in a different order. It's because a hashset doesn't preserve the insertion order of values.
 
 ____
+
+### 2. Check Value is Present in a HashSet in Rust
+
+We use the `contains()` method to check if a value is present in a hashset. The method returns true if the specified element is present in the hashset, otherwise returns false.
+
+Let's see an example,
+
+```rust
+use std::collections::HashSet;
+
+fn main() {
+    let mut colors: HashSet<&str> = HashSet::new();
+
+    colors.insert("Red");
+    colors.insert("Yellow");
+
+    println!("colors = {:?}", colors);
+
+    // check for a value in a HashSet
+    if colors.contains("Red") {
+        println!("We have the color \"Red\" in the HashSet.")
+    }
+}
+```
+
+#### Output
+
+```bash
+colors = {"Red", "Yellow"}
+We have the color "Red" in the HashSet.
+```
+
+In the above example, we have used the `colors.contains("Red")` as a condition to the `if` statement.
+
+Here, the element `Red` is present inside the hashset, so the condition is true. Hence, we get the desired output.
+
+____
