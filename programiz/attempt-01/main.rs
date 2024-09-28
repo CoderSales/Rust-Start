@@ -2,17 +2,16 @@ use std::collections::HashSet;
 
 fn main() {
     let mut colors: HashSet<&str> = HashSet::new();
-
+    
     colors.insert("Red");
     colors.insert("Yellow");
     colors.insert("Green");
 
-    println!("colors before remove operation = {:?}", colors);
-
-    // remove value from a HashSet
-    colors.remove("Yellow");
-    
-    println!("colors after remove operation = {:?}", colors);
+    // iterate over a hashset
+    for color in colors {
+        // print each value in the hashset
+        println!("{}", color);
+    }
 }
 
 /*
@@ -23,7 +22,7 @@ Page Title:
 Rust HashSet
 
 Section Title:
-3. Remove Values from a HashSet in Rust
+4. Iterate over Values of a HashSet in Rust
 
 Subsection Title:
 
@@ -32,9 +31,15 @@ Subsection Title:
 34-Tutorial-HashSet-onwards.md
 
 Output:
-colors before remove operation = {"Yellow", "Red", "Green"}
-colors after remove operation = {"Red", "Green"}
+Yellow
+Green
+Red
 
 Notes:
+Order of colors
+in Output
+varies
+with each
+run
 
 */

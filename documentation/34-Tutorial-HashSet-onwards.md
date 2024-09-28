@@ -193,3 +193,35 @@ colors.remove("Yellow");
 to remove the element `Yellow` from the hashset.
 
 ____
+
+### 4. Iterate over Values of a HashSet in Rust
+
+We can use the [Rust for Loop](https://www.programiz.com/rust/for-loop) to iterate over values of a hashset. For example,
+
+```rust
+use std::collections::HashSet;
+
+fn main() {
+    let mut colors: HashSet<&str> = HashSet::new();
+    
+    colors.insert("Red");
+    colors.insert("Yellow");
+    colors.insert("Green");
+
+    // iterate over a hashset
+    for color in colors {
+        // print each value in the hashset
+        println!("{}", color);
+    }
+}
+```
+
+#### Output
+
+```bash
+
+```
+
+Here, we iterate over the hashset named `colors` and print each element.
+
+____
