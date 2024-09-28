@@ -28,4 +28,4 @@
 
 ## Current program file:
 
-[programiz/attempt-01](/programmiz/attempt-01)
+[programiz/attempt-01](/programiz/attempt-01)
