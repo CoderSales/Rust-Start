@@ -5,13 +5,14 @@ fn main() {
 
     colors.insert("Red");
     colors.insert("Yellow");
+    colors.insert("Green");
 
-    println!("colors = {:?}", colors);
+    println!("colors before remove operation = {:?}", colors);
 
-    // check for a value in a HashSet
-    if colors.contains("Red") {
-        println!("We have the color \"Red\" in the HashSet.")
-    }
+    // remove value from a HashSet
+    colors.remove("Yellow");
+    
+    println!("colors after remove operation = {:?}", colors);
 }
 
 /*
@@ -22,7 +23,7 @@ Page Title:
 Rust HashSet
 
 Section Title:
-2. Check Value is Present in a HashSet in Rust
+3. Remove Values from a HashSet in Rust
 
 Subsection Title:
 
@@ -31,8 +32,8 @@ Subsection Title:
 34-Tutorial-HashSet-onwards.md
 
 Output:
-colors = {"Red", "Yellow"}
-We have the color "Red" in the HashSet.
+colors before remove operation = {"Yellow", "Red", "Green"}
+colors after remove operation = {"Red", "Green"}
 
 Notes:
 

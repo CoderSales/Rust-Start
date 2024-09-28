@@ -153,3 +153,43 @@ In the above example, we have used the `colors.contains("Red")` as a condition t
 Here, the element `Red` is present inside the hashset, so the condition is true. Hence, we get the desired output.
 
 ____
+
+### 3. Remove Values from a HashSet in Rust
+
+We can use the `remove()` method to remove the specified element from the hashset. For example,
+
+```rust
+use std::collections::HashSet;
+
+fn main() {
+    let mut colors: HashSet<&str> = HashSet::new();
+
+    colors.insert("Red");
+    colors.insert("Yellow");
+    colors.insert("Green");
+
+    println!("colors before remove operation = {:?}", colors);
+
+    // remove value from a HashSet
+    colors.remove("Yellow");
+    
+    println!("colors after remove operation = {:?}", colors);
+}
+```
+
+#### Output
+
+```bash
+colors before remove operation = {"Yellow", "Red", "Green"}
+colors after remove operation = {"Red", "Green"}
+```
+
+In the above example, we have used
+
+```rust
+colors.remove("Yellow");
+```
+
+to remove the element `Yellow` from the hashset.
+
+____
