@@ -260,3 +260,16 @@ Here, we create a hashset using the `HashSet::from()` method with default values
 Order of values in Output varies with each run.
 
 ____
+
+### Other Methods of Rust HashSet
+
+Besides the basic methods, here are some more commonly used HashSet methods.
+
+| Method | Description |
+|--------|-------------|
+|`len()`|returns the length of a hashset|
+|`is_empty()`|checks if the hashset is empty|
+|`clear()`|removes all elements from the hashset|
+|`drain()`|returns all the elements as an iterator and clears the hashset|
+
+____
