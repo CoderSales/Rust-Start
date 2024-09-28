@@ -24,6 +24,8 @@
 
 [33-Tutorial-HashMap-onwards.md](/documentation/33-Tutorial-HashMap-onwards.md)
 
+[34-Tutorial-HashSet-onwards.md](/documentation/34-Tutorial-HashSet-onwards.md)
+
 ## Current program file:
 
 [programmiz/attempt-01](/programmiz/attempt-01)
