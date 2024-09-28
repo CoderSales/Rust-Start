@@ -1,41 +1,46 @@
-use std::collections::HashMap;
+// import HashSet from Rust standard collections library
+use std::collections::HashSet;
 
 fn main() {
-    let mut fruits: HashMap<i32, String> = HashMap::new();
+    // create a new HashSet
+    let mut color: HashSet<String> = HashSet::new();
     
-    fruits.insert(1, String::from("Apple"));
-    fruits.insert(2, String::from("Banana"));
-    
-    // loop and print values of hashmap using values() method
-    for fruit in fruits.values() {
-        println!("{}", fruit)
-    }
-    
-    // print the length of hashmap using len() method
-    println!("Length of fruits = {}", fruits.len());
+    println!("HashSet = {:?}", color);
 }
 
 /*
 url:
-https://www.programiz.com/rust/hashmap
+https://www.programiz.com/rust/hashset
 
 Page Title:
-Rust HashMap
+Rust HashSet
 
 Section Title:
-Other Methods of Rust HashMap
+Creating a HashSet in Rust
 
 Subsection Title:
-Example: Rust HashMap Methods
+Example: Creating a HashSet
 
 ### Documentation
 
-33-Tutorial-HashMap-onwards.md
+34-Tutorial-HashSet-onwards.md
+
+Compiler Warning:
+
+warning: variable does not need to be mutable
+ --> ./main.rs:6:9
+  |
+6 |     let mut color: HashSet<String> = HashSet::new();
+  |         ----^^^^^
+  |         |
+  |         help: remove this `mut`
+  |
+  = note: `#[warn(unused_mut)]` on by default
+
+warning: 1 warning emitted
 
 Output:
-Apple
-Banana
-Length of fruits = 2
+HashSet = {}
 
 Notes:
 

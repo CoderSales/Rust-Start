@@ -1,3 +1,57 @@
 # [HashSet](https://www.programiz.com/rust/hashset)
 
 ( Back to [33-Tutorial-HashMap-onwards.md](/documentation/33-Tutorial-HashMap-onwards.md) )
+
+HashSet implements the set data structure in Rust. Just like a set, it allows us to store values without duplicates.
+
+## Creating a HashSet in Rust
+
+Hashset is part of the Rust standard collections library, so we must include the `HashSet` module in our program.
+
+```rust
+use std::collections::HashSet;
+```
+
+We have imported the `HashSet` module using the `use` declaration. It should be at the top of the program.
+
+Now, we can create a hashset using the `new()` method of the `HashSet` module. For example,
+
+```rust
+let mut color: HashSet<String> = HashSet::new();
+```
+
+Here,
+
+- `let mut color` - declares a mutable variable `color`
+- `HashSet<String>` - type of the hashset where the values are of type `String`
+- `HashSet::new()` - creates a new hashset
+
+____
+
+### Example: Creating a HashSet
+
+```rust
+// import HashSet from Rust standard collections library
+use std::collections::HashSet;
+
+fn main() {
+    // create a new HashSet
+    let mut color: HashSet<String> = HashSet::new();
+    
+    println!("HashSet = {:?}", color);
+}
+```
+
+#### Output
+
+```bash
+HashSet = {}
+```
+
+Here, we create an empty `HashSet` and print it to the screen.
+
+##### Note: 
+
+We use `:?` in the `println!` macro to print a hashset.
+
+____
