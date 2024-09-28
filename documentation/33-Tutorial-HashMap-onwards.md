@@ -332,3 +332,7 @@ Length of fruits = 2
 Here, we use the `values()` method of the HashMap to loop through its values and `len()` method of the hashmap to find its length.
 
 ____
+
+[34-Tutorial-HashSet-onwards.md](/documentation/34-Tutorial-HashSet-onwards.md)
+
+____
