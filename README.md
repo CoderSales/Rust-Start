@@ -8,7 +8,7 @@
 
 [Commands.md](/documentation/03-Commands.md)
 
-## Programmiz Tutorial Progress:
+## Programiz Tutorial Progress:
 
 [27-Tutorial.md](/documentation/27-Tutorial.md)
 
