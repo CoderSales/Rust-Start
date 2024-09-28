@@ -235,3 +235,52 @@ fruits after remove operation = {2: "Banana"}
 Here, we remove an element in the hashmap with key `&1` using the `remove()` method.
 
 ____
+
+### 4. Change Elements of a HashMap in Rust
+
+We can change/update elements of a hashmap by using the `insert()` method. For example,
+
+```rust
+let mut fruits: HashMap<i32, String> = HashMap::new();
+
+// insert values in the hashmap
+fruits.insert(1, String::from("Apple"));
+fruits.insert(2, String::from("Banana"));
+
+// update the value of the element with key 1
+fruits.insert(1, String::from("Mango"));
+```
+
+Here, the final insert expression updates the initial value of the element with the key of 1.
+
+____
+
+#### Example: Change Elements of a HashMap
+
+```rust
+use std::collections::HashMap;
+
+fn main() {
+    let mut fruits: HashMap<i32, String> = HashMap::new();
+    
+    // insert values in a hashmap
+    fruits.insert(1, String::from("Apple"));
+    fruits.insert(2, String::from("Banana"));
+    
+    println!("Before update = {:?}", fruits);
+    
+    // change value of hashmap with key of 1
+    fruits.insert(1, String::from("Mango"));
+    
+    println!("After update = {:?}", fruits);
+}
+```
+
+##### Output
+
+```bash
+Before update = {2: "Banana", 1: "Apple"}
+After update = {2: "Banana", 1: "Mango"}
+```
+
+____

@@ -7,12 +7,12 @@ fn main() {
     fruits.insert(1, String::from("Apple"));
     fruits.insert(2, String::from("Banana"));
     
-    println!("fruits before remove operation = {:?}", fruits);
-
-    // remove value in a hashmap
-    fruits.remove(&1);
+    println!("Before update = {:?}", fruits);
     
-    println!("fruits after remove operation = {:?}", fruits);
+    // change value of hashmap with key of 1
+    fruits.insert(1, String::from("Mango"));
+    
+    println!("After update = {:?}", fruits);
 }
 
 /*
@@ -23,18 +23,18 @@ Page Title:
 Rust HashMap
 
 Section Title:
-3. Remove Elements from a HashMap in Rust
+4. Change Elements of a HashMap in Rust
 
 Subsection Title:
-Example: Remove Elements in a HashMap
+Example: Change Elements of a HashMap
 
 ### Documentation
 
 33-Tutorial-HashMap-onwards.md
 
 Output:
-fruits before remove operation = {2: "Banana", 1: "Apple"}
-fruits after remove operation = {2: "Banana"}
+Before update = {2: "Banana", 1: "Apple"}
+After update = {2: "Banana", 1: "Mango"}
 
 Notes:
 
