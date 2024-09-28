@@ -228,7 +228,7 @@ Here, we iterate over the hashset named `colors` and print each element.
 
 ##### Note from Running Program:
 
-Order of colors varies with each run.
+Order of colors in Output varies with each run.
 
 ____
 
