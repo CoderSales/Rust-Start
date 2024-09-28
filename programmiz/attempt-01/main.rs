@@ -1,11 +1,14 @@
-// import HashSet from Rust standard collections library
 use std::collections::HashSet;
 
 fn main() {
-    // create a new HashSet
-    let mut color: HashSet<String> = HashSet::new();
+    let mut colors: HashSet<&str> = HashSet::new();
     
-    println!("HashSet = {:?}", color);
+    // insert values in a HashSet
+    colors.insert("Red");
+    colors.insert("Yellow");
+    colors.insert("Green");
+
+    println!("colors = {:?}", colors);
 }
 
 /*
@@ -16,31 +19,17 @@ Page Title:
 Rust HashSet
 
 Section Title:
-Creating a HashSet in Rust
+1. Add Values to a HashSet in Rust
 
 Subsection Title:
-Example: Creating a HashSet
+Example: Add Values to a HashSet
 
 ### Documentation
 
 34-Tutorial-HashSet-onwards.md
 
-Compiler Warning:
-
-warning: variable does not need to be mutable
- --> ./main.rs:6:9
-  |
-6 |     let mut color: HashSet<String> = HashSet::new();
-  |         ----^^^^^
-  |         |
-  |         help: remove this `mut`
-  |
-  = note: `#[warn(unused_mut)]` on by default
-
-warning: 1 warning emitted
-
 Output:
-HashSet = {}
+colors = {"Yellow", "Red", "Green"}
 
 Notes:
 

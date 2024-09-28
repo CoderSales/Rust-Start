@@ -55,3 +55,64 @@ Here, we create an empty `HashSet` and print it to the screen.
 We use `:?` in the `println!` macro to print a hashset.
 
 ____
+
+### HashSet Operations in Rust
+
+The `HashSet` module provides various methods to perform basic operations in a hashset.
+
+- Add Values
+
+- Check Values
+
+- Remove Values
+
+- Iterate over Values
+
+____
+
+#### 1. Add Values to a HashSet in Rust
+
+We can use the `insert()` method to add an element to the hashset. For example,
+
+```rust
+let mut colors: HashSet<&str> = HashSet::new();
+
+// insert elements to hashset
+colors.insert("Red");
+colors.insert("Yellow");
+```
+
+Here, we insert two values in the `HashSet` bound to the variable `colors`.
+
+##### Note: 
+
+Adding a new value to the hashset is only possible because of the `mut` variable declaration.
+
+____
+
+#### Example: Add Values to a HashSet
+
+```rust
+use std::collections::HashSet;
+
+fn main() {
+    let mut colors: HashSet<&str> = HashSet::new();
+    
+    // insert values in a HashSet
+    colors.insert("Red");
+    colors.insert("Yellow");
+    colors.insert("Green");
+
+    println!("colors = {:?}", colors);
+}
+```
+
+##### Output
+
+```bash
+colors = {"Yellow", "Red", "Green"}
+```
+
+Here, the output has the elements in a different order. It's because a hashset doesn't preserve the insertion order of values.
+
+____
