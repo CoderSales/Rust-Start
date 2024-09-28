@@ -273,3 +273,49 @@ Besides the basic methods, here are some more commonly used HashSet methods.
 |`drain()`|returns all the elements as an iterator and clears the hashset|
 
 ____
+
+### Set Operations
+
+The HashSet module also provides various methods used to perform different set operations.
+
+#### 1. Union of two Sets
+
+We can use the `union()` method to find the union of two sets. For example,
+
+```rust
+use std::collections::HashSet;
+
+fn main() {
+    let hashset1 = HashSet::from([2, 7, 8]);
+    let hashset2 = HashSet::from([1, 2, 7]);
+    
+    // Union of hashsets
+    let result: HashSet<_> = hashset1.union(&hashset2).collect();
+    
+    println!("hashset1 = {:?}", hashset1);
+    println!("hashset2 = {:?}", hashset2);
+    println!("union = {:?}", result);
+}
+```
+
+##### Output
+
+```bash
+hashset1 = {7, 8, 2}
+hashset2 = {1, 2, 7}
+union = {8, 2, 1, 7}
+```
+
+Here, we have used the `union()` method to find the union between two sets: `hashset1` and `hashset2`.
+
+```rust
+hashset1.union(&hashset2).collect();
+```
+
+The `union()` method returns an iterator, so we have used the `collect()` method to get the actual result.
+
+##### Note:
+
+We have passed `&hashset2` as an argument to the `union()` method because it takes a reference as an argument.
+
+____

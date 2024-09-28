@@ -1,10 +1,15 @@
 use std::collections::HashSet;
 
 fn main() {
-    // Create HashSet with default set of values using from() method
-    let numbers = HashSet::from([2, 7, 8, 10]);
+    let hashset1 = HashSet::from([2, 7, 8]);
+    let hashset2 = HashSet::from([1, 2, 7]);
     
-    println!("numbers = {:?}", numbers);
+    // Union of hashsets
+    let result: HashSet<_> = hashset1.union(&hashset2).collect();
+    
+    println!("hashset1 = {:?}", hashset1);
+    println!("hashset2 = {:?}", hashset2);
+    println!("union = {:?}", result);
 }
 
 /*
@@ -15,22 +20,20 @@ Page Title:
 Rust HashSet
 
 Section Title:
-HashSet with Default Values in Rust
+Set Operations
 
 Subsection Title:
+1. Union of two Sets
 
 ### Documentation
 
 34-Tutorial-HashSet-onwards.md
 
 Output:
-numbers = {2, 7, 8, 10}
+hashset1 = {7, 8, 2}
+hashset2 = {1, 2, 7}
+union = {8, 2, 1, 7}
 
 Notes:
-order of
-values
-in Output
-varies with
-each run
 
 */
