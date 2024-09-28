@@ -284,3 +284,51 @@ After update = {2: "Banana", 1: "Mango"}
 ```
 
 ____
+
+### Other Methods of Rust HashMap
+
+Besides the basic methods, here are some more commonly used HashMap methods.
+
+|Method	| Description |
+|-------|-------------|
+|`len()`|Returns the length of the HashMap.|
+|`contains_key()`|Checks if a value exists for the specified key.|
+|`iter()`|Returns an iterator over the entries of a HashMap.|
+|`values()`|Returns an iterator over the values of a HashMap.|
+|`keys()`|Returns an iterator over the keys of a HashMap.|
+|`clone()`|Creates and returns a copy of the HashMap.|
+
+____
+
+#### Example: Rust HashMap Methods
+
+```rust
+use std::collections::HashMap;
+
+fn main() {
+    let mut fruits: HashMap<i32, String> = HashMap::new();
+    
+    fruits.insert(1, String::from("Apple"));
+    fruits.insert(2, String::from("Banana"));
+    
+    // loop and print values of hashmap using values() method
+    for fruit in fruits.values() {
+        println!("{}", fruit)
+    }
+    
+    // print the length of hashmap using len() method
+    println!("Length of fruits = {}", fruits.len());
+}
+```
+
+#### Output
+
+```bash
+Banana
+Apple
+Length of fruits = 2
+```
+
+Here, we use the `values()` method of the HashMap to loop through its values and `len()` method of the hashmap to find its length.
+
+____
