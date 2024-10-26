@@ -29,10 +29,9 @@ Subsection Title:
 
 35-Tutorial-Hashset-continued-onwards.md
 
-Output:
-hashset1 = {2, 7, 8}
-hashset2 = {1, 2, 7}
-intersection = {2, 7}
+hashset1 = {3, 4, 1, 2}
+hashset2 = {4, 2, 3}
+difference = {1}
 
 Notes:
 Order of values
