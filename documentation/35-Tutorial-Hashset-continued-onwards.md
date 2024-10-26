@@ -107,3 +107,9 @@ fn main() {
 ```
 
 #### Output
+
+```bash
+hashset1 = {4, 1, 2, 3}
+hashset2 = {4, 3, 2}
+difference = {1}
+```
