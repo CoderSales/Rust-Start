@@ -137,8 +137,20 @@ fn main() {
 
 #### Output
 
+##### Expected
+
+```bash
+thread 'main' panicked at 'fetch user', src/main.rs:12:31
+```
+
+##### Actual
+
 ```bash
 thread 'main' panicked at main.rs:12:31:
 fetch user
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
+
+Essentially the same
+
+____
