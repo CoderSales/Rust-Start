@@ -22,7 +22,7 @@ go to VSCode
 
 Pick a (local) folder location
 
-<kbd>Ctrl</kbd><kbd>'</kbd'>
+<kbd>Ctrl</kbd><kbd>'</kbd>
 
 to make terminal appear
 
