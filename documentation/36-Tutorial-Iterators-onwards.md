@@ -103,3 +103,15 @@ Notice that we need to make the `colors_iterator` a mutable variable because cal
 The `next()` method returns `None` when the iterator reaches the end of the sequence.
 
 ____
+
+### Ways to Create Iterator in Rust
+
+We can create an iterator by converting a collection into an iterator. There are three ways to create an iterator.
+
+1. Using `iter()` method
+
+2. Using `into_iter()` method
+
+3. Using `iter_mut()` method
+
+All these methods provide different views of the data within the iterator.
