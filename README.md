@@ -58,11 +58,11 @@ Assuming VSCode knows about git bash (if just installed restart VSCode) (may eve
 
 ____
 
-<kbd>Ctrl</kbd><kbd>'</kbd'>
+<kbd>Ctrl</kbd><kbd>'</kbd>
 
 to make terminal appear
 
-- Then Click on: little "v" at top right of the terminal that appears (may need to press <kbd>Ctrl</kbd><kbd>'</kbd'> a few times, to get comfortable with toggling terminal on / off (sometimes instead of <kbd>'</kbd> it can be say <kbd>\`</kbd> "backtick" instead of <kbd>'</kbd> "apostrophe", depending on keyboard type, (or if not using Windows, but can Google Keyboard Shortcut then, or just go to the bar at the top of VSCode (which, if it has disappeared pressing <kbd>F11</kbd> should make it reappear) and in bar at top read from top left: File, Edit, Seleection, View, Go, Run, Terminal, Help and Select Terminal | Then `New Terminal` ) Then ) <kbd>Ctrl</kbd><kbd>'</kbd'>
+- Then Click on: little "v" at top right of the terminal that appears (may need to press <kbd>Ctrl</kbd><kbd>'</kbd> a few times, to get comfortable with toggling terminal on / off (sometimes instead of <kbd>'</kbd> it can be say <kbd>\`</kbd> "backtick" instead of <kbd>'</kbd> "apostrophe", depending on keyboard type, (or if not using Windows, but can Google Keyboard Shortcut then, or just go to the bar at the top of VSCode (which, if it has disappeared pressing <kbd>F11</kbd> should make it reappear) and in bar at top read from top left: File, Edit, Seleection, View, Go, Run, Terminal, Help and Select Terminal | Then `New Terminal` ) Then ) <kbd>Ctrl</kbd><kbd>'</kbd>
 should allow to hide Terminal or can click "x" at top right of Terminal Window in VScode).
 
 then type:
