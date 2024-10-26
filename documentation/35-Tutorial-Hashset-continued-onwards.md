@@ -135,3 +135,11 @@ fn main() {
     println!("symmetric difference = {:?}", result);
 }
 ```
+
+#### Output
+
+```bash
+hashset1 = {7, 2, 8}
+hashset2 = {2, 9, 7, 1}
+symmetric difference = {8, 9, 1}
+```
