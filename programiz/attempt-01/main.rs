@@ -1,18 +1,8 @@
-use std::fs::File;
-
-fn main() {
-    let data_result = File::open("data.txt");
-
-    print!("{}", data_result);
-
-    // // using match for Result type
-    // let data_file = match data_result {
-    //     Ok(file) => file,
-    //     Err(error) => panic!("Problem opening the data file: {:?}", error),
-    // };
-
-    // println!("Data file", data_file);
-}
+// data_file is a Result<T, E>
+match data_result {
+    Ok(file) => file,
+    Err(error) => panic!("Problem opening the data file: {:?}", error),
+};
 
 /*
 url:
@@ -22,43 +12,30 @@ Page Title:
 Rust Error Handling
 
 Section Title:
-Recoverable Errors
+The Result Enum
 
 Subsection Title:
 
+
 ### Documentation
 
-36-Tutorial-Iterators-onwards.md
+37-Error-Handling.md
 
 
+### Compiler Messages
 
-### at Compile time
-
-
-
-error: argument never used
---> main.rs:12:27
-|
-12 |     println!("Data file", data_file);
-|              -----------  ^^^^^^^^^ argument never used
-|              |
-|              formatting specifier missing
+error: expected item, found keyword `match`
+ --> main.rs:2:1
+  |
+2 | match data_result {
+  | ^^^^^ expected item
+  |
+  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
 
 error: aborting due to 1 previous error
 
-
-
 ### Output
 
-
-Hello, World!
-thread 'main' panicked at main.rs:5:5:
-Crash
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-
-
-
-Notes:
+### Notes:
 
 */
