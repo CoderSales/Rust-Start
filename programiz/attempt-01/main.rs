@@ -1,12 +1,15 @@
 fn main() {
-    let numbers = [2, 1, 17, 99, 34, 56];
+    let colors = vec!["Red", "Yellow", "Green"];
     
     // iterator
-    let numbers_iterator = numbers.iter();
+    let mut colors_iterator = colors.iter();
+    println!("colors iterator = {:?}", colors_iterator);
     
-    for number in numbers_iterator {
-        println!("{}", number);
-    }
+    // fetch values from iterator one by one using next() method
+    println!("{:?}", colors_iterator.next());
+    println!("{:?}", colors_iterator.next());
+    println!("{:?}", colors_iterator.next());
+    println!("{:?}", colors_iterator.next());
 }
 
 /*
@@ -17,7 +20,7 @@ Page Title:
 Rust Iterator
 
 Section Title:
-Example: Iterator in Rust
+next() Method of an Iterator in Rust
 
 Subsection Title:
 
@@ -27,12 +30,11 @@ Subsection Title:
 
 Output
 
-2
-1
-17
-99
-34
-56
+colors iterator = Iter(["Red", "Yellow", "Green"])
+Some("Red")
+Some("Yellow")
+Some("Green")
+None
 
 Notes:
 Order of values
