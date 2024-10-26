@@ -56,7 +56,7 @@ programiz/attempt-01/main.exe
 
 ____
 
-#### Output
+##### Output
 
 ```bash
 hashset1 = {2, 7, 8}
@@ -85,3 +85,5 @@ which seems to be
 The intersection HashSet
 
 ____
+
+#### 3. Difference between two Sets
