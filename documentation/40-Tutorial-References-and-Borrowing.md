@@ -113,4 +113,49 @@ This allows the change() function to modify the value it borrows. Inside the cha
 
 Note: If you have a mutable reference to a value, you can have no other references to that value.
 
+```rust
+fn main() {
+    let mut str = String::from("hello");
 
+    // mutable reference 1
+    let ref1 = &mut str;
+
+    // mutable reference 2
+    let ref2 = &mut str;
+
+    println!("{}, {}", ref1, ref2);
+}
+```
+
+#### Output
+
+##### Compiler Error [E0499]
+
+```bash
+error[E0499]: cannot borrow `str` as mutable more than once at a time
+  --> main.rs:8:16
+   |
+5  |     let ref1 = &mut str;
+   |                -------- first mutable borrow occurs here
+...
+8  |     let ref2 = &mut str;
+   |                ^^^^^^^^ second mutable borrow occurs here
+9  |
+10 |     println!("{}, {}", ref1, ref2);
+   |                        ---- first borrow later used here
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0499`.
+
+```
+
+____
+
+Rules of References
+Rust primarily follows these rules of references at any given time:
+
+At any given time, you can have either one mutable reference or any number of immutable references.
+References must always be valid.
+
+____

@@ -1,19 +1,13 @@
 fn main() {
-    let mut str = String::from("Hello");
-    
-    // before modifying the string
-    println!("Before: str = {}", str);
+    let mut str = String::from("hello");
 
-    // pass a mutable string when calling the function
-    change(&mut str);
-    
-    // after modifying the string
-    println!("After: str = {}", str);
-}
+    // mutable reference 1
+    let ref1 = &mut str;
 
-fn change(s: &mut String) {
-    // push a string to the mutable reference variable
-    s.push_str(", World!");
+    // mutable reference 2
+    let ref2 = &mut str;
+
+    println!("{}, {}", ref1, ref2);
 }
 
 /*
@@ -24,6 +18,7 @@ Page Title:
 Rust References and Borrowing
 
 Section Title:
+Modifying a Reference in Rust Part 2
 
 
 Subsection Title:
@@ -36,11 +31,28 @@ Subsection Title:
 
 ### Compiler Messages
 
+#### Compiler Error [E0499]
+
+error[E0499]: cannot borrow `str` as mutable more than once at a time
+  --> main.rs:8:16
+   |
+5  |     let ref1 = &mut str;
+   |                -------- first mutable borrow occurs here
+...
+8  |     let ref2 = &mut str;
+   |                ^^^^^^^^ second mutable borrow occurs here
+9  |
+10 |     println!("{}, {}", ref1, ref2);
+   |                        ---- first borrow later used here
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0499`.
+
+
 
 ### Output
 
-Before: str = Hello
-After: str = Hello, World!
 
 ### Notes:
 
