@@ -55,3 +55,11 @@ programiz/attempt-01/main.exe
 ```
 
 ____
+
+#### Output
+
+```bash
+hashset1 = {2, 7, 8}
+hashset2 = {1, 2, 7}
+intersection = {2, 7}
+```
