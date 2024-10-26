@@ -85,3 +85,13 @@ fn main() {
     println!("{:?}", colors_iterator.next());
 }
 ```
+
+#### Output
+
+```bash
+colors iterator = Iter(["Red", "Yellow", "Green"])
+Some("Red")
+Some("Yellow")
+Some("Green")
+None
+```
