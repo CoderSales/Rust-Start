@@ -1,8 +1,16 @@
-// data_file is a Result<T, E>
-match data_result {
-    Ok(file) => file,
-    Err(error) => panic!("Problem opening the data file: {:?}", error),
-};
+fn main() {
+    let text = "Hello, World!";
+    
+    let character_option = text.chars().nth(15);
+    
+    // using match for Option type
+    let character = match character_option {
+        None => "empty".to_string(),
+        Some(c) => c.to_string()
+    };
+    
+    println!("Character at index 15 is {}", character);
+}
 
 /*
 url:
@@ -12,7 +20,7 @@ Page Title:
 Rust Error Handling
 
 Section Title:
-The Result Enum
+The Option Enum
 
 Subsection Title:
 
@@ -24,17 +32,11 @@ Subsection Title:
 
 ### Compiler Messages
 
-error: expected item, found keyword `match`
- --> main.rs:2:1
-  |
-2 | match data_result {
-  | ^^^^^ expected item
-  |
-  = note: for a full list of items that can appear in modules, see <https://doc.rust-lang.org/reference/items.html>
-
-error: aborting due to 1 previous error
 
 ### Output
+
+Character at index 15 is empty
+
 
 ### Notes:
 

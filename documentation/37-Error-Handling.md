@@ -331,5 +331,5 @@ fn main() {
 #### Output
 
 ```bash
-
+Character at index 15 is empty
 ```
