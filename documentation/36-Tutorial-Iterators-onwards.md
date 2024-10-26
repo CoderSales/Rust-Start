@@ -218,3 +218,45 @@ for color in colors {
     // code
 }
 ```
+
+____
+
+#### 3. Using iter_mut() method
+
+Using the `iter_mut()` method on a collection will mutably borrow each element of the collection in each iteration. It means we can modify the collection in place.
+
+For example,
+
+```rust
+fn main() {
+    let mut colors = vec!["Red", "Yellow", "Green"];
+    
+    // using iter_mut() to iterate through a collection
+    for color in colors.iter_mut() {
+        // modify the item in the collection
+        *color = "Black";
+        println!("{}", color);
+    }
+    
+    // the modified collection is available here
+    println!("colors = {:?}", colors);
+}
+```
+
+
+Output
+
+```bash
+Black
+Black
+Black
+colors = ["Black", "Black", "Black"]
+```
+
+Notice here that we use `iter_mut()` method to change the original items in the collection with `*color = "Black"`. Thus, every item in the collection after the for loop is modified.
+
+###### Note: 
+
+All of the ways to construct an iterator follow the concept of Borrowing. To learn more about **Borrowing**, visit *Rust References and Borrowing*.
+
+____
