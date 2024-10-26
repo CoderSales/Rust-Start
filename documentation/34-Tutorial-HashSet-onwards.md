@@ -391,6 +391,6 @@ ____
 Note: We have passed `&hashset2` as an argument to the `union()` method because it takes a reference as an argument.
 ____
 
-[35-Tutorial-Hashset-continued-onwards.md](/documentation/35-Tutorial-HashSet-onwards.md)
+[35-Tutorial-Hashset-continued-onwards.md](/documentation/35-Tutorial-HashSet-continued-onwards.md)
 
 ____
