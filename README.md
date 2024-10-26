@@ -119,7 +119,7 @@ now `git status` commands will work as well as standard commands to `git add .` 
 
 If there are errors, these may be to do with setting up your `git username` and `git email` locally, which you can either refer here for: [gitlab - "Make sure you configure your 'user.email' and 'user.name' in git" when trying to push to git lab - Stack Overflow](https://stackoverflow.com/questions/54876421/make-sure-you-configure-your-user-email-and-user-name-in-git-when-trying-t) or: can just copy *and then modify slightly* these 2 commands from the last link: 1. `git config --global user.name "John Doe"` 2. `git config --global user.email "johndoe@email.com"` substituting *your* git username and email (to match GitHub username and email), and then this should resolve any errors like: [`Make sure you configure your 'user.email' and 'user.name' in git".`](https://stackoverflow.com/questions/54876421/make-sure-you-configure-your-user-email-and-user-name-in-git-when-trying-t)
 
-and per above reference can check all setup for git usage by running `git remote -v`.
+and per above reference, you can check that you are all setup for git usage by running `git remote -v`.
 
 After that all works, continue.
 
