@@ -9,3 +9,5 @@ Let's look at a simple example on how we can loop through an array.
 ```rust
 let numbers = [2, 1, 17, 99, 34, 56];
 ```
+
+Now, let's change the array to an iterable array by calling the `iter()` method. If a data structure has the `iter()` method, it is called iterable.
