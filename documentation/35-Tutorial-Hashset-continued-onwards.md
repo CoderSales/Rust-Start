@@ -35,3 +35,23 @@ ____
 This code was already added to the `main.rs` file in [programiz/attempt-01](../programiz/attempt-01)
 
 ____
+
+##### Aside:
+
+###### Note:
+
+code to compile:
+
+(from Rust-Start folder in git bash)
+
+```bash
+rustc programiz/attempt-01/main.rs
+```
+
+code to run
+
+```bash
+programiz/attempt-01/main.exe
+```
+
+____
