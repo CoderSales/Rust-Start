@@ -1,17 +1,13 @@
 fn main() {
-    let mut colors = vec!["Red", "Yellow", "Green"];
+    let numbers: Vec<i32> = vec![1, 2, 3];
     
-    // using iter_mut() to iterate through a collection
-    for color in colors.iter_mut() {
-        // modify the item in the collection
-        *color = "Black";
-        println!("{}", color);
-    }
+    // using the map iterator adapter
+    let even_numbers: Vec<i32> = numbers.iter().map(|i| i * 2).collect();
     
-    // the modified collection is available here
-    println!("colors = {:?}", colors);
-}
-
+    println!("numbers = {:?}", numbers);
+    println!("even_numbers = {:?}", even_numbers);
+ }
+ 
 /*
 url:
 https://www.programiz.com/rust/iterator
@@ -20,21 +16,18 @@ Page Title:
 Rust Iterator
 
 Section Title:
-Ways to Create Iterator in Rust
+### Example: Iterator Adapters
 
 Subsection Title:
-3. Using iter_mut() method
+
 
 ### Documentation
 
 36-Tutorial-Iterators-onwards.md
 
 Output
-
-Black
-Black
-Black
-colors = ["Black", "Black", "Black"]
+numbers = [1, 2, 3]
+even_numbers = [2, 4, 6]
 
 Notes:
 

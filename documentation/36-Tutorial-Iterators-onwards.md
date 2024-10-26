@@ -260,3 +260,48 @@ Notice here that we use `iter_mut()` method to change the original items in the 
 All of the ways to construct an iterator follow the concept of Borrowing. To learn more about **Borrowing**, visit *Rust References and Borrowing*.
 
 ____
+
+#### Iterator Adapters in Rust
+
+Iterator adapters are used to transform it into another kind of iterator by altering its behavior. For example, let's take a look at the map() adapter.
+
+```rust
+let numbers = vec![1, 2, 3];
+```
+
+```rust
+numbers.iter().map(|i| i + 1);
+```
+
+Here, the `map()` method takes a closure to call on each item on the vector numbers.
+
+However, we will have to use the `collect()` method on the `map()` adapter to collect the result. This is because iterator adapters do not produce the result directly (lazy) without calling the collect() method.
+
+```rust
+numbers.iter().map(|i| i + 1).collect();
+```
+
+This will return a vector containing each item from the original vector incremented by **1**.
+
+_____
+
+### Example: Iterator Adapters
+
+```bash
+fn main() {
+   let numbers: Vec<i32> = vec![1, 2, 3];
+   
+   // using the map iterator adapter
+   let even_numbers: Vec<i32> = numbers.iter().map(|i| i * 2).collect();
+   
+   println!("numbers = {:?}", numbers);
+   println!("even_numbers = {:?}", even_numbers);
+}
+```
+
+#### Output
+
+```bash
+numbers = [1, 2, 3]
+even_numbers = [2, 4, 6]
+```
