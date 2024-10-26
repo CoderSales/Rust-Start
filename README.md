@@ -1,5 +1,11 @@
 # Rust-Start
 
+Scroll to bottom of README / Ctrl F for 
+
+notes on running
+
+if returning and just want basic commands
+
 ## Preliminary
 
 **have a quick look at instructions here:** [Start.md](/documentation/01-Start.md)
