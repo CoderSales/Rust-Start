@@ -6,11 +6,11 @@
 
 [Cargo.md](/documentation/02-cargoBook.md)
 
-[Commands.md](/documentation/03-Commands.md)
+(uses cargo commands): [Commands.md](/documentation/03-Commands.md)
 
 ## Programiz Tutorial Progress:
 
-[27-Tutorial.md](/documentation/27-Tutorial.md)
+**Start here:** [27-Tutorial.md](/documentation/27-Tutorial.md)
 
 [28-Tutorial-Tuple-onwards.md](/documentation/28-Tutorial-Tuple-onwards.md)
 
