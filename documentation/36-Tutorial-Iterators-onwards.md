@@ -61,3 +61,27 @@ ____
 Here, `for..in` loop is called using the iterator in `numbers_iterator`, each value in the iterator is used in one iteration and then printed to the screen.
 
 ____
+
+### next() Method of an Iterator in Rust
+
+Another important method of iterator is the `next()` method. The `next()` method of an iterator can be used to traverse through the values in the iterator.
+
+Every iterator in Rust by definition will have the `next()` method. The `next()` method is used to fetch individual values from the iterator.
+
+Let's take a look at an example.
+
+```rust
+fn main() {
+    let colors = vec!["Red", "Yellow", "Green"];
+    
+    // iterator
+    let mut colors_iterator = colors.iter();
+    println!("colors iterator = {:?}", colors_iterator);
+    
+    // fetch values from iterator one by one using next() method
+    println!("{:?}", colors_iterator.next());
+    println!("{:?}", colors_iterator.next());
+    println!("{:?}", colors_iterator.next());
+    println!("{:?}", colors_iterator.next());
+}
+```
