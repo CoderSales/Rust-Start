@@ -8,8 +8,8 @@ fn get_user(username: &str) -> Option<&str> {
 }
 
 fn main() {
-    // use of unwrap method to get the result of Option enum from get_user function
-    let result = get_user("").unwrap();
+    // use of expect method to get the result of Option enum from get_user function
+    let result = get_user("").expect("fetch user");
 
     // print the result
     println!("user = {:?}", result);
@@ -23,10 +23,9 @@ Page Title:
 Rust unwrap() and expect()
 
 Section Title:
-The unwrap() Method
+The expect() Method
 
 Subsection Title:
-Example: Using the match Expression
 
 
 ### Documentation
@@ -40,10 +39,8 @@ Example: Using the match Expression
 ### Output
 
 thread 'main' panicked at main.rs:12:31:
-called `Option::unwrap()` on a `None` value
+fetch user
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-
-
 
 ### Notes:
 

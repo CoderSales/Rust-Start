@@ -116,3 +116,29 @@ The expect() method is defined on both Option and Result type.
 
 Let's update the above example to use expect() instead of unwrap().
 
+```rust
+// function to find a user by their username which return an Option enum
+fn get_user(username: &str) -> Option<&str> {
+    if username.is_empty() {
+        return None;
+    }
+
+    return Some(username);
+}
+
+fn main() {
+    // use of expect method to get the result of Option enum from get_user function
+    let result = get_user("").expect("fetch user");
+
+    // print the result
+    println!("user = {:?}", result);
+}
+```
+
+#### Output
+
+```bash
+thread 'main' panicked at main.rs:12:31:
+fetch user
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+```
