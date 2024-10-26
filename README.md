@@ -2,7 +2,7 @@
 
 ## Preliminary
 
-[Start.md](/documentation/01-Start.md)
+**have a quick look at instructions here:** [Start.md](/documentation/01-Start.md)
 
 [Cargo.md](/documentation/02-cargoBook.md)
 
