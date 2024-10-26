@@ -1,6 +1,6 @@
 # Rust-Start
 
-Scroll to bottom of README / Ctrl F for 
+Scroll to bottom of README or Ctrl F for 
 
 notes on running
 
