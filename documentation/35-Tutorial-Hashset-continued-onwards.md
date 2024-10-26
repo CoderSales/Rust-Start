@@ -7,3 +7,5 @@
 ### Set Operations (continued)
 
 #### 2. Intersection of two Sets
+
+We can use the `intersection()` method to find the intersection between two sets. For example,
