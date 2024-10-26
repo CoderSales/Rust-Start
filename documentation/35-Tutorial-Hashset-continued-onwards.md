@@ -63,3 +63,25 @@ hashset1 = {2, 7, 8}
 hashset2 = {1, 2, 7}
 intersection = {2, 7}
 ```
+
+____
+
+##### Aside
+
+###### Note
+
+Key point above here seems to be 
+
+the line
+
+```rust
+intersection = {2, 7}
+```
+
+in output, 
+
+which seems to be
+
+The intersection HashSet
+
+____
