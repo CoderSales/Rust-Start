@@ -111,6 +111,7 @@ fn main() {
 }
 ```
 
+#### Compiler Warning / Output / Error 
 
 ```bash
 error: argument never used
