@@ -389,3 +389,7 @@ hashset1.union(&hashset2).collect();
 ```
 
 ____
+
+The union() method returns an iterator, so we have used the collect() method to get the actual result.
+
+____
