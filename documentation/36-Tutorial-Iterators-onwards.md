@@ -200,3 +200,21 @@ error: aborting due to 1 previous error
 
 For more information about this error, try `rustc --explain E0382`.
 ```
+
+Notice here that the `colors` variable is unavailable because the `into_iter()` method moves the actual data into the `for` loop and is not available outside of its scope.
+
+###### Note: 
+
+By default the for loop will apply the `into_iter()` function to the collection. We don't have to use the `into_iter()` function to convert the collection to an iterator when using the for loop.
+
+For example, these two ways to loop through an iterator are the same.
+
+```bash
+for color in colors.into_iter() {
+    // code
+}
+
+for color in colors {
+    // code
+}
+```
