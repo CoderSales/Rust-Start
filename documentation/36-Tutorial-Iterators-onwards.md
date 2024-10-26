@@ -55,3 +55,9 @@ fn main() {
 34
 56
 ```
+
+____
+
+Here, `for..in` loop is called using the iterator in `numbers_iterator`, each value in the iterator is used in one iteration and then printed to the screen.
+
+____
