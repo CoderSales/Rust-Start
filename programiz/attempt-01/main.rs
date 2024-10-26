@@ -1,18 +1,20 @@
-// function to find a user by their username which return an Option enum
-fn get_user(username: &str) -> Option<&str> {
-    if username.is_empty() {
-        return None;
-    }
+use std::num::ParseIntError;
 
-    return Some(username);
+// Function to parse an integer
+fn parse_int() -> Result<i32, ParseIntError> {
+    // Example of ? where value is unwrapped
+    let x: i32 = "12".parse()?; // x = 12
+    
+    // Example of ? where error is returned
+    let y: i32 = "12a".parse()?; // returns an Err() immediately
+    
+    Ok(x + y) // Doesn't reach this line
 }
 
 fn main() {
-    // use of expect method to get the result of Option enum from get_user function
-    let result = get_user("").expect("fetch user");
+    let res = parse_int();
 
-    // print the result
-    println!("user = {:?}", result);
+    println!("{:?}", res);
 }
 
 /*
@@ -38,9 +40,7 @@ Subsection Title:
 
 ### Output
 
-thread 'main' panicked at main.rs:12:31:
-fetch user
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+Err(ParseIntError { kind: InvalidDigit })
 
 ### Notes:
 
