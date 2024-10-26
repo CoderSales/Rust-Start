@@ -1,8 +1,7 @@
 fn main() {
-    println!("Hello, World!");
+    let numbers = [1, 2 ,3];
 
-    // Explicitly exit the program with an unrecoverable error
-    panic!("Crash");
+    println!("unknown index value = {}", numbers[3]);
 }
 
 /*
@@ -16,7 +15,7 @@ Section Title:
 Unrecoverable Errors in Rust
 
 Subsection Title:
-
+Example 2: Rust Unrecoverable Errors
 
 ### Documentation
 
@@ -24,10 +23,16 @@ Subsection Title:
 
 Output
 
-Hello, World!
-thread 'main' panicked at main.rs:5:5:
-Crash
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: this operation will panic at runtime
+ --> main.rs:4:42
+  |
+4 |     println!("unknown index value = {}", numbers[3]);
+  |                                          ^^^^^^^^^^ index out of bounds: the length is 3 but the index is 3  
+  |
+  = note: `#[deny(unconditional_panic)]` on by default
+
+error: aborting due to 1 previous error
+
 
 Notes:
 

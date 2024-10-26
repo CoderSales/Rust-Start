@@ -55,4 +55,34 @@ The `panic!` macro takes in an error message as an argument.
 
 ____
 
+#### Example 2: Rust Unrecoverable Errors
+
+Unrecoverable errors are also triggered by taking an action that might cause our code to panic. For example, accessing an array past its index will cause a panic.
+
+```rust
+fn main() {
+    let numbers = [1, 2 ,3];
+
+    println!("unknown index value = {}", numbers[3]);
+}
+```
+
+##### Output
+
+```bash
+error: this operation will panic at runtime
+ --> main.rs:4:42
+  |
+4 |     println!("unknown index value = {}", numbers[3]);
+  |                                          ^^^^^^^^^^ index out of bounds: the length is 3 but the index is 3  
+  |
+  = note: `#[deny(unconditional_panic)]` on by default
+
+error: aborting due to 1 previous error
+```
+
+Here, Rust stops us from compiling the program because it knows the operation will panic at runtime.
+
+The array `numbers` does not have a value at index **3** i.e. `numbers[3]`.
+
 ____
