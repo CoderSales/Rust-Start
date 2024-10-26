@@ -95,3 +95,11 @@ Some("Yellow")
 Some("Green")
 None
 ```
+
+Here, we fetch values from the iterator in `colors_iterator` using the `next()` method. The `next()` method either returns `Some` value or `None`.
+
+Notice that we need to make the `colors_iterator` a mutable variable because calling `next()` will change the internal state of the iterator. Each call to `next()` will consume an item from the iterator.
+
+The `next()` method returns `None` when the iterator reaches the end of the sequence.
+
+____
