@@ -44,4 +44,15 @@ Crash
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
+Here, the call to the `panic!` macro causes an unrecoverable error.
+
+```bash
+thread 'main' panicked at 'Crash', src/main.rs:5:5
+```
+Notice that the program still runs the expressions above `panic!` macro. We can still see `Hello, World!` printed to the screen before the error message.
+
+The `panic!` macro takes in an error message as an argument.
+
+____
+
 ____
