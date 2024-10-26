@@ -382,3 +382,8 @@ In short,
 
 - Result is about `Ok` or `Err` (result or error result)
 
+____
+
+[38-unwrap-and-expect.md](documentation/38-unwrap-and-expect.md)
+
+____
