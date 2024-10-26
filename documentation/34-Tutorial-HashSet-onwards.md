@@ -383,3 +383,9 @@ ____
 
 
 ____
+
+```rust
+hashset1.union(&hashset2).collect();
+```
+
+____
