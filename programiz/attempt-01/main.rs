@@ -1,7 +1,7 @@
 fn main() {
     let text = "Hello, World!";
     
-    let character_option = text.chars().nth(15);
+    let character_option = text.chars().nth(11);
     
     // using match for Option type
     let character = match character_option {
@@ -9,7 +9,7 @@ fn main() {
         Some(c) => c.to_string()
     };
     
-    println!("Character at index 15 is {}", character);
+    println!("Character at index 11 is {}", character);
 }
 
 /*
@@ -23,6 +23,7 @@ Section Title:
 The Option Enum
 
 Subsection Title:
+Part 2
 
 
 ### Documentation
@@ -35,7 +36,7 @@ Subsection Title:
 
 ### Output
 
-Character at index 15 is empty
+Character at index 11 is d
 
 
 ### Notes:

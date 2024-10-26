@@ -333,3 +333,40 @@ fn main() {
 ```bash
 Character at index 15 is empty
 ```
+
+Here, the method text.chars().nth(15) returns an Option<String>. So, to get the value out of the Option, we use a match expression.
+
+In the example above, the 15th index of the string text doesn't exist. Thus, the Option type returns a None which matches the "empty" string.
+
+```bash
+None => "empty".to_string() 
+```
+
+If we were to get the 11th index of the string text, the Option enum would return Some(c), where c is the character in the 11th index.
+
+Let's update the above example to find out the 11th index in the string.
+
+```rust
+fn main() {
+    let text = "Hello, World!";
+    
+    let character_option = text.chars().nth(11);
+    
+    // using match for Option type
+    let character = match character_option {
+        None => "empty".to_string(),
+        Some(c) => c.to_string()
+    };
+    
+    println!("Character at index 11 is {}", character);
+}
+```
+
+#### Output
+
+```bash
+Character at index 11 is d
+```
+
+____
+
