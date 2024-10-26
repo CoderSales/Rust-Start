@@ -90,4 +90,18 @@ ____
 
 We can use the `difference()` method to find the difference between two sets. For example,
 
+```rust
+use std::collections::HashSet;
 
+fn main() {
+    let hashset1 = HashSet::from([1, 2, 3, 4]);
+    let hashset2 = HashSet::from([4, 3, 2]);
+    
+    // Difference between hashsets
+    let result: HashSet<_> = hashset1.difference(&hashset2).collect();
+    
+    println!("hashset1 = {:?}", hashset1);
+    println!("hashset2 = {:?}", hashset2);
+    println!("difference = {:?}", result);
+}
+```
