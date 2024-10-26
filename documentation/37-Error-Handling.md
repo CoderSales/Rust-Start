@@ -161,6 +161,21 @@ ____
 
 ##### Debug difference with tutorial
 
+###### Part 1
+
+____
+
+**References**
+
+[| formatting specifier missing - Google Search](https://www.google.com/search?q=%7C+formatting+specifier+missing&oq=%7C++++++++++++++formatting+specifier+missing&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDINCAMQABiGAxiABBiKBTINCAQQABiGAxiABBiKBTINCAUQABiGAxiABBiKBTIKCAYQABiABBiiBDIKCAcQABiABBiiBDIKCAgQABiABBiiBNIBBzk2N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
+
+
+[python - Format specifier missing precision error with string formatting - Stack Overflow](https://stackoverflow.com/questions/60770948/format-specifier-missing-precision-error-with-string-formatting)
+
+____
+
+###### Part 2
+
 Explain E277
 
 (basically tried to print something that was not printable )
