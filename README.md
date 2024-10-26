@@ -105,7 +105,7 @@ Then can scrolling back up the reference provided above, or just clicking here o
 
 (Note this assumes you have setup a GitHub account, which you can just do or Google how to):
 
-then (**substituing for user with your GitHub username** as well as **your GitHub Repository**, which you will also need to make after having setup GitHub, and then copied the url to *your* GitHub Repository), you can: add an origin: using your particular variant of this "kind" of command:
+then (**substituing** for **user** with **your GitHub username** as well as **your GitHub Repository**, which you will also need to make after having setup GitHub, and then copied the url to *your* GitHub Repository), you can: add an origin: using your particular variant of this "kind" of command:
 
 ```bash
 git remote add origin https://github.com/user/repo.git
