@@ -357,3 +357,29 @@ ____
 Here, we have used the union() method to find the union between two sets: hashset1 and hashset2.
 
 ____
+
+Aside:
+
+References
+
+____
+
+Git
+
+[git user.name and user.email are not set - Google Search](https://www.google.com/search?q=git+user.name+and+user.email+are+not+set&oq=git+user.name&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDINCAYQABiGAxiABBiKBTINCAcQABiGAxiABBiKBTIGCAgQRRhA0gEINDQ4N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
+
+
+[gitlab - "Make sure you configure your 'user.email' and 'user.name' in git" when trying to push to git lab - Stack Overflow](https://stackoverflow.com/questions/54876421/make-sure-you-configure-your-user-email-and-user-name-in-git-when-trying-t)
+
+Chrome Extension for Referencing
+
+[add google chrome extension from local developer - Google Search](https://www.google.com/search?q=add+google+chrome+extension+from+local+developer&num=10&newwindow=1&sca_esv=9df5b358ca5e7839&sxsrf=ADLYWIK6rO3txntiWzUwm80UOiGFDg7sdA%3A1729947608811&ei=2OccZ72RMc2yhbIPyPGe6Aw&ved=0ahUKEwi93c-FjayJAxVNWUEAHci4B80Q4dUDCA8&uact=5&oq=add+google+chrome+extension+from+local+developer&gs_lp=Egxnd3Mtd2l6LXNlcnAiMGFkZCBnb29nbGUgY2hyb21lIGV4dGVuc2lvbiBmcm9tIGxvY2FsIGRldmVsb3BlcjIFECEYoAEyBRAhGKABMgUQIRigAUjpJlCyBFiKJnACeAGQAQCYAXOgAaMMqgEEMjAuMbgBA8gBAPgBAZgCFqAC5QvCAgoQABiwAxjWBBhHwgIKECEYoAEYwwQYCsICBBAhGArCAggQABiABBiiBMICBRAhGJIDwgIHECEYoAEYCpgDAIgGAZAGCJIHAjIyoAe4YQ&sclient=gws-wiz-serp)
+
+
+[Hello World extension  |  Chrome Extensions  |  Chrome for Developers](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world)
+
+____
+
+
+
+____
