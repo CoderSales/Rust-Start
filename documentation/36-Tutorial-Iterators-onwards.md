@@ -15,3 +15,5 @@ Now, let's change the array to an iterable array by calling the `iter()` method.
 ```rust
 let numbers_iterator = numbers.iter();
 ```
+
+Finally, we can loop through the values and print them out.
