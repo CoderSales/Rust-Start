@@ -301,3 +301,35 @@ When the result is `Ok`, this code will return the `file`, and when the result i
 To learn more about pattern matching, visit [Rust Pattern Matching](https://www.programiz.com/rust/pattern-matching).
 
 ____
+
+### The Option Enum
+
+The Option type or Option<T> type is an enum type just like Result with two possible variants.
+
+- None → to indicate failure with no value
+
+- Some(T) → a value with type T
+
+Let's look at an example,
+
+```rust
+fn main() {
+    let text = "Hello, World!";
+    
+    let character_option = text.chars().nth(15);
+    
+    // using match for Option type
+    let character = match character_option {
+        None => "empty".to_string(),
+        Some(c) => c.to_string()
+    };
+    
+    println!("Character at index 15 is {}", character);
+}
+```
+
+#### Output
+
+```bash
+
+```
