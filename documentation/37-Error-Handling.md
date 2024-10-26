@@ -129,6 +129,12 @@ ____
 
 ###### Note output above is different to Tutorial
 
+only compiler warning shown here and in `main.rs` file
+
+###### Rerun with data.txt file present
+
+copy in compiler warning and runtime error
+
 ____
 
 If the data.txt file exists, the output is:
