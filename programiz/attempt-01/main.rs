@@ -1,20 +1,15 @@
 fn main() {
-    // create a new String.
-    let fruit1 = String::from("Banana");
+    let x = 11;
     
-    // create a copy of fruit1 using the clone method.
-    let fruit2 = fruit1.clone();
-    
+    // copies data from x to y 
+    let y = x;
 
-    println!("fruit1 = {}", fruit1);
-    
-    // print value of fruit2 on the screen
-    println!("fruit2 = {}", fruit2);
+    println!("x = {}, y = {}", x, y);
 }
 
 /*
 url:
-https://www.programiz.com/rust/unwrap-and-expect
+https://www.programiz.com/rust/ownership
 
 Page Title:
 Ownership
@@ -33,11 +28,10 @@ Subsection Title:
 
 
 ### Output
-fruit1 = Banana
-fruit2 = Banana
+
+x = 11, y = 11
 
 ### Notes:
-Note: Using clone() can incur additional runtime cost, so it should be used sensibly.
 
 
 */

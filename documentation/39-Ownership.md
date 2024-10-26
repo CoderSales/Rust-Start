@@ -135,4 +135,21 @@ Primitive types (Integers, Floats, and Booleans) have a known size at compile ti
 
 Let's see an example.
 
+```rust
+fn main() {
+    let x = 11;
+    
+    // copies data from x to y 
+    let y = x;
+
+    println!("x = {}, y = {}", x, y);
+}
+```
+
+Here x is copied instead of a move, because primitive types like integers, floats implement the Copy trait by default and hence are copied.
+
+Here, x variable can be used afterward, because x is copied and not moved even though y is assigned to x.
+
+A trait is a way to define shared behavior in Rust. To learn more about traits, visit [Rust Trait](https://www.programiz.com/rust/trait).
+
 
