@@ -9,3 +9,19 @@
 #### 2. Intersection of two Sets
 
 We can use the `intersection()` method to find the intersection between two sets. For example,
+
+```rust
+use std::collections::HashSet;
+
+fn main() {
+    let hashset1 = HashSet::from([2, 7, 8]);
+    let hashset2 = HashSet::from([1, 2, 7]);
+    
+    // Intersection of hashsets
+    let result: HashSet<_> = hashset1.intersection(&hashset2).collect();
+    
+    println!("hashset1 = {:?}", hashset1);
+    println!("hashset2 = {:?}", hashset2);
+    println!("intersection = {:?}", result);
+}
+```
