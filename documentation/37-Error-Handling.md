@@ -111,7 +111,6 @@ fn main() {
 }
 ```
 
-#### Output
 
 ```bash
 error: argument never used
@@ -123,6 +122,15 @@ error: argument never used
    |              formatting specifier missing
 
 error: aborting due to 1 previous error
+```
+
+#### Output
+
+```bash
+Hello, World!
+thread 'main' panicked at main.rs:5:5:
+Crash
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
 ____
