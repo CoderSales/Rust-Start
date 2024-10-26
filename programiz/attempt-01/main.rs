@@ -1,28 +1,29 @@
 fn main() {
-    let str = String::from("Hello, World!");
+    let mut str = String::from("Hello");
     
-    // Call function with reference String value
-    let len = calculate_length(&str);
+    // before modifying the string
+    println!("Before: str = {}", str);
 
-    println!("The length of '{}' is {}.", str, len);
+    // pass a mutable string when calling the function
+    change(&mut str);
+    
+    // after modifying the string
+    println!("After: str = {}", str);
 }
 
-// Function to calculate length of a string
-// It takes a reference of a String as an argument
-fn calculate_length(s: &String) -> usize { // s is a reference to a String
-    s.len()
+fn change(s: &mut String) {
+    // push a string to the mutable reference variable
+    s.push_str(", World!");
 }
-
 
 /*
 url:
-https://www.programiz.com/rust/ownership
+https://www.programiz.com/rust/references-and-borrowing
 
 Page Title:
 Rust References and Borrowing
 
 Section Title:
-Understanding References in Rust
 
 
 Subsection Title:
@@ -38,7 +39,8 @@ Subsection Title:
 
 ### Output
 
-The length of 'Hello, World!' is 13.
+Before: str = Hello
+After: str = Hello, World!
 
 ### Notes:
 

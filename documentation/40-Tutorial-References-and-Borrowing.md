@@ -72,3 +72,45 @@ Ampersand (&) represents references, and they allow us to refer to some value wi
 
 ____
 
+Modifying a Reference in Rust
+
+By default a reference is always immutable. However, we can use the &mut keyword to make a reference mutable.
+
+For example,
+
+```rust
+fn main() {
+    let mut str = String::from("Hello");
+    
+    // before modifying the string
+    println!("Before: str = {}", str);
+
+    // pass a mutable string when calling the function
+    change(&mut str);
+    
+    // after modifying the string
+    println!("After: str = {}", str);
+}
+
+fn change(s: &mut String) {
+    // push a string to the mutable reference variable
+    s.push_str(", World!");
+}
+```
+
+##### Output
+
+```bash
+Before: str = Hello
+After: str = Hello, World!
+```
+
+____
+
+Here, we set the variable str to be mutable. Then we create a mutable reference with &mut str, and call the change() function with a mutable reference s: &mut String.
+
+This allows the change() function to modify the value it borrows. Inside the change() function, we push a string with s.push_str(", World!") to the reference string.
+
+Note: If you have a mutable reference to a value, you can have no other references to that value.
+
+
