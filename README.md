@@ -1,5 +1,13 @@
 # Rust-Start
 
+Scroll to bottom of README or Ctrl F for
+
+notes on running
+
+if returning and just want basic commands
+
+Otherwise may need some or all of the following to get basic setup on Windows for the first time:
+
 ## Instructions assuming some knowledge of GitHub but otherwise from scratch:
 
 ## to clone
