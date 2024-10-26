@@ -86,3 +86,60 @@ Here, Rust stops us from compiling the program because it knows the operation wi
 The array `numbers` does not have a value at index **3** i.e. `numbers[3]`.
 
 ____
+
+#### Recoverable Errors
+
+Recoverable errors are errors that won't stop a program from executing. Most errors are recoverable, and we can easily take action based on the type of error.
+
+For example, if you try to open a file that doesn't exist, you can create the file instead of stopping the execution of the program or exiting the program with a panic.
+
+Let's look at an example.
+
+```rust
+use std::fs::File;
+
+fn main() {
+    let data_result = File::open("data.txt");
+
+    // using match for Result type
+    let data_file = match data_result {
+        Ok(file) => file,
+        Err(error) => panic!("Problem opening the data file: {:?}", error),
+    };
+
+    println!("Data file", data_file);
+}
+```
+
+#### Output
+
+```bash
+error: argument never used
+  --> main.rs:12:27
+   |
+12 |     println!("Data file", data_file);
+   |              -----------  ^^^^^^^^^ argument never used
+   |              |
+   |              formatting specifier missing
+
+error: aborting due to 1 previous error
+```
+
+____
+
+###### Note output above is different to Tutorial
+
+____
+
+If the data.txt file exists, the output is:
+
+```bash
+Data file: File { fd: 3, path: "/playground/data.txt", read: true, write: false }
+If the data.txt file doesn't exist, the output is:
+```
+
+```bash
+thread 'main' panicked at 'Problem opening the data file: Os { code: 2, kind: NotFound, message: "No such file or directory" }', src/main.rs:8:23
+```
+
+____

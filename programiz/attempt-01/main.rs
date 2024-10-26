@@ -1,7 +1,15 @@
-fn main() {
-    let numbers = [1, 2 ,3];
+use std::fs::File;
 
-    println!("unknown index value = {}", numbers[3]);
+fn main() {
+    let data_result = File::open("data.txt");
+
+    // using match for Result type
+    let data_file = match data_result {
+        Ok(file) => file,
+        Err(error) => panic!("Problem opening the data file: {:?}", error),
+    };
+
+    println!("Data file", data_file);
 }
 
 /*
@@ -12,10 +20,9 @@ Page Title:
 Rust Error Handling
 
 Section Title:
-Unrecoverable Errors in Rust
+Recoverable Errors
 
 Subsection Title:
-Example 2: Rust Unrecoverable Errors
 
 ### Documentation
 
@@ -23,16 +30,15 @@ Example 2: Rust Unrecoverable Errors
 
 Output
 
-error: this operation will panic at runtime
- --> main.rs:4:42
-  |
-4 |     println!("unknown index value = {}", numbers[3]);
-  |                                          ^^^^^^^^^^ index out of bounds: the length is 3 but the index is 3  
-  |
-  = note: `#[deny(unconditional_panic)]` on by default
+error: argument never used
+  --> main.rs:12:27
+   |
+12 |     println!("Data file", data_file);
+   |              -----------  ^^^^^^^^^ argument never used
+   |              |
+   |              formatting specifier missing
 
 error: aborting due to 1 previous error
-
 
 Notes:
 
