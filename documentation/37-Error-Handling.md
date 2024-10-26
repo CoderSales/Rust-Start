@@ -370,3 +370,15 @@ Character at index 11 is d
 
 ____
 
+### Difference between Result and Option enum in Rust
+
+Option enum can return None, which can indicate failure.
+
+However, sometimes it is essential to express why an operation failed. Thus, we have the Result enum, which gives us the Err with the reason behind the failure of the operation.
+
+In short,
+
+- Option is about `Some` or `None` (value or no value)
+
+- Result is about `Ok` or `Err` (result or error result)
+
