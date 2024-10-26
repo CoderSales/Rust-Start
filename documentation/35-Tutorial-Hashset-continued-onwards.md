@@ -25,3 +25,13 @@ fn main() {
     println!("intersection = {:?}", result);
 }
 ```
+
+____
+
+##### Aside
+
+###### Note: 
+
+This code was already added to the `main.rs` file in [programiz/attempt-01](../programiz/attempt-01)
+
+____
