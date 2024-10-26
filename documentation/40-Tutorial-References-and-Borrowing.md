@@ -35,4 +35,40 @@ In the above example, we define a function called calculate_length() which takes
 
 The important part here is that s is a reference to a String and it doesn't take ownership of the actual value of String.
 
+```rust
+fn calculate_length(s: &String) -> usize { // s is a reference to a String
+    s.len()
+}
+```
+
+____
+
+##### Aside Note
+
+Output unchanged.
+
+____
+
+
+When, s goes out of scope, at the end of the function, it is not dropped because it does not have ownership of what it refers to.
+
+____
+
+The function call looks like:
+
+```rust
+let str = String::from("Hello, World!");
+
+let len = calculate_length(&str);
+```
+
+The &str syntax while calling the function lets us create a reference that refers to the value of str but does not own it.
+
+The action of creating a reference is known as borrowing. Borrowing is when we borrow something, and we are done with it, we give it back. It doesn't make us the owner of the data.
+
+##### Note: 
+
+Ampersand (&) represents references, and they allow us to refer to some value without taking ownership of it.
+
+____
 

@@ -9,9 +9,10 @@ fn main() {
 
 // Function to calculate length of a string
 // It takes a reference of a String as an argument
-fn calculate_length(s: &String) -> usize {
+fn calculate_length(s: &String) -> usize { // s is a reference to a String
     s.len()
 }
+
 
 /*
 url:
