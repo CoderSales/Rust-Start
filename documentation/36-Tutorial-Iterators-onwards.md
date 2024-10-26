@@ -115,3 +115,30 @@ We can create an iterator by converting a collection into an iterator. There are
 3. Using `iter_mut()` method
 
 All these methods provide different views of the data within the iterator.
+
+#### 1. Using iter() method
+
+Using the `iter()` method on a collection will borrow (reference) each element of the collection in each iteration. Thus, the collection will be available for use after we have looped through it.
+
+For example,
+
+```rust
+fn main() {
+    let colors = vec!["Red", "Yellow", "Green"];
+    
+    // using iter() to iterate through a collection
+    for color in colors.iter() {
+        // reference to the items in the iterator
+        println!("{}", color);
+    }
+    
+    // the collection is untouched and still available here
+    println!("colors = {:?}", colors);
+}
+```
+
+##### Output
+
+```bash
+
+```
