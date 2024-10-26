@@ -336,3 +336,7 @@ Here, we loop through a range `1..6` which is inclusive on the left (starts at 1
 To learn more about range and for loop, visit [Rust for Loop](https://www.programiz.com/rust/for-loop).
 
 ____
+
+[37-Error-Handling.md](/documentation/37-Error-Handling.md)
+
+____
