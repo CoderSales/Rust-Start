@@ -111,7 +111,7 @@ then (**substituing for user with your GitHub username** as well as **your GitHu
 git remote add origin https://github.com/user/repo.git
 ```
 
-(basically a `git` `remote` `add` `origin` command with your `**GitHub-username**` whichever one of your `**GitHub-repository-name**`s inserted into the url like https://github.com/`username`/`repositoryName` (without backticks if they are visible, ignore this comment if not) )
+(basically a `git` `remote` `add` `origin` command with your `**GitHub-username**` whichever one of your `**GitHub-repository-name**`s inserted into the url like https://github.com/[username]/[repositoryName] (without square brackets `[` and `]` if they are visible, ignore this comment if not) )
 
 will add your remote repo to your VSCode local environment so that they "talk to" and are "aware of" each other.
 
