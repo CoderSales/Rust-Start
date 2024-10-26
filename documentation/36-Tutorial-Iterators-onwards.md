@@ -305,3 +305,34 @@ fn main() {
 numbers = [1, 2, 3]
 even_numbers = [2, 4, 6]
 ```
+
+____
+
+### Range in Rust
+
+One of the other ways to create an iterator is to use the range notation. An example of a range is `1..6` which is an iterator. For example,
+
+```rust
+fn main() {
+    // looping through a range
+    for i in 1..6 {
+        println!("{}", i);
+    }
+}
+```
+
+#### Output
+
+```bash
+1
+2
+3
+4
+5
+```
+
+Here, we loop through a range `1..6` which is inclusive on the left (starts at 1) and exclusive on the right (ends at 5). Range is usually used together with the `for` loop.
+
+To learn more about range and for loop, visit [Rust for Loop](https://www.programiz.com/rust/for-loop).
+
+____
