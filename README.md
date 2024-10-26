@@ -2,7 +2,7 @@
 
 Scroll to bottom of README or Ctrl F for
 
-notes on running
+`notes on running`
 
 if returning and just want basic commands
 
