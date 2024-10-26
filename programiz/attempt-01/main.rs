@@ -30,9 +30,9 @@ Subsection Title:
 34-Tutorial-HashSet-onwards.md
 
 Output:
-hashset1 = {7, 8, 2}
-hashset2 = {2, 1, 7}
-intersection = {7, 2}
+hashset1 = {2, 7, 8}
+hashset2 = {1, 2, 7}
+intersection = {2, 7}
 
 Notes:
 Order of values
