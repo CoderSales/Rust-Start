@@ -115,3 +115,23 @@ difference = {1}
 ```
 
 ____
+
+#### 4. Symmetric Difference between two Sets
+
+We can use the `symmetric_difference()` method to find the symmetric difference between two sets. The symmetric difference returns values from both sets except the ones in both.
+
+```rust
+use std::collections::HashSet;
+
+fn main() {
+    let hashset1 = HashSet::from([2, 7, 8]);
+    let hashset2 = HashSet::from([1, 2, 7, 9]);
+    
+    // Symmetric difference of hashsets
+    let result: HashSet<_> = hashset1.symmetric_difference(&hashset2).collect();
+    
+    println!("hashset1 = {:?}", hashset1);
+    println!("hashset2 = {:?}", hashset2);
+    println!("symmetric difference = {:?}", result);
+}
+```
