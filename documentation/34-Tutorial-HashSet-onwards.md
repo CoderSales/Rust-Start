@@ -395,5 +395,8 @@ The union() method returns an iterator, so we have used the collect() method to 
 ____
 
 Note: We have passed &hashset2 as an argument to the union() method because it takes a reference as an argument.
+____
+
+[35-Tutorial-Hashset-continued-onwards.md](/documentation/34-Tutorial-HashSet-onwards.md)
 
 ____
