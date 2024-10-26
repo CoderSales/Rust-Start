@@ -1,15 +1,14 @@
 fn main() {
     let colors = vec!["Red", "Yellow", "Green"];
     
-    // iterator
-    let mut colors_iterator = colors.iter();
-    println!("colors iterator = {:?}", colors_iterator);
+    // using iter() to iterate through a collection
+    for color in colors.iter() {
+        // reference to the items in the iterator
+        println!("{}", color);
+    }
     
-    // fetch values from iterator one by one using next() method
-    println!("{:?}", colors_iterator.next());
-    println!("{:?}", colors_iterator.next());
-    println!("{:?}", colors_iterator.next());
-    println!("{:?}", colors_iterator.next());
+    // the collection is untouched and still available here
+    println!("colors = {:?}", colors);
 }
 
 /*
@@ -20,9 +19,10 @@ Page Title:
 Rust Iterator
 
 Section Title:
-next() Method of an Iterator in Rust
+Ways to Create Iterator in Rust
 
 Subsection Title:
+1. Using iter() method
 
 ### Documentation
 
@@ -30,11 +30,10 @@ Subsection Title:
 
 Output
 
-colors iterator = Iter(["Red", "Yellow", "Green"])
-Some("Red")
-Some("Yellow")
-Some("Green")
-None
+Red
+Yellow
+Green
+colors = ["Red", "Yellow", "Green"]
 
 Notes:
 Order of values
