@@ -145,3 +145,34 @@ Yellow
 Green
 colors = ["Red", "Yellow", "Green"]
 ```
+
+____
+
+#### 2. Using into_iter() method
+
+Using the `into_iter()` method on a collection will iterate on the same element of the collection in each iteration. Thus, the collection will no longer be available for reuse as the value moves within the loop.
+
+For example,
+
+```rust
+fn main() {
+    let colors = vec!["Red", "Yellow", "Green"];
+    
+    // using into_iter() to iterate through a collection
+    for color in colors.into_iter() {
+        // the items in the collection move into this scope
+        println!("{}", color);
+    }
+    // end of scope of for loop
+    
+    // error
+    // the collection is not available here as the for loop scope ends above
+    println!("colors = {:?}", colors);
+}
+```
+
+##### Output
+
+```bash
+
+```
