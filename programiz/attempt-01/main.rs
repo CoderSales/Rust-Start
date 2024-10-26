@@ -1,19 +1,14 @@
-fn main() {
-    // looping through a range
-    for i in 1..6 {
-        println!("{}", i);
-    }
-}
+
 
 /*
 url:
-https://www.programiz.com/rust/iterator
+https://www.programiz.com/rust/error-handling
 
 Page Title:
-Rust Iterator
+Rust Error Handling
 
 Section Title:
-Range in Rust
+Unrecoverable Errors in Rust
 
 Subsection Title:
 
@@ -23,11 +18,6 @@ Subsection Title:
 36-Tutorial-Iterators-onwards.md
 
 Output
-1
-2
-3
-4
-5
 
 Notes:
 
