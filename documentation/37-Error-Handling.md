@@ -257,3 +257,31 @@ already specify all requirements that will be used for every type parameter.
 ```
 
 ____
+
+### The Result Enum
+
+In the above example, the return type of the `File::open('data.txt')` is a `Result<T, E>`.
+
+The `Result<T, E>` type returns either a value or an error in Rust. It is an `enum` type with two possible variants.
+
+- `Ok(T)` → operation succeeded with value `T`
+
+- `Err(E)` → operation failed with an error `E`
+
+Here, `T` and `E` are generic types. To know more about generics or generic types, visit [Rust Generics](https://www.programiz.com/rust/generics).
+
+The most basic way to see whether a `Result` enum has a value or error is to use pattern matching with a `match` expression.
+
+```rust
+// data_file is a Result<T, E>
+match data_result {
+    Ok(file) => file,
+    Err(error) => panic!("Problem opening the data file: {:?}", error),
+ };
+```
+
+When the result is `Ok`, this code will return the `file`, and when the result is `Err`, it will return a `panic!`.
+
+To learn more about pattern matching, visit [Rust Pattern Matching](https://www.programiz.com/rust/pattern-matching).
+
+____
