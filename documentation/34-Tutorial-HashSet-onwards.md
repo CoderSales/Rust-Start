@@ -353,3 +353,7 @@ intersection = {7, 2}
 Order of values in Output vary but the actual values themselves are the same.
 
 ____
+
+Here, we have used the union() method to find the union between two sets: hashset1 and hashset2.
+
+____
