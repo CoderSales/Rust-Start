@@ -120,3 +120,19 @@ fn main() {
     println!("fruit2 = {}", fruit2);
 }
 ```
+
+#### Output
+
+```bash
+Note: Using clone() can incur additional runtime cost, so it should be used sensibly.
+```
+
+____
+
+### Data Copy in Rust
+
+Primitive types (Integers, Floats, and Booleans) have a known size at compile time and are stored entirely on the stack. Due to this, primitive types are cheap to copy, and they implement the copy trait instead of the move.
+
+Let's see an example.
+
+

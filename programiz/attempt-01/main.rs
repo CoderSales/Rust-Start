@@ -1,17 +1,12 @@
 fn main() {
-    // owner of the String value
-    // rule no. 1 
+    // create a new String.
     let fruit1 = String::from("Banana");
     
-    // ownership moves to another variable
-    // only one owner at a time
-    // rule no. 2
-    let fruit2 = fruit1;
+    // create a copy of fruit1 using the clone method.
+    let fruit2 = fruit1.clone();
     
-    // cannot print variable fruit1 because ownership has moved
-    // error, out of scope, value is dropped
-    // rule no. 3
-    // println!("fruit1 = {}", fruit1);
+
+    println!("fruit1 = {}", fruit1);
     
     // print value of fruit2 on the screen
     println!("fruit2 = {}", fruit2);
@@ -38,8 +33,11 @@ Subsection Title:
 
 
 ### Output
+fruit1 = Banana
 fruit2 = Banana
 
 ### Notes:
+Note: Using clone() can incur additional runtime cost, so it should be used sensibly.
+
 
 */
