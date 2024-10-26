@@ -1,15 +1,15 @@
 use std::collections::HashSet;
 
 fn main() {
-    let hashset1 = HashSet::from([1, 2, 3, 4]);
-    let hashset2 = HashSet::from([4, 3, 2]);
+    let hashset1 = HashSet::from([2, 7, 8]);
+    let hashset2 = HashSet::from([1, 2, 7, 9]);
     
-    // Difference between hashsets
-    let result: HashSet<_> = hashset1.difference(&hashset2).collect();
+    // Symmetric difference of hashsets
+    let result: HashSet<_> = hashset1.symmetric_difference(&hashset2).collect();
     
     println!("hashset1 = {:?}", hashset1);
     println!("hashset2 = {:?}", hashset2);
-    println!("difference = {:?}", result);
+    println!("symmetric difference = {:?}", result);
 }
 
 /*
@@ -23,15 +23,15 @@ Section Title:
 Set Operations
 
 Subsection Title:
-3. Difference between two Sets
+4. Symmetric Difference between two Sets
 
 ### Documentation
 
 35-Tutorial-Hashset-continued-onwards.md
 
-hashset1 = {3, 4, 1, 2}
-hashset2 = {4, 2, 3}
-difference = {1}
+hashset1 = {7, 2, 8}
+hashset2 = {1, 2, 7, 9}
+symmetric difference = {1, 8, 9}
 
 Notes:
 Order of values
