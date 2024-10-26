@@ -127,7 +127,7 @@ error: aborting due to 1 previous error
 
 ____
 
-###### Note output above is different to Tutorial
+##### Note output above is different to Tutorial
 
 only compiler warning shown here and in `main.rs` file
 
