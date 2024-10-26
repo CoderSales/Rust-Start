@@ -1,34 +1,43 @@
+// function to find a user by their username which returns an Option type
+fn get_user(username: &str) -> Option<&str> {
+    if username.is_empty() {
+        return None;
+    }
+
+    return Some(username);
+}
+
 fn main() {
-    let text = "Hello, World!";
-    
-    let character_option = text.chars().nth(11);
-    
-    // using match for Option type
-    let character = match character_option {
-        None => "empty".to_string(),
-        Some(c) => c.to_string()
+    // returns an Option
+    let user_option = get_user("Hari");
+
+    // use of match expression to get the result out of Option
+    let result = match user_option {
+        Some(user) => user,
+        None => "not found!",
     };
-    
-    println!("Character at index 11 is {}", character);
+
+    // print the result
+    println!("user = {:?}", result);
 }
 
 /*
 url:
-https://www.programiz.com/rust/error-handling
+https://www.programiz.com/rust/unwrap-and-expect
 
 Page Title:
-Rust Error Handling
+Rust unwrap() and expect()
 
 Section Title:
-The Option Enum
+The unwrap() Method
 
 Subsection Title:
-Part 2
+Example: Using the match Expression
 
 
 ### Documentation
 
-37-Error-Handling.md
+38-unwrap-and-expect.md
 
 
 ### Compiler Messages
@@ -36,7 +45,7 @@ Part 2
 
 ### Output
 
-Character at index 11 is d
+user = "Hari"
 
 
 ### Notes:
