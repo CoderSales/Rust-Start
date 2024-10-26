@@ -256,6 +256,7 @@ Rust only looks at the signature of the called function, as such it must
 already specify all requirements that will be used for every type parameter.
 ```
 
+
 ____
 
 ### The Result Enum
