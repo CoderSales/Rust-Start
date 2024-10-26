@@ -152,4 +152,40 @@ Here, x variable can be used afterward, because x is copied and not moved even t
 
 A trait is a way to define shared behavior in Rust. To learn more about traits, visit [Rust Trait](https://www.programiz.com/rust/trait).
 
+____
+
+### Ownership in Functions
+
+Passing a variable to a function will move or copy, just as an assignment. Stack-only types will copy the data when passed into a function. Heap data types will move the ownership of the variable to the function.
+
+Let's take a look at some examples.
+
+#### 1. Passing String to a function
+
+```rust
+fn main() {
+    let fruit = String::from("Apple");  // fruit comes into scope
+    
+    // ownership of fruit moves into the function
+    print_fruit(fruit);
+    
+    // fruit is moved to the function so is no longer available here
+    // error
+    // println!("fruit = {}", fruit);
+}
+
+fn print_fruit(str: String) {   // str comes into scope
+    println!("str = {}", str);
+}   // str goes out of scope and is dropped, plus memory is freed
+```
+
+#### Output
+
+```bash
+str = Apple
+```
+
+Here, the value of the fruit variable is moved into the function print_fruit() because String type uses heap memory.
+
+#### 2. Passing Integer to a function
 
