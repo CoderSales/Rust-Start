@@ -1,17 +1,17 @@
 fn main() {
-    let fruit = String::from("Apple");  // fruit comes into scope
+    // number comes into scope
+    let number = 10;
     
-    // ownership of fruit moves into the function
-    print_fruit(fruit);
+    // value of the number is copied into the function
+    print_number(number);
     
-    // fruit is moved to the function so is no longer available here
-    // error
-    // println!("fruit = {}", fruit);
+    // number variable can be used here
+    println!("number = {}", number);
 }
 
-fn print_fruit(str: String) {   // str comes into scope
-    println!("str = {}", str);
-}   // str goes out of scope and is dropped, plus memory is freed
+fn print_number(value: i32) { // value comes into scope
+    println!("value = {}", value);
+}   // value goes out of scope
 
 /*
 url:
@@ -37,7 +37,8 @@ Subsection Title:
 
 ### Output
 
-str = Apple
+value = 10
+number = 10
 
 ### Notes:
 

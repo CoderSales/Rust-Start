@@ -189,3 +189,29 @@ Here, the value of the fruit variable is moved into the function print_fruit() b
 
 #### 2. Passing Integer to a function
 
+```rust
+fn main() {
+    // number comes into scope
+    let number = 10;
+    
+    // value of the number is copied into the function
+    print_number(number);
+    
+    // number variable can be used here
+    println!("number = {}", number);
+}
+
+fn print_number(value: i32) { // value comes into scope
+    println!("value = {}", value);
+}   // value goes out of scope
+```
+
+#### Output
+
+```bash
+value = 10
+number = 10
+```
+
+Here, the value of the number variable is copied into the function print_number() because the i32 (integer) type uses stack memory.
+
