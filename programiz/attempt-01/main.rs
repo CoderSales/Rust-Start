@@ -1,37 +1,38 @@
-use std::collections::HashSet;
-
 fn main() {
-    let hashset1 = HashSet::from([2, 7, 8]);
-    let hashset2 = HashSet::from([1, 2, 7, 9]);
+    let numbers = [2, 1, 17, 99, 34, 56];
     
-    // Symmetric difference of hashsets
-    let result: HashSet<_> = hashset1.symmetric_difference(&hashset2).collect();
+    // iterator
+    let numbers_iterator = numbers.iter();
     
-    println!("hashset1 = {:?}", hashset1);
-    println!("hashset2 = {:?}", hashset2);
-    println!("symmetric difference = {:?}", result);
+    for number in numbers_iterator {
+        println!("{}", number);
+    }
 }
 
 /*
 url:
-https://www.programiz.com/rust/hashset
+https://www.programiz.com/rust/iterator
 
 Page Title:
-Rust HashSet
+Rust Iterator
 
 Section Title:
-Set Operations
+Example: Iterator in Rust
 
 Subsection Title:
-4. Symmetric Difference between two Sets
 
 ### Documentation
 
-35-Tutorial-Hashset-continued-onwards.md
+36-Tutorial-Iterators-onwards.md
 
-hashset1 = {7, 2, 8}
-hashset2 = {1, 2, 7, 9}
-symmetric difference = {1, 8, 9}
+Output
+
+2
+1
+17
+99
+34
+56
 
 Notes:
 Order of values
