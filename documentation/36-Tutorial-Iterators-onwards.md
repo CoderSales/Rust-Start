@@ -23,3 +23,8 @@ for number in numbers_iterator {
     println!("{}", number);
 }
 ```
+
+#### Note:
+
+Collections like Array, Vector, HashMap and HashSet are not iterable by default. We can use the `iter()` method to tell Rust that it can be used to loop over the values.
+
