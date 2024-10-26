@@ -1,27 +1,27 @@
 fn main() {
-    // number comes into scope
-    let number = 10;
+    let str = String::from("Hello, World!");
     
-    // value of the number is copied into the function
-    print_number(number);
-    
-    // number variable can be used here
-    println!("number = {}", number);
+    // Call function with reference String value
+    let len = calculate_length(&str);
+
+    println!("The length of '{}' is {}.", str, len);
 }
 
-fn print_number(value: i32) { // value comes into scope
-    println!("value = {}", value);
-}   // value goes out of scope
+// Function to calculate length of a string
+// It takes a reference of a String as an argument
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
 
 /*
 url:
 https://www.programiz.com/rust/ownership
 
 Page Title:
-Ownership
+Rust References and Borrowing
 
 Section Title:
-Ownership in Functions
+Understanding References in Rust
 
 
 Subsection Title:
@@ -29,7 +29,7 @@ Subsection Title:
 
 ### Documentation
 
-39-Ownership.md
+40-Tutorail-References-and-Borrowing.md
 
 
 ### Compiler Messages
@@ -37,8 +37,7 @@ Subsection Title:
 
 ### Output
 
-value = 10
-number = 10
+The length of 'Hello, World!' is 13.
 
 ### Notes:
 
