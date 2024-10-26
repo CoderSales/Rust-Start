@@ -1,4 +1,4 @@
-// function to find a user by their username which returns an Option type
+// function to find a user by their username which return an Option enum
 fn get_user(username: &str) -> Option<&str> {
     if username.is_empty() {
         return None;
@@ -8,14 +8,8 @@ fn get_user(username: &str) -> Option<&str> {
 }
 
 fn main() {
-    // returns an Option
-    let user_option = get_user("Hari");
-
-    // use of match expression to get the result out of Option
-    let result = match user_option {
-        Some(user) => user,
-        None => "not found!",
-    };
+    // use of unwrap method to get the result of Option enum from get_user function
+    let result = get_user("").unwrap();
 
     // print the result
     println!("user = {:?}", result);
@@ -45,7 +39,10 @@ Example: Using the match Expression
 
 ### Output
 
-user = "Hari"
+thread 'main' panicked at main.rs:12:31:
+called `Option::unwrap()` on a `None` value
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
 
 
 ### Notes:

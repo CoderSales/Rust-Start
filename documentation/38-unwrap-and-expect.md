@@ -83,3 +83,36 @@ user = "Hari"
 ```
 
 Both the match expression and unwrap() gives us the same output. The only difference being that unwrap() will panic if the return value is a None.
+
+If we update the above program to send an empty username argument to the get_user() method. It will panic.
+
+```rust
+let result = get_user("").unwrap();
+```
+
+The output in this case will be,
+
+##### Expected Output
+
+```bash
+thread 'main' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:12:31ßß
+```
+
+##### Actual Output
+
+```bash
+thread 'main' panicked at main.rs:12:31:
+called `Option::unwrap()` on a `None` value
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+```
+
+____
+
+### The expect() Method
+
+expect() is very similar to unwrap() with the addition of a custom panic message as an argument.
+
+The expect() method is defined on both Option and Result type.
+
+Let's update the above example to use expect() instead of unwrap().
+
