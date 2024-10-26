@@ -140,5 +140,8 @@ fn main() {
 ##### Output
 
 ```bash
-
+Red
+Yellow
+Green
+colors = ["Red", "Yellow", "Green"]
 ```
