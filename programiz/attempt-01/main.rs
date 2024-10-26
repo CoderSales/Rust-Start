@@ -1,20 +1,20 @@
-use std::num::ParseIntError;
-
-// Function to parse an integer
-fn parse_int() -> Result<i32, ParseIntError> {
-    // Example of ? where value is unwrapped
-    let x: i32 = "12".parse()?; // x = 12
-    
-    // Example of ? where error is returned
-    let y: i32 = "12a".parse()?; // returns an Err() immediately
-    
-    Ok(x + y) // Doesn't reach this line
-}
-
 fn main() {
-    let res = parse_int();
-
-    println!("{:?}", res);
+    // owner of the String value
+    // rule no. 1 
+    let fruit1 = String::from("Banana");
+    
+    // ownership moves to another variable
+    // only one owner at a time
+    // rule no. 2
+    let fruit2 = fruit1;
+    
+    // cannot print variable fruit1 because ownership has moved
+    // error, out of scope, value is dropped
+    // rule no. 3
+    // println!("fruit1 = {}", fruit1);
+    
+    // print value of fruit2 on the screen
+    println!("fruit2 = {}", fruit2);
 }
 
 /*
@@ -22,25 +22,23 @@ url:
 https://www.programiz.com/rust/unwrap-and-expect
 
 Page Title:
-Rust unwrap() and expect()
+Ownership
 
 Section Title:
-The expect() Method
 
 Subsection Title:
 
 
 ### Documentation
 
-38-unwrap-and-expect.md
+39-Ownership.md
 
 
 ### Compiler Messages
 
 
 ### Output
-
-Err(ParseIntError { kind: InvalidDigit })
+fruit2 = Banana
 
 ### Notes:
 
