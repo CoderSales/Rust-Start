@@ -173,6 +173,30 @@ fn main() {
 
 ##### Output
 
-```bash
+###### Error (for educational purposes)
 
+```bash
+error[E0382]: borrow of moved value: `colors`
+  --> main.rs:13:31
+   |
+2  |     let colors = vec!["Red", "Yellow", "Green"];
+   |         ------ move occurs because `colors` has type `Vec<&str>`, which does not implement the `Copy` trait 
+...
+5  |     for color in colors.into_iter() {
+   |                         ----------- `colors` moved due to this method call
+...
+13 |     println!("colors = {:?}", colors);
+   |                               ^^^^^^ value borrowed here after move
+   |
+note: `into_iter` takes ownership of the receiver `self`, which moves `colors`
+  --> /rustc/f6e511eec7342f59a25f7c0534f1dbea00d01b14\library\core\src\iter\traits\collect.rs:346:18
+   = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: you can `clone` the value and consume it, but this might not be your desired behavior
+   |
+5  |     for color in colors.clone().into_iter() {
+   |                        ++++++++
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0382`.
 ```
