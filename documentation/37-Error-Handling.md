@@ -5,20 +5,43 @@
 ____
 
 ## Rust Error Handling
+
 An error is an unexpected behavior or event in a program that will produce an unwanted output.
 
 In Rust, errors are of two categories:
 
-Unrecoverable Errors
-Recoverable Errors
-Unrecoverable Errors in Rust
+- Unrecoverable Errors
+
+- Recoverable Errors
+
+____
+
+### Unrecoverable Errors in Rust
+
 Unrecoverable errors are errors from which a program stops its execution. As the name suggests, we cannot recover from unrecoverable errors.
 
-These errors are known as panic and can be triggered explicitly by calling the panic! macro.
+These errors are known as **panic** and can be triggered explicitly by calling the `panic!` macro.
 
-Let's look at an example that uses the panic! macro.
+Let's look at an example that uses the `panic!` macro.
 
-Example 1: Rust Unrecoverable Errors with panic! Macro
+#### Example 1: Rust Unrecoverable Errors with panic! Macro
 
+```rust
+fn main() {
+    println!("Hello, World!");
+
+    // Explicitly exit the program with an unrecoverable error
+    panic!("Crash");
+}
+```
+
+##### Output
+
+```bash
+Hello, World!
+thread 'main' panicked at main.rs:5:5:
+Crash
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+```
 
 ____
