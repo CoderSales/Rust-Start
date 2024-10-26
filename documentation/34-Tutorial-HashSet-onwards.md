@@ -354,15 +354,13 @@ Order of values in Output vary but the actual values themselves are the same.
 
 ____
 
-Here, we have used the union() method to find the union between two sets: hashset1 and hashset2.
+Here, we have used the `union()` method to find the union between two sets: `hashset1` and `hashset2`.
 
 ____
 
-Aside:
+##### Aside:
 
-References
-
-____
+###### References
 
 Git
 
@@ -380,21 +378,17 @@ Chrome Extension for Referencing
 
 ____
 
-
-
-____
-
 ```rust
 hashset1.union(&hashset2).collect();
 ```
 
 ____
 
-The union() method returns an iterator, so we have used the collect() method to get the actual result.
+The `union()` method returns an iterator, so we have used the `collect()` method to get the actual result.
 
 ____
 
-Note: We have passed &hashset2 as an argument to the union() method because it takes a reference as an argument.
+Note: We have passed `&hashset2` as an argument to the `union()` method because it takes a reference as an argument.
 ____
 
 [35-Tutorial-Hashset-continued-onwards.md](/documentation/34-Tutorial-HashSet-onwards.md)
