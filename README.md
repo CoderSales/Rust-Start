@@ -29,3 +29,25 @@
 ## Current program file:
 
 [programiz/attempt-01](/programiz/attempt-01)
+
+____
+
+## notes on running
+
+```bash
+cd programmiz/attempt-01
+rustc rust.rs
+./rust.exe
+```
+
+first command goes to folder where `rust.rs` file is
+
+second command compiles using `rustc` command to run rust compiler
+
+third command runs the newly compiled `rust.exe` file
+
+- Note: 
+
+    - It is necessary to add `./` before `rust.exe` to run `rust.exe`
+
+____
