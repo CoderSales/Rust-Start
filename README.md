@@ -4,7 +4,7 @@
 
 **have a quick look at instructions here:** [Start.md](/documentation/01-Start.md)
 
-[Cargo.md](/documentation/02-cargoBook.md)
+**just a note on a bug [Fixed]** [Cargo.md](/documentation/02-cargoBook.md)
 
 (uses cargo commands): [Commands.md](/documentation/03-Commands.md)
 
