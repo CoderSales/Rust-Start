@@ -87,3 +87,7 @@ The intersection HashSet
 ____
 
 #### 3. Difference between two Sets
+
+We can use the `difference()` method to find the difference between two sets. For example,
+
+
