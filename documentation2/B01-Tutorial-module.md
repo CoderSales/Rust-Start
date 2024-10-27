@@ -319,3 +319,46 @@ Here, we have a sprite module nested within the player module.
 We define a public function create() inside of the sprite module which is called using player::sprite::create() outside the module in the main() function.
 
 ____
+
+### The use keyword in Rust
+
+We can use the use keyword to bring items inside a module into the current scope. The use keyword helps us eliminate writing out the full module path to call functions.
+
+Let's rewrite our nested module example with the help of the use keyword.
+
+```rust
+// nested module
+pub mod player {
+    pub mod sprite {
+        pub fn create() {
+            println!("called player::sprite::create");
+        }
+    }
+}
+
+// bring the create function into scope
+use player::sprite::create;
+
+fn main() {
+    // call public function directly
+    create();
+}
+```
+
+#### Output
+
+```bash
+called player::sprite::create
+```
+
+____
+
+##### Note
+
+same output as last program
+
+____
+
+Here, we use the use keyword to bring the create() function into the current scope from the sprite module which is inside the player module. This allows us to call the create() function directly, without having to fully qualify the name as player::sprite::create().
+
+____
