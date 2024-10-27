@@ -21,3 +21,4 @@ Cargo.lock
 #.idea/
 
 documentation/afterInstallLog.md
+prepforcommit/**
