@@ -36,43 +36,29 @@ documentation2/B01-Tutorial-module.md
 
 ### Compiler Messages
 
+warning: function `select` is never used
+ --> main.rs:3:7
+  |
+3 |    fn select() {
+  |       ^^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: function `print` is never used
+ --> main.rs:8:11
+  |
+8 |    pub fn print() {
+  |           ^^^^^
+
+warning: 2 warnings emitted
 
 ### Compiler error
 
-error[E0601]: `main` function not found in crate `main`
-  --> main.rs:11:2
-   |
-11 | }
-   |  ^ consider adding a `main` function to `main.rs`
-
-error: aborting due to 1 previous error
-
-For more information about this error, try `rustc --explain E0601`.
-
-### more on error from rustc
-
-
-$ rustc --explain 0601
-No `main` function was found in a binary crate.
-
-To fix this error, add a `main` function:
-
-```
-fn main() {
-    // Your program will start here.
-    println!("Hello world!");
-}
-```
-
-If you don't know the basics of Rust, you can look at the
-[Rust Book][rust-book] to get started.
-
-[rust-book]: https://doc.rust-lang.org/book/
--- More  --
 
 
 ### Output
 
+Hello world!
 
 ### Notes:
 

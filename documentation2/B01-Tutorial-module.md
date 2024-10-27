@@ -84,3 +84,35 @@ mod config {
     }
 }
 ```
+
+____
+
+### Debug
+
+Add a stock main function to avoid compiler error no main function defined [E601].
+
+#### Compiler
+
+warning: function `select` is never used
+ --> main.rs:3:7
+  |
+3 |    fn select() {
+  |       ^^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: function `print` is never used
+ --> main.rs:8:11
+  |
+8 |    pub fn print() {
+  |           ^^^^^
+
+warning: 2 warnings emitted
+
+
+
+#### Output
+
+```bash
+Hello world!
+```
