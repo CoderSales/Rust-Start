@@ -11,9 +11,9 @@ mod config {
 }
 
 fn main() {
-   // public items inside module can be accessed outside the parent module
-   // call public print function from display module
-   config::print();
+   // private items inside module cannot be accessed outside the parent module
+   // calling private select function inside config module will cause a compilation error
+   display::select();
 }
 
 /*
@@ -38,24 +38,22 @@ documentation2/B01-Tutorial-module.md
 ### Compiler Messages
 
 
-warning: function `select` is never used
- --> main.rs:3:7
-  |
-3 |    fn select() {
-  |       ^^^^^^
-  |
-  = note: `#[warn(dead_code)]` on by default
-
-warning: 1 warning emitted
 
 
 ### Compiler error
 
+error[E0433]: failed to resolve: use of undeclared crate or module `display`
+  --> main.rs:16:4
+   |
+16 |    display::select();
+   |    ^^^^^^^ use of undeclared crate or module `display`
 
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0433`.
 
 ### Output
 
-called config::print
 
 ### Notes:
 

@@ -184,3 +184,57 @@ warning: 1 warning emitted
 ```rust
 called config::print
 ```
+
+Here, we call the public function print() inside of the config module using the syntax config::print(). The :: operator is used to separate the module name and the item to call inside the module.
+
+However, private items inside of the module are not accessible outside the module. If we call the private function select() inside the config module, we get a compilation error.
+
+```rust
+mod config {
+    // items in modules by default have private visibility
+    fn select() {
+        println!("called config::select");
+    }
+
+    // use the `pub` keyword to override private visibility
+    pub fn print() {
+        println!("called config::print");
+    }
+}
+
+fn main() {
+    // private items inside module cannot be accessed outside the parent module
+    // calling private select function inside config module will cause a compilation error
+    display::select();
+}
+```
+
+### Comiler Error
+
+```bash
+error[E0433]: failed to resolve: use of undeclared crate or module `display`
+  --> main.rs:16:4
+   |
+16 |    display::select();
+   |    ^^^^^^^ use of undeclared crate or module `display`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0433`.
+```
+
+____
+
+#### Aside: Note
+
+##### Expected Error
+
+```bash
+error[E0603]: function `select` is private
+  --> src/main.rs:16:14
+   |
+16 |     display::select();
+   |              ^^^^^^ private function
+```
+
+____
