@@ -175,8 +175,8 @@ ____
 
 ```bash
 cd programmiz/attempt-01
-rustc rust.rs
-./rust.exe
+rustc main.rs
+./main.exe
 ```
 
 first command goes to folder where `rust.rs` file is
