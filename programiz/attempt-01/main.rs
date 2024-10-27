@@ -55,7 +55,7 @@ warning: 1 warning emitted
 
 ### Output
 
-Hello world!
+called config::print
 
 ### Notes:
 

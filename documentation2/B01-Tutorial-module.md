@@ -178,3 +178,9 @@ warning: function `select` is never used
 
 warning: 1 warning emitted
 ```
+
+#### Updated Output
+
+```rust
+called config::print
+```
