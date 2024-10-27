@@ -1,0 +1,65 @@
+# [Module](https://www.programiz.com/rust/module)
+
+Modules in Rust help in splitting a program into logical units for better readability and organization.
+
+Once a program gets larger, it is important to split it into multiple files or namespaces. Modules help in structuring our program.
+
+A module is a collection of items: functions, structs and even other modules.
+
+____
+
+## Defining a Module in Rust
+
+The mod keyword is used to define a module. The syntax of module is:
+
+```rust
+// syntax of a module
+mod module_name {
+  // code
+}
+```
+
+Here, module_name is the name of the module.
+
+Now, let's define a module.
+
+```rust
+// a module named config
+mod config {
+    // a function print inside of the module 
+    fn print() {
+        println!("config!");
+    }
+}
+```
+
+____
+
+
+### Aside: Note:
+
+#### Compiler Messages
+
+##### Compiler error
+
+```bash
+error[E0601]: `main` function not found in crate `main`
+ --> main.rs:7:2
+  |
+7 | }
+  |  ^ consider adding a `main` function to `main.rs`
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0601`.
+```
+
+____
+
+In the above example, we create a module named config using the mod keyword.
+
+Inside the module we can define multiple items. Here, we have defined the print() function.
+
+
+
+____

@@ -1,24 +1,20 @@
-fn main() {
-    let mut str = String::from("hello");
-
-    // mutable reference 1
-    let ref1 = &mut str;
-
-    // mutable reference 2
-    let ref2 = &mut str;
-
-    println!("{}, {}", ref1, ref2);
+// a module named config
+mod config {
+   // a function print inside of the module 
+   fn print() {
+       println!("config!");
+   }
 }
 
 /*
 url:
-https://www.programiz.com/rust/references-and-borrowing
+https://www.programiz.com/rust/module
 
 Page Title:
-Rust References and Borrowing
+Rust Module
 
 Section Title:
-Modifying a Reference in Rust Part 2
+Defining a Module in Rust
 
 
 Subsection Title:
@@ -26,29 +22,22 @@ Subsection Title:
 
 ### Documentation
 
-40-Tutorail-References-and-Borrowing.md
+documentation2/B01-Tutorial-module.md
 
 
 ### Compiler Messages
 
-#### Compiler Error [E0499]
+#### Compiler error
 
-error[E0499]: cannot borrow `str` as mutable more than once at a time
-  --> main.rs:8:16
-   |
-5  |     let ref1 = &mut str;
-   |                -------- first mutable borrow occurs here
-...
-8  |     let ref2 = &mut str;
-   |                ^^^^^^^^ second mutable borrow occurs here
-9  |
-10 |     println!("{}, {}", ref1, ref2);
-   |                        ---- first borrow later used here
+error[E0601]: `main` function not found in crate `main`
+ --> main.rs:7:2
+  |
+7 | }
+  |  ^ consider adding a `main` function to `main.rs`
 
 error: aborting due to 1 previous error
 
-For more information about this error, try `rustc --explain E0499`.
-
+For more information about this error, try `rustc --explain E0601`.
 
 
 ### Output
