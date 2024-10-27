@@ -11,8 +11,9 @@ mod config {
 }
 
 fn main() {
-   // Your program will start here.
-   println!("Hello world!");
+   // public items inside module can be accessed outside the parent module
+   // call public print function from display module
+   config::print();
 }
 
 /*
@@ -36,6 +37,7 @@ documentation2/B01-Tutorial-module.md
 
 ### Compiler Messages
 
+
 warning: function `select` is never used
  --> main.rs:3:7
   |
@@ -44,13 +46,8 @@ warning: function `select` is never used
   |
   = note: `#[warn(dead_code)]` on by default
 
-warning: function `print` is never used
- --> main.rs:8:11
-  |
-8 |    pub fn print() {
-  |           ^^^^^
+warning: 1 warning emitted
 
-warning: 2 warnings emitted
 
 ### Compiler error
 

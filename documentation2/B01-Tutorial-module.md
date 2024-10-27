@@ -116,3 +116,65 @@ warning: 2 warnings emitted
 ```bash
 Hello world!
 ```
+
+____
+
+Here, we define a module named config with two functions select() and print().
+
+The print() function starts with the pub keyword which means it has public visibility. However, the select() function does not.
+
+If we compile the above program, we don't get any output because we have not used the functions yet.
+
+#### Repeat Compiler error
+
+```rust
+warning: function `select` is never used
+ --> main.rs:3:7
+  |
+3 |    fn select() {
+  |       ^^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: function `print` is never used
+ --> main.rs:8:11
+  |
+8 |    pub fn print() {
+  |           ^^^^^
+```
+
+Now, let's call the functions inside the module.
+
+```rust
+mod config {
+    // items in modules by default have private visibility
+    fn select() {
+        println!("called config::select");
+    }
+
+    // use the `pub` keyword to override private visibility
+    pub fn print() {
+        println!("called config::print");
+    }
+}
+
+fn main() {
+    // public items inside module can be accessed outside the parent module
+    // call public print function from display module
+    config::print();
+}
+```
+
+#### Updated compiler message
+
+```rust
+warning: function `select` is never used
+ --> main.rs:3:7
+  |
+3 |    fn select() {
+  |       ^^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: 1 warning emitted
+```
