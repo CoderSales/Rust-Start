@@ -56,10 +56,31 @@ For more information about this error, try `rustc --explain E0601`.
 
 ____
 
+
 In the above example, we create a module named config using the mod keyword.
 
 Inside the module we can define multiple items. Here, we have defined the print() function.
 
-
-
 ____
+
+## Visibility of Items inside a Module in Rust
+
+Items inside a module can be private or public. By default, a module is private. It means items inside the module cannot be accessed outside of the module.
+
+The pub keyword can be used to give an item public visibility.
+
+Let's look at an example.
+
+```rust
+mod config {
+    // items in modules by default have private visibility
+    fn select() {
+        println!("called config::select");
+    }
+
+    // use the `pub` keyword to override private visibility
+    pub fn print() {
+        println!("called config::print");
+    }
+}
+```
