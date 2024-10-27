@@ -1,19 +1,26 @@
-mod config {
-   // items in modules by default have private visibility
-   fn select() {
-       println!("called config::select");
+mod player {
+   // private function
+   fn focus() {
+       println!("called player::focus");
    }
 
-   // use the `pub` keyword to override private visibility
-   pub fn print() {
-       println!("called config::print");
+   // public function
+   pub fn shift() {
+       println!("called player::shift");
+   }
+
+   // public function
+   pub fn jump() {
+       // call private function focus and shift inside the module
+       focus();
+       shift();
+       println!("called player::jump");
    }
 }
 
 fn main() {
-   // private items inside module cannot be accessed outside the parent module
-   // calling private select function inside config module will cause a compilation error
-   display::select();
+   // call public function jump from player module
+   player::jump();
 }
 
 /*
@@ -28,6 +35,7 @@ Visibility of Items inside a Module in Rust
 
 
 Subsection Title:
+Example: Using Module in Rust
 
 
 ### Documentation
@@ -42,18 +50,12 @@ documentation2/B01-Tutorial-module.md
 
 ### Compiler error
 
-error[E0433]: failed to resolve: use of undeclared crate or module `display`
-  --> main.rs:16:4
-   |
-16 |    display::select();
-   |    ^^^^^^^ use of undeclared crate or module `display`
-
-error: aborting due to 1 previous error
-
-For more information about this error, try `rustc --explain E0433`.
 
 ### Output
 
+called player::focus
+called player::shift
+called player::jump
 
 ### Notes:
 

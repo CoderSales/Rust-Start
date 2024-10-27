@@ -209,7 +209,7 @@ fn main() {
 }
 ```
 
-### Comiler Error
+### Compiler Error
 
 ```bash
 error[E0433]: failed to resolve: use of undeclared crate or module `display`
@@ -238,3 +238,48 @@ error[E0603]: function `select` is private
 ```
 
 ____
+
+The error mentions that the function `select` is private. Thus, visibility of items inside a module is an important design consideration.
+
+Note: A module can also have public visibility when used together with the pub keyword.
+
+____
+
+### Example: Using Module in Rust
+
+```rust
+mod player {
+    // private function
+    fn focus() {
+        println!("called player::focus");
+    }
+
+    // public function
+    pub fn shift() {
+        println!("called player::shift");
+    }
+
+    // public function
+    pub fn jump() {
+        // call private function focus and shift inside the module
+        focus();
+        shift();
+        println!("called player::jump");
+    }
+}
+
+fn main() {
+    // call public function jump from player module
+    player::jump();
+}
+```
+
+#### Output
+
+```bash
+called player::focus
+called player::shift
+called player::jump
+```
+
+Here, we define multiple functions inside the player module. Notice that we are able to call the private function focus() in another function jump() inside the same module.
