@@ -283,3 +283,39 @@ called player::jump
 ```
 
 Here, we define multiple functions inside the player module. Notice that we are able to call the private function focus() in another function jump() inside the same module.
+
+____
+
+### Nested Modules
+
+A module can be defined inside another module. This is known as module nesting.
+
+Let's look at an example.
+
+```rust
+// nested module
+pub mod player {
+    pub mod sprite {
+        pub fn create() {
+            println!("called player::sprite::create");
+        }
+    }
+}
+
+fn main() {
+    // call public function create from sprite module which is inside player module 
+    player::sprite::create();
+}
+```
+
+#### Output
+
+```bash
+called player::sprite::create
+```
+
+Here, we have a sprite module nested within the player module.
+
+We define a public function create() inside of the sprite module which is called using player::sprite::create() outside the module in the main() function.
+
+____

@@ -1,26 +1,15 @@
-mod player {
-   // private function
-   fn focus() {
-       println!("called player::focus");
-   }
-
-   // public function
-   pub fn shift() {
-       println!("called player::shift");
-   }
-
-   // public function
-   pub fn jump() {
-       // call private function focus and shift inside the module
-       focus();
-       shift();
-       println!("called player::jump");
+// nested module
+pub mod player {
+   pub mod sprite {
+       pub fn create() {
+           println!("called player::sprite::create");
+       }
    }
 }
 
 fn main() {
-   // call public function jump from player module
-   player::jump();
+   // call public function create from sprite module which is inside player module 
+   player::sprite::create();
 }
 
 /*
@@ -31,11 +20,11 @@ Page Title:
 Rust Module
 
 Section Title:
-Visibility of Items inside a Module in Rust
+Nested Modules
 
 
 Subsection Title:
-Example: Using Module in Rust
+
 
 
 ### Documentation
@@ -53,9 +42,8 @@ documentation2/B01-Tutorial-module.md
 
 ### Output
 
-called player::focus
-called player::shift
-called player::jump
+called player::sprite::create
+
 
 ### Notes:
 
