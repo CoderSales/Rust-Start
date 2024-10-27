@@ -87,13 +87,13 @@ Here, fruit1 is the owner of the String.
 
 A String stores data both on the stack and the heap. This means that when we bind a String to a variable fruit1, the memory representation looks like this:
 
-![alt text](image.png)
+![A16-String-bound-to-Variable.png](../static/images/A16-String-bound-to-Variable.png)
 
 A String holds a pointer to the memory that holds the content of the string, a length, and a capacity in the stack. The heap on the right hand side of the diagram holds the contents of the String.
 
 Now, when we assign fruit1 to fruit2, this is how the memory representation looks like:
 
-![alt text](image-1.png)
+![A17-String-Value-Post-Variable-Move.png](../static/images/A17-String-Value-Post-Variable-Move.png)
 
 Rust will invalidate (drop) the first variable fruit1, and move the value to another variable fruit2. This way two variables cannot point to the same content. At any point, there is only one owner of the value.
 
