@@ -43,5 +43,11 @@ cargo new hello_world --bin
 ### Output
 
 ```bash
-
+    Creating binary (application) `hello_world` package
+note: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 ```
+
+We create a binary package hello_world using cargo and the --bin option. It is the default cargo behavior.
+
+Let's look at the contents of the hello_world package.
+
