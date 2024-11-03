@@ -78,6 +78,18 @@ ls */*
 
 ____
 
+[tree how to only go to depth 3 folders - Google Search](https://www.google.com/search?q=tree+how+to+only+go+to+depth+3+folders&oq=tree+how+to+only+go+to+depth+3+folders&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCTExNzEwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8)
+
+###### PowerShell
+
+```bash
+Get-Childitem C:\Users\specifyUsername -include *.docx -depth 2
+```
+
+[PowerTip: Limit Get-Childitem to a limited depth in the tree - Scripting Blog [archived]](https://devblogs.microsoft.com/scripting/powertip-limit-get-childitem-to-a-limited-depth-in-the-tree/)
+
+____
+
 #### Referencing tool
 
 [CoderSales/javascript-chrome-extension-2-version-2: javascript-chrome-extension-2-version-2](https://github.com/CoderSales/javascript-chrome-extension-2-version-2)
