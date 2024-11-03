@@ -63,6 +63,21 @@ ____
 
 ____
 
+#### Aside on tree limit depth
+
+[tree how to only go to depth 3 folders - Google Search](https://www.google.com/search?q=tree+how+to+only+go+to+depth+3+folders&oq=tree+how+to+only+go+to+depth+3+folders&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCTExNzEwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8)
+
+____
+
+```bash
+ls */*
+```
+
+[directory - Can I use ls -R to show up to 2 folder depth? - Ask Ubuntu](https://askubuntu.com/questions/161442/can-i-use-ls-r-to-show-up-to-2-folder-depth)
+
+
+____
+
 #### Referencing tool
 
 [CoderSales/javascript-chrome-extension-2-version-2: javascript-chrome-extension-2-version-2](https://github.com/CoderSales/javascript-chrome-extension-2-version-2)
