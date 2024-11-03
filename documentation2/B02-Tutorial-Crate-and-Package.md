@@ -51,3 +51,20 @@ We create a binary package hello_world using cargo and the --bin option. It is t
 
 Let's look at the contents of the hello_world package.
 
+____
+
+### Aside on tree
+
+____
+
+[how to display tree in powershell on windows - Google Search](https://www.google.com/search?q=how+to+display+tree+in+powershell+on+windows&num=10&newwindow=1&sca_esv=6afdee832c06e966&sxsrf=ADLYWIJMjTiT7VLcs5xLfzfuhkx1TKQG_A%3A1730630448662&ei=MFMnZ7uOKIKvhbIPrbG1uA0&ved=0ahUKEwi75oTp_L-JAxWCV0EAHa1YDdcQ4dUDCA8&uact=5&oq=how+to+display+tree+in+powershell+on+windows&gs_lp=Egxnd3Mtd2l6LXNlcnAiLGhvdyB0byBkaXNwbGF5IHRyZWUgaW4gcG93ZXJzaGVsbCBvbiB3aW5kb3dzMggQIRigARjDBDIIECEYoAEYwwQyCBAhGKABGMMESMccUIIQWM8bcAB4A5ABAJgBWqABvAWqAQIxMbgBA8gBAPgBAZgCDaAC5AXCAgQQABhHwgIKECEYoAEYwwQYCpgDAOIDBRIBMSBAiAYBkAYIkgcCMTOgB8BA&sclient=gws-wiz-serp)
+
+[How to use the tree command in PowerShell?](https://www.tutorialspoint.com/how-to-use-the-tree-command-in-powershell#:~:text=c%3A%5C%3Etree%20%2F%3F,ASCII%20instead%20of%20extended%20characters.)
+
+____
+
+#### Referencing tool
+
+[CoderSales/javascript-chrome-extension-2-version-2: javascript-chrome-extension-2-version-2](https://github.com/CoderSales/javascript-chrome-extension-2-version-2)
+
+____
