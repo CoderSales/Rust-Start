@@ -114,7 +114,7 @@ pwd
 
 Copy path
 
-paste to replace insertpath here:
+Paste to replace insertpath here:
 
 ```bash
 Get-Childitem insertpath -depth 2
