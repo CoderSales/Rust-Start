@@ -167,7 +167,7 @@ cargo new hello_world_lib --lib
 
 #### Aside
 
-![image of cargo new hello_world_lib --lib command and output](image.png)
+![image of cargo new hello_world_lib --lib command and output](../static/images/A21-image.png)
 
 ##### Input and Output
 
@@ -179,7 +179,7 @@ note: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.
 
 Corresponds with the following Screenshot from tutorial
 
-![Screenshot of Creating a Library Package in Rust from programiz tutorial](image-1.png)
+![Screenshot of Creating a Library Package in Rust from programiz tutorial](../static/images/A19-image-1.png)
 
 #### End Aside
 
@@ -191,7 +191,7 @@ Let's look at the contents of the `hello_world_lib` package.
 
 ##### cargoBox
 
-![alt text](cargoBox.jpg)
+![alt text](../static/images/A18-cargoBox.jpg)
 
 #### End Aside
 
@@ -273,7 +273,7 @@ Here,
 
 A package can contain `src/main.rs` and `src/lib.rs`. In this case, it has two crates: a binary and a library, both with the same name as the package. For example,
 
-![output image of folder tree from programiz tutorial](image-2.png)
+![output image of folder tree from programiz tutorial](../static/images/A20-image-2.png)
 
 ____
 
