@@ -105,7 +105,7 @@ ls
 ```
 
 ```bash
-cd programiz/attempt1/hello_world
+cd programiz/attempt-01/hello_world
 ```
 
 ```bash
@@ -192,6 +192,74 @@ Let's look at the contents of the `hello_world_lib` package.
 ##### cargoBox
 
 ![alt text](cargoBox.jpg)
+
+#### End Aside
+
+#### Aside
+
+Open PowerShell
+
+###### PowerShell
+
+```bash
+ls
+```
+
+```bash
+cd programiz/attempt-01/hello_world
+```
+
+```bash
+pwd
+```
+
+Copy path
+
+Paste to replace insertpath here:
+
+```bash
+Get-Childitem insertpath -depth 2
+```
+
+#### End Aside
+
+#### Aside
+
+Open PowerShell
+
+###### PowerShell
+
+```bash
+ls
+```
+
+```bash
+cd programiz/attempt-01/hello_world/hello_world_lib
+```
+
+```bash
+pwd
+```
+
+Copy path
+
+Paste to replace insertpath here:
+
+```bash
+Get-Childitem insertpath -depth 2
+```
+
+##### Output
+
+###### hello_world\hello_world_lib
+
+src
+
+Cargo.toml
+
+###### hello_world\hello_world_lib\src
+
+lib.rs
 
 #### End Aside
 
