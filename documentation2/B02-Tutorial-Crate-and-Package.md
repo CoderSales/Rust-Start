@@ -177,6 +177,10 @@ cargo new hello_world_lib --lib
 note: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 ```
 
+Corresponds with the following Screenshot from tutorial
+
+![Screenshot of Creating a Library Package in Rust from programiz tutorial](image-1.png)
+
 #### End Aside
 
 ____
