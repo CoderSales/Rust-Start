@@ -144,6 +144,42 @@ Here,
 - `src/main.rs` is the crate root and contains the source code of the binary package
 
 ____
+
+### Creating a Library Package in Rust
+
+____
+
+#### Aside
+
+In git bash
+
+```bash
+cd programiz/attempt-01/hello_world
+```
+
+#### End Aside
+
+Similarly, we can create a library package in Rust using cargo.
+
+```bash
+cargo new hello_world_lib --lib
+```
+
+#### Aside
+
+![image of cargo new hello_world_lib --lib command and output](image.png)
+
+##### Input and Output
+
+```bash
+cargo new hello_world_lib --lib
+    Creating library `hello_world_lib` package
+note: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+```
+
+#### End Aside
+
+____
 ____
 
 #### Referencing tool
