@@ -263,6 +263,16 @@ lib.rs
 
 #### End Aside
 
+Here,
+
+- `hello_world_lib` is the package directory
+
+- `Cargo.toml` is a file that contains metadata about the crate, such as its name, version, and dependencies
+
+- `src/lib.rs` is the crate root and contains the source code of the library package
+
+A package can contain `src/main.rs` and `src/lib.rs`. In this case, it has two crates: a binary and a library, both with the same name as the package. For example,
+
 ____
 ____
 
