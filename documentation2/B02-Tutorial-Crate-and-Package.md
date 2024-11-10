@@ -183,6 +183,10 @@ Corresponds with the following Screenshot from tutorial
 
 #### End Aside
 
+We create a library package `hello_world_lib` using cargo and the `--lib` option.
+
+Let's look at the contents of the `hello_world_lib` package.
+
 ____
 ____
 
