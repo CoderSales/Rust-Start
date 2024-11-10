@@ -276,6 +276,10 @@ A package can contain `src/main.rs` and `src/lib.rs`. In this case, it has two c
 ![output image of folder tree from programiz tutorial](image-2.png)
 
 ____
+
+**Note:** Cargo by convention passes the crate root files to the Rust compiler to build the library or binary.
+
+____
 ____
 
 ## References
