@@ -273,6 +273,8 @@ Here,
 
 A package can contain `src/main.rs` and `src/lib.rs`. In this case, it has two crates: a binary and a library, both with the same name as the package. For example,
 
+![output image of folder tree from programiz tutorial](image-2.png)
+
 ____
 ____
 
