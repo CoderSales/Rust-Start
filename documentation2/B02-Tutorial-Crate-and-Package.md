@@ -96,6 +96,8 @@ ____
 
 to apply this to PowerShell:
 
+Open PowerShell
+
 ###### PowerShell
 
 ```bash
