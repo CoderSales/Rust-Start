@@ -101,6 +101,14 @@ Open PowerShell
 ###### PowerShell
 
 ```bash
+ls
+```
+
+```bash
+cd programiz/attempt1/hello_world
+```
+
+```bash
 pwd
 ```
 
