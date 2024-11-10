@@ -134,6 +134,16 @@ main.rs
 Corresponds with programiz tutorial
 
 ____
+
+Here,
+
+- `hello_world` is the package directory
+
+- `Cargo.toml` is a file that contains metadata about the crate, such as its name, version, and dependencies
+
+- `src/main.rs` is the crate root and contains the source code of the binary package
+
+____
 ____
 
 #### Referencing tool
