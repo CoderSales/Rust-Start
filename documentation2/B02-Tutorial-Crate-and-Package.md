@@ -187,8 +187,20 @@ We create a library package `hello_world_lib` using cargo and the `--lib` option
 
 Let's look at the contents of the `hello_world_lib` package.
 
+![alt text](cargoBox.jpg)
+
 ____
 ____
+
+## References
+
+### cargoBox image
+
+Google [cargo box ship wooden cartoon old](https://www.google.com/search?q=cargo+box+ship+wooden+cartoon+old&oq=cargo+box+ship+wooden+cartoon+old&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCDg0OTVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8)
+
+image made in Google Slides
+
+### Referencing tools
 
 #### Referencing tool
 
