@@ -104,7 +104,9 @@ Open PowerShell
 pwd
 ```
 
-Copy result and replace insertpath in next line.
+Copy path
+
+paste to replace insertpath here:
 
 ```bash
 Get-Childitem insertpath -depth 2
