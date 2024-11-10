@@ -187,7 +187,13 @@ We create a library package `hello_world_lib` using cargo and the `--lib` option
 
 Let's look at the contents of the `hello_world_lib` package.
 
+#### Aside
+
+##### cargoBox
+
 ![alt text](cargoBox.jpg)
+
+#### End Aside
 
 ____
 ____
