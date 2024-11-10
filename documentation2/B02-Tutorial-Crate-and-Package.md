@@ -120,6 +120,19 @@ Paste to replace insertpath here:
 Get-Childitem insertpath -depth 2
 ```
 
+###### Output
+
+in \hello_world:
+
+src
+Cargo.toml
+
+in \hello_world\src :
+
+main.rs
+
+Corresponds with programiz tutorial
+
 ____
 ____
 
