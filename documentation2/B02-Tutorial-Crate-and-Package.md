@@ -90,6 +90,26 @@ Get-Childitem C:\Users\specifyUsername -include *.docx -depth 2
 
 ____
 
+### End of Aside on tree
+
+### application to current project
+
+to apply this to PowerShell:
+
+###### PowerShell
+
+```bash
+pwd
+```
+
+Copy result and replace insertpath in next line.
+
+```bash
+Get-Childitem insertpath -depth 2
+```
+
+____
+
 #### Referencing tool
 
 [CoderSales/javascript-chrome-extension-2-version-2: javascript-chrome-extension-2-version-2](https://github.com/CoderSales/javascript-chrome-extension-2-version-2)
