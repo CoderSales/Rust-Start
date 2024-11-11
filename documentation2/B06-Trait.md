@@ -239,3 +239,10 @@ cargo build
 ```bash
 cargo run
 ```
+
+##### Output
+
+```bash
+x: 10
+y: 10
+```
