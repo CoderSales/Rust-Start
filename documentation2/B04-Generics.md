@@ -222,3 +222,72 @@ warning: `hello_world` (bin "hello_world") generated 1 warning
 int_point: Point { x: 1, y: 2 }
 float_point: Point { x: 1.1, y: 2.2 }
 ```
+
+### Generic Function in Rust
+
+We can also create functions with generic types as parameter(s).
+
+Here is the syntax of a generic function.
+
+```rust
+// generic function with single generic type
+fn my_function<T>(x: T, y: T) -> T {
+    // function body
+    // do something with `x` and `y`
+}
+
+// generic function with multiple generic types
+fn my_function<T, U>(x: T, y: U) {
+    // function body
+    // do something with `x` and `y`
+}
+```
+
+Here, `<T>` in the function definition signifies a generic function over type `T`. Similarly, `<T, U>` signifies a generic function over type `T` and `U`.
+
+____
+
+#### Example: Generic Function in Rust
+
+```bash
+fn main() {
+    // generic function to find minimum between two inputs
+    fn min<T: PartialOrd>(a: T, b: T) -> T {
+        if a < b {
+            return a;
+        } else {
+            return b;
+        }
+    }
+
+    // call generic function with integer type as parameters    
+    let result1 = min(2, 7);
+
+    // call generic function with float type as parameters
+    let result2 = min(2.1, 1.1);
+    
+    println!("Result1 = {}", result1);
+    println!("Result2 = {}", result2);
+}
+```
+
+```bash
+cargo build
+```
+
+##### Output
+
+```bash
+Result1 = 2
+Result2 = 1.1
+```
+
+In this example, we create a function `min()` with generic type arguments `a: T` and `b: T`. The type parameter `T` is declared with the syntax `<T: PartialOrd>`, which means that T can be any type that implements the `PartialOrd` trait.
+
+The `PartialOrd` trait provides methods for comparing values of a type, such as `<` and `>`. This feature of Rust is called Trait bounds. If we don't use `<T: PartialOrder>`, Rust will throw a compile error: `error[E0369]: binary operation `<` cannot be applied to type `T``
+
+Thus, we should restrict the parameter `T` to `PartialOrd` from the `std::cmp` module.
+
+To learn more about traits, visit [Rust Trait](https://www.programiz.com/rust/trait).
+
+____
