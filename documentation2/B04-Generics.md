@@ -102,3 +102,81 @@ cargo run
 Numbers: {2: "Two", 1: "One"}
 Language Codes: {"EN": "English", "NE": "Nepali"}
 ```
+
+Here, we create two HashMap data structures: `HashMap<i32, &str>` and `HashMap<&str, &str>`.
+
+This is possible because HashMap implementation uses generics and can work with different types.
+
+____
+
+### Generic Struct
+
+We can create a generic struct data structure in Rust with the help of generics. For example, we can declare a struct with generic parameter(s).
+
+```rust
+struct Point<T> {
+    x: T,
+    y: T,
+}
+```
+
+Here, we create a struct `Point` with generic type parameter `T` in angle brackets. Inside the body of the struct, we use the `T` data type for `x` and `y`.
+
+Now, to use the generic struct `Point` we can initialize it and bind it to a variable.
+
+```rust
+let int_point = Point { x: 1, y: 2 };
+let float_point = Point { x: 1.1, y: 2.2 };
+```
+
+Here, we initialize the `Point` struct twice, first with integer values and second with float values.
+
+____
+
+#### Example: Generic Struct in Rust
+
+```rust
+fn main() {
+    // defining a struct with generic data type
+    #[derive(Debug)]
+    struct Point<T> {
+        x: T,
+        y: T,
+    }
+    
+    // initializing a generic struct with i32 data type
+    let int_point = Point { x: 1, y: 2 };
+    
+    // initializing a generic struct with f32 data type
+    let float_point = Point { x: 1.1, y: 2.2 };
+    
+    println!("int_point: {:?}", int_point);
+    println!("float_point: {:?}", float_point);
+}
+```
+
+##### Output
+
+###### from programiz Tutorial
+
+```bash
+int_point: Point { x: 1, y: 2 }
+float_point: Point { x: 1.1, y: 2.2 }
+```
+
+###### Commands to compile and run program
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+###### Output from code
+
+```bash
+Numbers: {1: "One", 2: "Two"}
+Language Codes: {"EN": "English", "NE": "Nepali"}
+```
