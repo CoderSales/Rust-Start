@@ -84,7 +84,7 @@ fn main() {
 
 ##### Tutorial Screenshot
 
-![Screenshot of Output from tutorial](image.png)
+![Screenshot of Output from tutorial](../static/images/A24-image.png)
 
 #### Commands
 

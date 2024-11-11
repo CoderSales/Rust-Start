@@ -199,7 +199,7 @@ ____
 
 #### Breakdown of macro match rule in Rust from image
 
-![Screenshot of Breakdown of macro match rule in Rust from Programiz tutorial](image-1.png)
+![Screenshot of Breakdown of macro match rule in Rust from Programiz tutorial](../statis/images/A25-image-1.png)
 
 ```rust
 ( $( $x:expr ),* )
