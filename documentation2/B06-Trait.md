@@ -1,4 +1,4 @@
-# Trait
+# [Trait](https://www.programiz.com/rust/trait)
 
 A Rust trait defines shared functionality for multiple types.
 
