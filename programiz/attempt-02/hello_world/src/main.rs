@@ -1,19 +1,45 @@
-fn main() {
-    // generic function to find minimum between two inputs
-    fn min<T: PartialOrd>(a: T, b: T) -> T {
-        if a < b {
-            return a;
-        } else {
-            return b;
-        }
+// Define a trait Printable
+trait Printable {
+    fn print(&self);
+}
+
+// Define a struct to implement a trait
+struct Person {
+    name: String,
+    age: u32,
+}
+
+// Implement trait Printable on struct Person
+impl Printable for Person {
+    fn print(&self) {
+        println!("Person {{ name: {}, age: {} }}", self.name, self.age);
     }
+}
 
-    // call generic function with integer type as parameters    
-    let result1 = min(2, 7);
+// Define another struct to implement a trait
+struct Car {
+    make: String,
+    model: String,
+}
 
-    // call generic function with float type as parameters
-    let result2 = min(2.1, 1.1);
+// Define trait Printable on struct Car
+impl Printable for Car {
+    fn print(&self) {
+        println!("Car {{ make: {}, model: {} }}", self.make, self.model);
+    }
+}
+
+// Utility function to print any object that implements the Printable trait
+fn print_thing<T: Printable>(thing: &T) {
+    thing.print();
+}
+
+fn main() {
+    // Instantiate Person and Car
+    let person = Person { name: "Hari".to_string(), age: 31 };
+    let car = Car { make: "Tesla".to_string(), model: "Model X".to_string() };
     
-    println!("Result1 = {}", result1);
-    println!("Result2 = {}", result2);
+    // Call print_thing with reference of Person and Car
+    print_thing(&person);
+    print_thing(&car);
 }
