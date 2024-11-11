@@ -205,3 +205,19 @@ If the operation does not proceed, we return a custom message: `could not remove
 
 If the file `data.txt` is not found or cannot be removed, we encounter an error.
 
+#### cargo run
+
+```bash
+cargo run
+```
+
+##### Output
+
+```bash
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target\debug\hello_world.exe`
+thread 'main' panicked at src/main.rs:5:33:
+could not remove file: Os { code: 2, kind: NotFound, message: "The system cannot find the file specified." }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace       
+error: process didn't exit successfully: `target\debug\hello_world.exe` (exit code: 101)
+```
