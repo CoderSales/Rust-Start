@@ -48,5 +48,75 @@ Now,
 
 If we want to use the "[rand](https://crates.io/crates/rand)" crate, we add the following line to the `[dependencies]` section of the `Cargo.toml`.
 
+**Note:** We can also add dependency to our project using the command cargo add rand.
+
+- Next, we'll need to import the crate in our `src/main.rs` Rust file. We can do this by using `extern crate <crate_name>` line at the top of the file.
+
+```bash
+extern crate rand;
+```
+
+Now, we can use the "rand" crate to generate a random number between **1** and **6**. The `use` keyword is used here to import items (such as functions, types, and constants) from the "rand" crate in the current scope.
+
+```bash
+extern crate rand;
+```
+
+```bash
+use rand::Rng;
+
+fn main() {
+    let mut rng = rand::thread_rng();
+
+    // simulate rolling a die
+    println!("roll = {}", rng.gen_range(1..=6));
+}
+
+# Output: roll = 5
+```
+____
+
+### Building and Running Project with Cargo in Rust
+
+We can use cargo to install, build and run our hello_world project with the "rand" crate. Here's how:
+
+**Build the project**
+
+```bash
+cargo build
+```
+
+#### Output
+
+![Image of Output of building crate](image.png)
+
+The `cargo build` command first installs any crates that are in use inside the `src/` directory and then proceeds to compile the project.
 
 ____
+
+### Run the project
+
+```bash
+cargo run
+```
+
+#### Output
+
+![Screenshot of Output](image-1.png)
+
+Hello, world!
+
+____
+
+### Useful Cargo Commands in Rust
+
+Cargo can do a bunch of repetitive tasks for us. Here are some of the commonly used cargo commands.
+
+|Command    |	Description           |
+|-----------|-------------------------|
+|cargo new  |	Create a new Rust project with basic directory structure |
+|cargo build|	Build (compile) the current project and generate a binary executable |
+|cargo run	|Build and run your current project (cargo build + run) |
+|cargo check|	Build the current project without generating a binary executable |
+|cargo add|	Add a new dependency and include it in Cargo.toml file |
+|cargo update|	Update all dependencies of current project to latest version |
