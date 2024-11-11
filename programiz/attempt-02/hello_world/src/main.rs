@@ -1,15 +1,15 @@
 use std::fs::File;
+use std::io::Read;
 
 fn main() {
-    // Open a file in read only mode in the local file system
-    let data_result = File::open("../../../static/data/data.txt");
+    // Read a file in the local file system
+    let mut data_file = File::open("../../../static/data/data.txt").unwrap();
 
-    // Reading a file returns a Result enum
-    // Result can be a file or an error
-    let data_file = match data_result {
-        Ok(file) => file,
-        Err(error) => panic!("Problem opening the data file: {:?}", error),
-    };
+    // Create an empty mutable string
+    let mut file_content = String::new();
 
-    println!("Data file: {:?}", data_file);
+    // Copy contents of file to a mutable string
+    data_file.read_to_string(&mut file_content).unwrap();
+
+    println!("File content: {:?}", file_content);
 }

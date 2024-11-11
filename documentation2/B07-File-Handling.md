@@ -65,3 +65,51 @@ cargo run
 ```bash
 Data file: File { handle: 0xc4, path: "...data.txt" }
 ```
+
+Here, we import the module `std::fs::File` on the top of the program to use the file I/O functions.
+
+To open a file, we call `File::open("data.txt")` which reads the `data.txt` file in the local file system.
+
+The `open()` function returns a `Result` enum which will return the `File` object or an `Err`.
+
+Then, we pattern match the `data_result` variable and `panic!` if there is an error with opening the file. If opening the file doesn't error, we output the `File` object.
+
+____
+
+#### Reading a File in Rust
+
+To read a file in Rust, we use the `read_to_string()` method of the `std::io:Read` trait. This method reads all bytes until end of file (EOF) and copies it to a mutable string.
+
+Here's an example.
+
+```rust
+use std::fs::File;
+use std::io::Read;
+
+fn main() {
+    // Read a file in the local file system
+    let mut data_file = File::open("data.txt").unwrap();
+
+    // Create an empty mutable string
+    let mut file_content = String::new();
+
+    // Copy contents of file to a mutable string
+    data_file.read_to_string(&mut file_content).unwrap();
+
+    println!("File content: {:?}", file_content);
+}
+```
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+##### Output
+
+```bash
+File content: "The quick brown fox jumps over the lazy dog.\\n"
+```
