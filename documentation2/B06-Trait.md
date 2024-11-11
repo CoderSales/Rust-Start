@@ -246,3 +246,11 @@ cargo run
 x: 10
 y: 10
 ```
+
+Here, we use the `derive` keyword to implement trait `Copy` and `Clone` from the Rust standard library.
+
+The `Copy` trait allows us to assign `x` to `y` by simply copying. The `Clone` trait allows us to create a new instance that is an exact copy of an existing instance.
+
+By using the `derive` keyword, we can avoid writing the code required to implement these traits.
+
+____
