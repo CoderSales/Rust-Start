@@ -170,13 +170,55 @@ float_point: Point { x: 1.1, y: 2.2 }
 cargo build
 ```
 
+###### Compiler
+
+```bash
+warning: fields `x` and `y` are never read
+ --> src/main.rs:5:9
+  |
+4 |     struct Point<T> {
+  |            ----- fields in this struct
+5 |         x: T,
+  |         ^
+6 |         y: T,
+  |         ^
+  |
+  = note: `Point` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+  = note: `#[warn(dead_code)]` on by default
+
+warning: `hello_world` (bin "hello_world") generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.23s
+```
+
+###### Run
+
 ```bash
 cargo run
+```
+
+###### Messages when running
+
+```bash
+warning: fields `x` and `y` are never read
+ --> src/main.rs:5:9
+  |
+4 |     struct Point<T> {
+  |            ----- fields in this struct
+5 |         x: T,
+  |         ^
+6 |         y: T,
+  |         ^
+  |
+  = note: `Point` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+  = note: `#[warn(dead_code)]` on by default
+
+warning: `hello_world` (bin "hello_world") generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
 ```
 
 ###### Output from code
 
 ```bash
-Numbers: {1: "One", 2: "Two"}
-Language Codes: {"EN": "English", "NE": "Nepali"}
+int_point: Point { x: 1, y: 2 }
+float_point: Point { x: 1.1, y: 2.2 }
 ```

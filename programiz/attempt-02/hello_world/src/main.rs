@@ -1,21 +1,17 @@
-use std::collections::HashMap;
-
 fn main() {
-    // Create a HashMap with types i32 and &str
-    let mut numbers: HashMap<i32, &str> = HashMap::new();
-
-    // Insert values to numbers HashMap
-    numbers.insert(1, "One");
-    numbers.insert(2, "Two");
-
-    println!("Numbers: {:?}", numbers);
+    // defining a struct with generic data type
+    #[derive(Debug)]
+    struct Point<T> {
+        x: T,
+        y: T,
+    }
     
-    // Create a HashMap with types &str and &str   
-    let mut language_codes: HashMap<&str, &str> = HashMap::new();
-
-    // Insert values to language_codes HashMap
-    language_codes.insert("EN", "English");
-    language_codes.insert("NE", "Nepali");
+    // initializing a generic struct with i32 data type
+    let int_point = Point { x: 1, y: 2 };
     
-    println!("Language Codes: {:?}", language_codes);
+    // initializing a generic struct with f32 data type
+    let float_point = Point { x: 1.1, y: 2.2 };
+    
+    println!("int_point: {:?}", int_point);
+    println!("float_point: {:?}", float_point);
 }
