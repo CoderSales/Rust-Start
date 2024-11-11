@@ -113,3 +113,51 @@ cargo run
 ```bash
 File content: "The quick brown fox jumps over the lazy dog.\\n"
 ```
+
+Here, we import two modules: `std::fs::File` and `std::io::Read` for reading a file. We first open the file `data.txt` with `File::open("data.txt") `method call and bind its result to a variable `data_file`.
+
+Once we open the file, we use the `read_to_string()` method which takes an empty mutable string `file_content` as an argument and copies the content of the file `data.txt` to `file_content`.
+
+____
+
+###### Note:
+
+We use `unwrap()` twice to get the result from the method calls. unwrap() is a utility method to work with `Option` and `Result` type. To learn more, visit [Rust unwrap() and expect()](https://www.programiz.com/rust/unwrap-and-expect).
+`read_to_string()` comes from the `std::io::Read` trait. To learn more, visit [Rust Trait](https://www.programiz.com/rust/trait).
+
+____
+
+### Writing to a File in Rust
+
+To write to a file in Rust, we can use the `write()` method from the `std::io:Write` trait. This method writes contents to a file.
+
+Let's look at an example.
+
+```rust
+use std::fs::File;
+use std::io::Write;
+
+fn main() {
+    // Create a file
+    let mut data_file = File::create("data.txt").expect("creation failed");
+
+    // Write contents to the file
+    data_file.write("Hello, World!".as_bytes()).expect("write failed");
+
+    println!("Created a file data.txt");
+}
+```
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+#### Output
+
+```bash
+Created a file data.txt
+```

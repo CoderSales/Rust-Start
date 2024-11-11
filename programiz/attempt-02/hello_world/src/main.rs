@@ -1,15 +1,12 @@
 use std::fs::File;
-use std::io::Read;
+use std::io::Write;
 
 fn main() {
-    // Read a file in the local file system
-    let mut data_file = File::open("../../../static/data/data.txt").unwrap();
+    // Create a file
+    let mut data_file = File::create("data.txt").expect("creation failed");
 
-    // Create an empty mutable string
-    let mut file_content = String::new();
+    // Write contents to the file
+    data_file.write("Hello, World!".as_bytes()).expect("write failed");
 
-    // Copy contents of file to a mutable string
-    data_file.read_to_string(&mut file_content).unwrap();
-
-    println!("File content: {:?}", file_content);
+    println!("Created a file data.txt");
 }
