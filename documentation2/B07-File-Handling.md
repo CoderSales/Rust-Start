@@ -161,3 +161,40 @@ cargo run
 ```bash
 Created a file data.txt
 ```
+
+Here, we import `std::fs::File` and `std::io::Write` modules for writing to a file. We first create a file `data.txt` with the `File::create("data.txt")` method and bind it to a mutable variable `data_file`.
+
+After we create a file, we write to the file using the `write()` method with the content `"Hello, World!"`.
+
+____
+
+### Removing a File in Rust
+
+To remove or delete a file in Rust, we can use the remove_file() method from the std::fs module.
+
+For example,
+
+```rust
+use std::fs;
+
+fn main() {
+    // Remove a file
+    fs::remove_file("data.txt").expect("could not remove file");
+    
+    println!("Removed file data.txt");
+}
+```
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+#### Output
+
+```bash
+Removed file data.txt
+```

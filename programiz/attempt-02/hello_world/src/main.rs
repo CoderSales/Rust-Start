@@ -1,12 +1,8 @@
-use std::fs::File;
-use std::io::Write;
+use std::fs;
 
 fn main() {
-    // Create a file
-    let mut data_file = File::create("data.txt").expect("creation failed");
-
-    // Write contents to the file
-    data_file.write("Hello, World!".as_bytes()).expect("write failed");
-
-    println!("Created a file data.txt");
+    // Remove a file
+    fs::remove_file("data.txt").expect("could not remove file");
+    
+    println!("Removed file data.txt");
 }
