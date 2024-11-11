@@ -1,12 +1,14 @@
-// A macro named `print_message`
-macro_rules! print_message {
-    // Match rule that takes an argument expression
-    ($message:expr) => {
-        println!("{}", $message)
+// A macro which uses repetitions
+macro_rules! repeat_print {
+    // match rule which matches multiple expressions in an argument
+    ($($x:expr),*) => {
+        $(
+            println!("{}", $x);
+        )*
     };
 }
 
 fn main() {
-    // Call the macro with an argument
-    print_message!("I am learning Rust!");
+    // Call the macro with multiple arguments
+    repeat_print!(1, 2, 3);
 }

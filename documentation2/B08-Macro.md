@@ -106,3 +106,121 @@ cargo run
 ```bash
 I am learning Rust!
 ```
+
+Here, we create a macro called `print_message` which takes an argument `$message`. The argument(s) of a macro are prefixed by a dollar sign `$` and type annotated with a **designator**.
+
+Rust will try to match the patterns defined within the match rules. In the above example our rule is:
+
+```rust
+($message:expr) => {
+    println!("{}", $message)
+};
+```
+
+The first part after the dollar sign `$` is the name of the variable. We capture it as a `$message`.
+
+The part after the semicolon `:` is called a designator, which are types that we can choose to match for. We are using the expression designator (`expr`) in the example.
+
+Now, when we call the macro `print_message!("I am learning Rust!")` it matches our input expression and captures the `$message` variable.
+
+Here, `$message` is assigned to `"I am learning Rust!"` which is then passed into `println!("{}", $message)`.
+
+It will generate code that is equivalent to writing `println!("{}", "I am learning Rust!")`. The `$message` argument allows us to specify the message to print.
+
+____
+
+#### Note: 
+
+There are many designators that we can use inside a macro rule body:
+
+- `stmt`: a statement
+
+- `pat`: a pattern
+
+- `expr`: an expression
+
+- `ty`: a type
+
+- `ident`: an identifier
+
+- …
+
+____
+
+____
+
+## Macro Repetitions in Rust
+
+Rust macro is also useful when we need to generate repetitive code. We can define a macro to accept arguments and repeat the generated code based on those arguments.
+
+The `macro_rules!` macro supports repetition using the `$(...)*` syntax. The `...` inside the parentheses can be any valid Rust expression or a pattern.
+
+Here's an example that demonstrates macro repetition:
+
+```rust
+// A macro which uses repetitions
+macro_rules! repeat_print {
+    // match rule which matches multiple expressions in an argument
+    ($($x:expr),*) => {
+        $(
+            println!("{}", $x);
+        )*
+    };
+}
+
+fn main() {
+    // Call the macro with multiple arguments
+    repeat_print!(1, 2, 3);
+}
+```
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+### Output
+
+```bash
+1
+2
+3
+```
+
+Here, the macro `repeat_print` takes a single argument, `($($x:expr),*)`, which is a repeating pattern.
+
+The pattern consists of zero or more expressions, separated by commas, that are matched by the macro. The star (`*`) symbol at the end will repeatedly match against the pattern inside `$()`.
+
+____
+
+
+#### Breakdown of macro match rule in Rust from image
+
+![Screenshot of Breakdown of macro match rule in Rust from Programiz tutorial](image-1.png)
+
+```rust
+( $( $x:expr ),* )
+```
+
+The asterisk * will repeat pattern inside the `$(...)`
+
+The comma, is the separator for the match expression
+
+____
+
+The code inside the curly braces `println!("{}", $x);`, is repeated zero or more times, once for each expression in the list of arguments as it is wrapped around `$(...)*` in the body of the macro definition. The `$x` in the code refers to the matched expressions.
+
+Each iteration of the generated code will print a different expression. Now, when we call `repeat_print!(1, 2, 3);` the macro will generate this code:
+
+```bash
+println!("{}", 1); // matches argument 1,
+println!("{}", 2); // matches argument 2,
+println!("{}", 3); // matches argument 3
+```
+
+Thus, this macro `repeat_print!` can print multiple expressions in a concise and convenient manner, without having to write out the `println!` macro every time.
+
+____
