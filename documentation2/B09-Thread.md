@@ -383,3 +383,41 @@ cargo run
 ```bash
 Received message: Hello, World!
 ```
+
+Here, we create a channel using the `channel()` function. The `std::sync::mpsc` module provides **multiple-producer, single-consumer** (mspc) channels that can be used to send values between threads.
+
+```bash
+// create a new channel
+let (sender, receiver) = mpsc::channel();
+```
+
+The `sender` and `receiver` variables represent the two endpoints of the channel. The sender endpoint is used to send messages, while the receiver endpoint is used to receive messages.
+
+```bash
+// spawn a new thread
+let handle = thread::spawn(move || {
+    // receive message from channel
+    let message = receiver.recv().unwrap();
+
+    println!("Received message: {}", message);
+});
+```
+
+We also create a spawned thread using the `thread::spawn()` function. The closure passed to the function receives a message using the `receiver.recv()` method.
+
+The `recv()` method blocks until a message is received on the channel, and it returns a `Result` indicating whether a message was received or an error occurred.
+
+```bash
+let message = String::from("Hello, World!");
+// send message to channel
+sender.send(message).unwrap();
+```
+
+In the main thread, a `message` is created and sent using the `sender.send()` method. The `send()` method returns a `Result` indicating whether the message was successfully sent or an error occurred.
+
+```bash
+// wait for spawned thread to finish
+handle.join().unwrap();
+```
+
+Finally, the `join()` method is called on the handle to wait for the spawned thread to finish before the program exits.
