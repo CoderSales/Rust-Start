@@ -1,14 +1,19 @@
-// A macro which uses repetitions
-macro_rules! repeat_print {
-    // match rule which matches multiple expressions in an argument
-    ($($x:expr),*) => {
-        $(
-            println!("{}", $x);
-        )*
-    };
-}
+use std::thread;
+use std::time::Duration;
 
 fn main() {
-    // Call the macro with multiple arguments
-    repeat_print!(1, 2, 3);
+    // create a thread
+    thread::spawn(|| {
+        // everything in here runs in a separate thread
+        for i in 0..10 {
+            println!("{} from the spawned thread!", i);
+            thread::sleep(Duration::from_millis(2));
+        }
+    });
+
+    // main thread
+    for i in 0..5 {
+        println!("{} from the main thread!", i);
+        thread::sleep(Duration::from_millis(1));
+    }
 }
