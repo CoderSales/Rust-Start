@@ -177,3 +177,65 @@ cargo run
 Person { name: Hari, age: 31 }
 Car { make: Tesla, model: Model X }
 ```
+
+In this example, we define a `Printable` trait and implement it for two structs: `Person` and `Car`. The `Printable` trait requires the method name `print` for implementers.
+
+In the `main()` function, we instantiate `Person` and `Car`, and pass it to the `print_thing()` function. The `print_thing` is a generic function that can accept reference to any object that implements the `Printable` trait.
+
+To learn more about generics in Rust, visit [Rust Generics](https://www.programiz.com/rust/generics).
+
+____
+
+#### Default Implementation of a Trait in Rust
+
+Sometimes it's useful to have default behavior for some or all of the methods in a trait. When defining a Rust trait, we can also define a default implementation of the methods.
+
+For example,
+
+```bash
+trait MyTrait {
+    // method with a default implementation
+    fn method_one(&self) {
+        println!("Inside method_one");
+    }
+    
+    // method without a default implementation
+    fn method_two(&self, arg: i32) -> bool;
+}
+```
+
+Here, `method_one()` has a `println!()` function call inside of the `method_one()` body which acts as a default behavior for all types that implement the trait `MyTrait`.
+
+However, `method_two()` just defined the method signature.
+
+____
+
+#### The derive Keyword in Rust
+
+The `derive` keyword in Rust is used to generate implementations for certain traits for a type. It can be used in a `struct` or `enum` definition.
+
+Let's look at an example,
+
+```bash
+// use derive keyword to generate implementations of Copy and Clone
+#[derive(Copy, Clone)]
+struct MyStruct {
+    value: i32,
+}
+
+fn main() {
+    let x = MyStruct { value: 10 };
+    let y = x;
+
+    println!("x: {:?}", x.value);
+    println!("y: {:?}", y.value);
+}
+```
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
