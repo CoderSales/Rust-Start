@@ -221,3 +221,47 @@ could not remove file: Os { code: 2, kind: NotFound, message: "The system cannot
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace       
 error: process didn't exit successfully: `target\debug\hello_world.exe` (exit code: 101)
 ```
+
+____
+
+### Appending to a File in Rust
+
+To append to a file in Rust, we should open the file in append mode. We can use the `append()` method in `std::fs::OpenOptions` which opens a file for appending.
+
+Then, we can use the `write()` method in `std::io::Write` trait to write data to the file.
+
+Let's look at an example.
+
+```rust
+use std::fs::OpenOptions;
+use std::io::Write;
+
+fn main() {
+    // Open a file with append option
+    let mut data_file = OpenOptions::new()
+        .append(true)
+        .open("data.txt")
+        .expect("cannot open file");
+
+    // Write to a file
+    data_file
+        .write("I am learning Rust!".as_bytes())
+        .expect("write failed");
+
+    println!("Appended content to a file");
+}
+```
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+#### Output
+
+```bash
+Appended content to a file
+```
