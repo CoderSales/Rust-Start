@@ -244,3 +244,94 @@ cargo run
 ```bash
 Hello, World!
 ```
+
+Here, the closure `||` passed to the `thread::spawn()` function uses the `move` keyword to indicate that it takes ownership of the `message` variable.
+
+When a value is moved into a thread, ownership of the value is transferred to the thread, and the main thread can no longer access the value.
+
+This means that the closure can use the `message` variable even after the main thread has completed.
+
+Let's look at what happens if we don't use the `move` keyword in front of the closure.
+
+```rust
+use std::thread;
+
+fn main() {
+    let message = String::from("Hello, World!");
+
+    // using the message variable without a move
+    let handle = thread::spawn(|| {
+        println!("{}", message);
+    });
+
+    handle.join().unwrap();
+}
+```
+
+```bash
+cargo build
+```
+
+#### Output
+
+##### Output from Programiz Tutorial
+
+```bash
+error[E0373]: closure may outlive the current function, but it borrows `message`, which is owned by the current function
+ --> src/main.rs:7:32
+  |
+7 |     let handle = thread::spawn(|| {
+  |                                ^^ may outlive borrowed value `message`
+8 |         println!("{}", message);
+  |                        ------- `message` is borrowed here
+  |
+```
+
+##### cargo build command and Output from code
+
+```bash
+cargo build
+   Compiling hello_world v0.1.0 (path_to_hello_world)
+error[E0373]: closure may outlive the current function, but it borrows `message`, which is owned by the current function
+ --> src/main.rs:7:32
+  |
+7 |     let handle = thread::spawn(|| {
+  |                                ^^ may outlive borrowed value `message`
+8 |         println!("{}", message);
+  |                        ------- `message` is borrowed here
+  |
+note: function requires argument type to outlive `'static`
+ --> src/main.rs:7:18
+  |
+7 |       let handle = thread::spawn(|| {
+  |  __________________^
+8 | |         println!("{}", message);
+9 | |     });
+  | |______^
+help: to force the closure to take ownership of `message` (and any other referenced variables), use the `move` keyword
+  |
+7 |     let handle = thread::spawn(move || {
+  |                                ++++
+
+For more information about this error, try `rustc --explain E0373`.
+error: could not compile `hello_world` (bin "hello_world") due to 1 previous error 
+```
+
+____
+
+The program in this case fails to compile. Here, Rust will try to borrow the message variable into the separate thread.
+
+```bash
+7 |     let handle = thread::spawn(|| {
+  |                                ^^ may outlive borrowed value `message`
+```
+
+However, Rust doesn't know how long the spawned thread will run. Thus it can't tell if the reference to the `message` variable will always be valid.
+
+By adding the `move` keyword before the closure, we force the closure to take ownership of the `message` variable or any variable used inside closure.
+
+We are telling Rust that the main thread won't use the `message` variable anymore. This is a classic example of Rust ownership and how it saves us from mishaps. To learn more about ownership in Rust, visit [Rust Ownership](https://www.programiz.com/rust/ownership).
+
+Note that moving a value into a thread can be useful for parallelism, but it can also be a source of bugs if not used carefully.
+
+____

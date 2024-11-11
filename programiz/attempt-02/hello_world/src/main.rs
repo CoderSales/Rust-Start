@@ -1,14 +1,12 @@
 use std::thread;
 
 fn main() {
-    // main thread starts here
     let message = String::from("Hello, World!");
 
-    // move the message value to a separate thread
-    let handle = thread::spawn(move || {
+    // using the message variable without a move
+    let handle = thread::spawn(|| {
         println!("{}", message);
     });
 
-    // wait for the thread to finish
     handle.join().unwrap();
 }
