@@ -62,7 +62,7 @@ Now, we can use the "rand" crate to generate a random number between **1** and *
 extern crate rand;
 ```
 
-```bash
+```rust
 use rand::Rng;
 
 fn main() {
@@ -88,7 +88,7 @@ cargo build
 
 #### Output
 
-![Image of Output of building crate](image.png)
+![Image of Output of building crate](../static/images/A23-image.png)
 
 The `cargo build` command first installs any crates that are in use inside the `src/` directory and then proceeds to compile the project.
 
@@ -102,7 +102,7 @@ cargo run
 
 #### Output
 
-![Screenshot of Output](image-1.png)
+![Screenshot of Output](../static/images/A22-image-1.png)
 
 Hello, world!
 
