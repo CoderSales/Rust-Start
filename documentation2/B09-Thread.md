@@ -203,3 +203,44 @@ cargo run
 3 from the main thread!
 4 from the main thread!
 ```
+
+Thus, it is important to know where `join()` is called. I will dictate whether threads run at the same time or not.
+
+____
+
+### Using move Closures with Threads in Rust
+
+A value can be moved into a separate thread by passing it as an argument to the `thread::spawn()` function.
+
+Let's look at an example.
+
+```rust
+use std::thread;
+
+fn main() {
+    // main thread starts here
+    let message = String::from("Hello, World!");
+
+    // move the message value to a separate thread
+    let handle = thread::spawn(move || {
+        println!("{}", message);
+    });
+
+    // wait for the thread to finish
+    handle.join().unwrap();
+}
+```
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+#### Output
+
+```bash
+Hello, World!
+```
