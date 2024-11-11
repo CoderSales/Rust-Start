@@ -23,3 +23,5 @@ Cargo.lock
 documentation/afterInstallLog.md
 prepforcommit/**
 prepforcommit
+C01-ThompsonBook-attempt-01/hello_*
+C01-ThompsonBook-attempt-01/hello_*/**
