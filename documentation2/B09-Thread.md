@@ -335,3 +335,51 @@ We are telling Rust that the main thread won't use the `message` variable anymor
 Note that moving a value into a thread can be useful for parallelism, but it can also be a source of bugs if not used carefully.
 
 ____
+
+## Sending Messages between Threads in Rust
+
+In Rust, threads can communicate with each other by sending messages through channels. A channel is a way to send values between threads, and it can be used to synchronize communication and avoid data races.
+
+We use the `channel()` function in the `std::sync::mspsc` module to create a channel in Rust.
+
+Let's take a look at how we can use channels to communicate between threads.
+
+```rust
+use std::sync::mpsc;
+use std::thread;
+
+fn main() {
+    // main thread starts here
+    // create a new channel
+    let (sender, receiver) = mpsc::channel();
+
+    // spawn a new thread
+    let handle = thread::spawn(move || {
+        // receive message from channel
+        let message = receiver.recv().unwrap();
+
+        println!("Received message: {}", message);
+    });
+
+    let message = String::from("Hello, World!");
+    // send message to channel
+    sender.send(message).unwrap();
+
+    // wait for spawned thread to finish
+    handle.join().unwrap();
+}
+```
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+### Output
+
+```bash
+Received message: Hello, World!
+```

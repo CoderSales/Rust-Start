@@ -1,12 +1,23 @@
+use std::sync::mpsc;
 use std::thread;
 
 fn main() {
-    let message = String::from("Hello, World!");
+    // main thread starts here
+    // create a new channel
+    let (sender, receiver) = mpsc::channel();
 
-    // using the message variable without a move
-    let handle = thread::spawn(|| {
-        println!("{}", message);
+    // spawn a new thread
+    let handle = thread::spawn(move || {
+        // receive message from channel
+        let message = receiver.recv().unwrap();
+
+        println!("Received message: {}", message);
     });
 
+    let message = String::from("Hello, World!");
+    // send message to channel
+    sender.send(message).unwrap();
+
+    // wait for spawned thread to finish
     handle.join().unwrap();
 }
