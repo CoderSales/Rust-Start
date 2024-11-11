@@ -198,3 +198,10 @@ cargo run
 ```bash
 Removed file data.txt
 ```
+
+Here, we import the `std::fs` module for deleting a file. We use the `remove_file()` method to delete the file `data.txt`.
+
+If the operation does not proceed, we return a custom message: `could not remove file` in case of an error.
+
+If the file `data.txt` is not found or cannot be removed, we encounter an error.
+
