@@ -138,3 +138,68 @@ cargo run
 8 from the spawned thread!
 9 from the spawned thread!
 ```
+
+Here, we save the return of the `thread::spawn()` function and bind it to a variable called `handle`.
+
+In the final line of the code, we call the `join()` method of the `handle`. Calling `join()` on the `handle` blocks the thread until the thread terminates.
+
+The two threads (main and spawned thread) continue alternating for some time, but the main thread waits because of `handle.join()` and does not end until the spawned thread is finished.
+
+____
+
+If we move the `handle.join()` before the final loop, the output will change and the print statements won't be interleaved.
+
+____
+
+```rust
+use std::thread;
+use std::time::Duration;
+
+fn main() {
+    // create a thread and save the handle to a variable
+    let handle = thread::spawn(|| {
+        // everything in here runs in a separate thread
+        for i in 0..10 {
+            println!("{} from the spawned thread!", i);
+            thread::sleep(Duration::from_millis(2));
+        }
+    });
+    
+    // wait for the separate thread to complete
+    handle.join().unwrap();
+
+    // main thread
+    for i in 0..5 {
+        println!("{} from the main thread!", i);
+        thread::sleep(Duration::from_millis(1));
+    }
+}
+```
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+##### Output of latest code
+
+```bash
+0 from the spawned thread!
+1 from the spawned thread!
+2 from the spawned thread!
+3 from the spawned thread!
+4 from the spawned thread!
+5 from the spawned thread!
+6 from the spawned thread!
+7 from the spawned thread!
+8 from the spawned thread!
+9 from the spawned thread!
+0 from the main thread!
+1 from the main thread!
+2 from the main thread!
+3 from the main thread!
+4 from the main thread!
+```

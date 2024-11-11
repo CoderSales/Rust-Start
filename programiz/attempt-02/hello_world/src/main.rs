@@ -10,13 +10,13 @@ fn main() {
             thread::sleep(Duration::from_millis(2));
         }
     });
+    
+    // wait for the separate thread to complete
+    handle.join().unwrap();
 
     // main thread
     for i in 0..5 {
         println!("{} from the main thread!", i);
         thread::sleep(Duration::from_millis(1));
     }
-    
-    // wait for the separate thread to complete
-    handle.join().unwrap();
 }
