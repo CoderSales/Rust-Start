@@ -265,3 +265,11 @@ cargo run
 ```bash
 Appended content to a file
 ```
+
+Here, we import the `std::fs::OpenOptions` and `std::io::Write` modules for appending to a file.
+
+The `OpenOptions::new()` and the `append(true)` method opens the file `data.txt` for appending.
+
+Next, we use the `write()` method from the `File` object to write additional content `"I am learning Rust!"` to the file.
+
+To deal with the errors, we chain the `expect()` method with a custom error message.
