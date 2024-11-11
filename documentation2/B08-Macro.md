@@ -57,3 +57,52 @@ cargo run
 ```bash
 Hello, World!
 ```
+
+In this example, we create a macro named `hello_world`. The macro definition has one rule to match which is:
+
+```rust
+() => {
+    println!("Hello, World!");
+};
+```
+
+To call the macro we use the `hello_world!()` call in the `main()` function.
+
+The macro will replace the `hello_world!()` call with the code defined in the macro definition i.e. `println!("Hello, World!)`.
+
+____
+
+## Creating a Macro with Arguments in Rust
+
+Macros can also take arguments, which allows us to customize the code that it generates based on different inputs.
+
+For example, here's a macro that defines a function to print a custom message:
+
+```rust
+// A macro named `print_message`
+macro_rules! print_message {
+    // Match rule that takes an argument expression
+    ($message:expr) => {
+        println!("{}", $message)
+    };
+}
+
+fn main() {
+    // Call the macro with an argument
+    print_message!("I am learning Rust!");
+}
+```
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+### Output
+
+```bash
+I am learning Rust!
+```
