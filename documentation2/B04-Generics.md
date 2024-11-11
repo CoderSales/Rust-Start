@@ -53,3 +53,52 @@ To know the basics of HashMap, visit [Rust HashMap](https://www.programiz.com/ru
     - E is used for error type
 
 ____
+
+### Example: Using Generics in Rust
+
+```rust
+use std::collections::HashMap;
+
+fn main() {
+    // Create a HashMap with types i32 and &str
+    let mut numbers: HashMap<i32, &str> = HashMap::new();
+
+    // Insert values to numbers HashMap
+    numbers.insert(1, "One");
+    numbers.insert(2, "Two");
+
+    println!("Numbers: {:?}", numbers);
+    
+    // Create a HashMap with types &str and &str   
+    let mut language_codes: HashMap<&str, &str> = HashMap::new();
+
+    // Insert values to language_codes HashMap
+    language_codes.insert("EN", "English");
+    language_codes.insert("NE", "Nepali");
+    
+    println!("Language Codes: {:?}", language_codes);
+}
+```
+
+#### Output
+
+##### Tutorial Screenshot
+
+![Screenshot of Output from tutorial](image.png)
+
+#### Commands
+
+```bash
+cargo build
+```
+
+```bash
+cargo run
+```
+
+##### Output from code
+
+```bash
+Numbers: {2: "Two", 1: "One"}
+Language Codes: {"EN": "English", "NE": "Nepali"}
+```
